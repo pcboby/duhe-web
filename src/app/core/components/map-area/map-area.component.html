@@ -1,0 +1,46 @@
+<!-- {{areamap | json}} -->
+<div class="areamap-label">{{label}}</div>
+<div class="areamap-container">
+  <div *ngFor="let item of dataset">
+    <ng-container [ngSwitch]="item.type">
+      <ng-container *ngSwitchCase="'river'">
+        <ng-container *ngTemplateOutlet="river; context:{ data: item};">
+        </ng-container>
+      </ng-container>
+      <ng-container *ngSwitchCase="'lake'">
+        <ng-container *ngTemplateOutlet="lake; context:{ data: item};">
+        </ng-container>
+      </ng-container>
+      <ng-container *ngSwitchCase="'city'">
+        <ng-container *ngTemplateOutlet="city; context:{ data: item};">
+        </ng-container>
+      </ng-container>
+      <ng-container *ngSwitchCase="'station'">
+        <ng-container *ngTemplateOutlet="station; context:{ data: item};">
+        </ng-container>
+      </ng-container>
+    </ng-container>
+  </div>
+</div>
+<!-- 河流 -->
+<ng-template #river let-item="data">
+  <div class="areamap-river" [ngStyle]="item.style" (click)="itemClick('river', item)"></div>
+</ng-template>
+<!-- 湖泊 -->
+<ng-template #lake let-item="data">
+  <div class="areamap-lake" [ngStyle]="item.style" (click)="itemClick('lake', item)">
+    <span>{{item.label}}</span>
+  </div>
+</ng-template>
+<!-- 城市 -->
+<ng-template #city let-item="data">
+  <div class="areamap-city" [ngStyle]="item.style" (click)="itemClick('city', item)">
+    <span>{{item.label}}</span>
+  </div>
+</ng-template>
+<!-- 水库 -->
+<ng-template #station let-item="data">
+  <div class="areamap-station" [ngStyle]="item.style" [ngClass]="{'selected': traceMap(item)}"  (click)="itemClick('station', item)">
+    <span>{{item.label}}</span>
+  </div>
+</ng-template>

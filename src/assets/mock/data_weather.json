@@ -1,0 +1,58 @@
+{
+  "data":[{
+    "name": "十堰",
+    "data":[{
+      "title": "昨天",
+      "datetime":"2019-7-15",
+      "weather":"晴",
+      "weather_image":"/assets/themes/default/images/s.png",
+      "temperature":"28℃",
+      "temperature_between":"21〜30℃",
+      "wind":"南风2级"
+    },{
+      "title": "今天",
+      "datetime":"2019-7-16",
+      "weather":"晴",
+      "weather_image":"/assets/themes/default/images/s.png",
+      "temperature":"28℃",
+      "temperature_between":"21〜30℃",
+      "wind":"南风2级"
+    },{
+      "title": "明天",
+      "datetime":"2019-7-17",
+      "weather":"晴",
+      "weather_image":"/assets/themes/default/images/s.png",
+      "temperature":"28℃",
+      "temperature_between":"21〜30℃",
+      "wind":"南风2级"
+    }]
+  }, {
+    "name": "竹山",
+    "data":[{
+      "title": "昨天",
+      "datetime":"2019-7-15",
+      "weather":"晴",
+      "weather_image":"/assets/themes/default/images/s.png",
+      "temperature":"28℃",
+      "temperature_between":"21〜30℃",
+      "wind":"南风2级"
+    },{
+      "title": "今天",
+      "datetime":"2019-7-16",
+      "weather":"晴",
+      "weather_image":"/assets/themes/default/images/s.png",
+      "temperature":"28℃",
+      "temperature_between":"21〜30℃",
+      "wind":"南风2级"
+    },{
+      "title": "明天",
+      "datetime":"2019-7-17",
+      "weather":"晴",
+      "weather_image":"/assets/themes/default/images/s.png",
+      "temperature":"28℃",
+      "temperature_between":"21〜30℃",
+      "wind":"南风2级"
+    }]
+  }]
+}
+

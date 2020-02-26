@@ -1,0 +1,49 @@
+﻿{
+  "title": "倾斜摄影数据",
+  "data": [{
+      "title": "鄂坪水库",
+      "text": "eping",
+      "type": "OBLIQUE",
+      "key": "1000",
+      "destination": "109.7044013053338,32.2050544405146",
+      "heightOffset": 685,
+      "url": "http://10.6.172.177:12000/assets/mock/DuheData/eping/tileset.json"
+    },
+    {
+      "title": "龙背湾",
+      "text": "longbeiwan",
+      "type": "OBLIQUE",
+      "key": "1001",
+      "destination": "110.06712694753425,31.879454870977973",
+      "heightOffset": 685,
+      "url": "http://10.6.172.177:12000/assets/mock/DuheData/longbeiwan/tileset.json"
+    },
+    {
+      "title": "小漩",
+      "text": "xiaoxuan",
+      "type": "OBLIQUE",
+      "key": "1002",
+      "destination": "110.20490394964477,32.22688616424487",
+      "heightOffset": 535,
+      "url": "http://10.6.172.177:12000/assets/mock/DuheData/xiaoxuan/tileset.json"
+    },
+    {
+      "title": "黄龙滩水库",
+      "text": "huanglongtan",
+      "type": "OBLIQUE",
+      "key": "1003",
+      "destination": "110.5230357771016,32.67630035881319",
+      "heightOffset": 535,
+      "url": "http://10.6.172.177:12000/assets/mock/DuheData/huanglongtan/tileset.json"
+    },
+    {
+      "title": "潘口",
+      "text": "pankou",
+      "type": "OBLIQUE",
+      "key": "1004",
+      "destination": "110.1515132638981,32.21145833057885",
+      "heightOffset": 535,
+      "url": "http://10.6.172.177:12000/assets/mock/DuheData/pankou/tileset.json"
+    }
+  ]
+}

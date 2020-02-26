@@ -1,0 +1,35 @@
+<!--  -->
+<!-- <app-fix-panel [isLock]="true" style="bottom: 10px; left: 10px;" [isFixed]="false">
+  <app-button-dropmenu [(ngModel)]="dropList" [ngPlacement]="'topLeft'" [ngType]="'link'">
+    <i nz-icon nzType="setting" nzTheme="outline" style="font-size: 22px;"></i>
+  </app-button-dropmenu>
+</app-fix-panel> -->
+<!--  -->
+<app-fix-panel *ngIf="plot_weather_isShow" style="top: 10px; left: 10px; width: 420px;" [isFixed]="false">
+  <app-panel title="气象信息" mode="BLUE">
+    <app-plot-real-weather></app-plot-real-weather>
+  </app-panel>
+</app-fix-panel>
+<!--  -->
+<app-fix-panel *ngIf="plot_river_isShow" style="top:382px; left: 424px; width:720px;"
+  [isFixed]="false">
+  <app-panel title="水库水情" mode="BLUE">
+    <app-plot-real-water></app-plot-real-water>
+  </app-panel>
+</app-fix-panel>
+<!--  -->
+<app-fix-panel *ngIf="plot_reservoir_isShow" style="top:382px; left: 10px; width:420px;"
+  [isFixed]="false">
+  <app-panel title="河道水情" mode="BLUE">
+    <app-plot-real-river></app-plot-real-river>
+  </app-panel>
+</app-fix-panel>
+
+<!--  -->
+
+<app-fix-panel [isLock]="true" style="top:300px; right: 0;"
+  [isFixed]="false">
+  <app-panel mode="BLUE">
+    <app-plot-control></app-plot-control>
+  </app-panel>
+</app-fix-panel>

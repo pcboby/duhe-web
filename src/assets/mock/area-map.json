@@ -1,0 +1,390 @@
+{
+  "label": "长江中下游分蓄洪区",
+  "data": [
+
+    {
+      "type":"river",
+      "label": "长江",
+      "style":{
+        "top":"30%"
+      }
+    },
+
+
+    {
+      "type": "lake",
+      "label": "洞庭湖",
+      "style":{
+        "top":"30%",
+        "left":"38%"
+      }
+    }, {
+      "type": "lake",
+      "label": "鄱阳湖",
+      "style":{
+        "top":"30%",
+        "left":"87%"
+      }
+    },
+
+
+    {
+      "type": "city",
+      "label": "荆州",
+      "style":{
+        "top":"30%",
+        "left":"10%"
+      }
+    }, {
+      "type": "city",
+      "label": "岳阳",
+      "style":{
+        "top":"30%",
+        "left":"40%"
+      }
+    }, {
+      "type": "city",
+      "label": "武汉",
+      "style":{
+        "top":"30%",
+        "left":"60%"
+      }
+    }, {
+      "type": "city",
+      "label": "九江",
+      "style":{
+        "top":"30%",
+        "left":"85%"
+      }
+    },
+
+
+
+    {
+      "type": "station",
+      "label": "人民大垸",
+      "style":{
+        "top":"22%",
+        "left":"16%",
+        "width":"4.2em"
+      }
+    }, {
+      "type": "station",
+      "label": "洪湖西分垸",
+      "style":{
+        "top":"22%",
+        "left":"42%"
+      }
+    }, {
+      "type": "station",
+      "label": "洪湖中分垸",
+      "style":{
+        "top":"22%",
+        "left":"47%"
+      }
+    }, {
+      "id":25,
+      "type": "station",
+      "label": "洪湖东分垸",
+      "style":{
+        "top":"22%",
+        "left":"52%"
+      }
+    }, {
+      "type": "station",
+      "label": "杜家台",
+      "style":{
+        "top":"22%",
+        "left":"57%"
+      }
+    }, {
+      "type": "station",
+      "label": "东西湖",
+      "style":{
+        "top":"22%",
+        "left":"65%"
+      }
+    }, {
+      "type": "station",
+      "label": "武湖",
+      "style":{
+        "top":"22%",
+        "left":"70%"
+      }
+    }, {
+      "type": "station",
+      "label": "张渡湖",
+      "style":{
+        "top":"22%",
+        "left":"75%"
+      }
+    }, {
+      "type": "station",
+      "label": "白潭湖",
+      "style":{
+        "top":"22%",
+        "left":"80%"
+      }
+    }, {
+      "type": "station",
+      "label": "华阳河",
+      "style":{
+        "top":"22%",
+        "left":"90%"
+      }
+    }, {
+      "type": "station",
+      "label": "宛市扩大区",
+      "style":{
+        "top":"40%",
+        "left":"8%"
+      }
+    }, {
+      "id":26,
+      "type": "station",
+      "label": "荆江分洪区",
+      "style":{
+        "top":"40%",
+        "left":"13%"
+      }
+    }, {
+      "type": "station",
+      "label": "虎西备盖区",
+      "style":{
+        "top":"48%",
+        "left":"13%"
+      }
+    }, {
+      "id":4,
+      "type": "station",
+      "label": "西官垸",
+      "style":{
+        "top":"58%",
+        "left":"8%"
+      }
+    }, {
+      "id":5,
+      "type": "station",
+      "label": "安澧垸",
+      "style":{
+        "top":"58%",
+        "left":"13%"
+      }
+    }, {
+      "id":9,
+      "type": "station",
+      "label": "安化垸",
+      "style":{
+        "top":"58%",
+        "left":"18%"
+      }
+    }, {
+      "id":3,
+      "type": "station",
+      "label": "九垸",
+      "style":{
+        "top":"66%",
+        "left":"8%"
+      }
+    }, {
+      "id":7,
+      "type": "station",
+      "label": "安昌垸",
+      "style":{
+        "top":"66%",
+        "left":"18%"
+      }
+    }, {
+      "id":6,
+      "type": "station",
+      "label": "澧南垸",
+      "style":{
+        "top":"74%",
+        "left":"8%"
+      }
+    }, {
+      "id":20,
+      "type": "station",
+      "label": "建设垸",
+      "style":{
+        "top":"40%",
+        "left":"25%"
+      }
+    }, {
+      "id":21,
+      "type": "station",
+      "label": "建新垸",
+      "style":{
+        "top":"40%",
+        "left":"30%"
+      }
+    }, {
+      "id":22,
+      "type": "station",
+      "label": "君山垸",
+      "style":{
+        "top":"40%",
+        "left":"35%"
+      }
+    }, {
+      "id":24,
+      "type": "station",
+      "label": "江南陆城",
+      "style":{
+        "top":"40%",
+        "left":"43.5%",
+        "width":"4.2em"
+      }
+    }, {
+      "id":18,
+      "type": "station",
+      "label": "集成安合",
+      "style":{
+        "top":"50%",
+        "left":"27%",
+        "padding":"0 2px"
+      }
+    }, {
+      "id":19,
+      "type": "station",
+      "label": "钱粮湖",
+      "style":{
+        "top":"50%",
+        "left":"32%"
+      }
+    }, {
+      "id":10,
+      "type": "station",
+      "label": "南顶垸",
+      "style":{
+        "top":"58%",
+        "left":"27%"
+      }
+    }, {
+      "id":23,
+      "type": "station",
+      "label": "大通湖东",
+      "style":{
+        "top":"58%",
+        "left":"32%",
+        "padding": "0 2px"
+      }
+    }, {
+      "id":11,
+      "type": "station",
+      "label": "和康垸",
+      "style":{
+        "top":"66%",
+        "left":"27%"
+      }
+    }, {
+      "id":8,
+      "type": "station",
+      "label": "南汉垸",
+      "style":{
+        "top":"74%",
+        "left":"27%"
+      }
+    }, {
+      "id":1,
+      "type": "station",
+      "label": "围堤湖",
+      "style":{
+        "top":"82%",
+        "left":"27%"
+      }
+    }, {
+      "id":2,
+      "type": "station",
+      "label": "六角山",
+      "style":{
+        "top":"79.5%",
+        "left":"34%"
+      }
+    }, {
+      "id":13,
+      "type": "station",
+      "label": "共双茶垸",
+      "style":{
+        "top":"71.5%",
+        "left":"39%",
+        "padding":"0 2px"
+      }
+    }, {
+      "id":12,
+      "type": "station",
+      "label": "民主垸",
+      "style":{
+        "top":"79.5%",
+        "left":"39%"
+      }
+    }, {
+      "id":15,
+      "type": "station",
+      "label": "屈原垸",
+      "style":{
+        "top":"71.5%",
+        "left":"44%"
+      }
+    }, {
+      "id":17,
+      "type": "station",
+      "label": "北湖垸",
+      "style":{
+        "top":"79.5%",
+        "left":"44%"
+      }
+    }, {
+      "id":14,
+      "type": "station",
+      "label": "城西垸",
+      "style":{
+        "top":"87.5%",
+        "left":"44%"
+      }
+    }, {
+      "id":16,
+      "type": "station",
+      "label": "义合垸",
+      "style":{
+        "top":"95.5%",
+        "left":"44%"
+      }
+    }, {
+      "type": "station",
+      "label": "西凉湖",
+      "style":{
+        "top":"40%",
+        "left":"56%"
+      }
+    }, {
+      "type": "station",
+      "label": "方洲斜塘",
+      "style":{
+        "top":"60%",
+        "left":"81%",
+        "padding":"0 2px"
+      }
+    }, {
+      "type": "station",
+      "label": "黄湖",
+      "style":{
+        "top":"72%",
+        "left":"84%"
+      }
+    }, {
+      "type": "station",
+      "label": "珠湖",
+      "style":{
+        "top":"53%",
+        "left":"93%"
+      }
+    }, {
+      "type": "station",
+      "label": "康山",
+      "style":{
+        "top":"72%",
+        "left":"90%"
+      }
+    }]
+}

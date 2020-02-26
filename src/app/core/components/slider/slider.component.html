@@ -1,0 +1,23 @@
+<ng-scrollbar>
+  <div class="slider-menu">
+    <!--  -->
+    <ng-container *ngTemplateOutlet="menuContainerTemplate; context: {$implicit: menu, level:0, path: []}"></ng-container>
+    <!--  -->
+    <ng-template #menuContainerTemplate let-data let-level="level" let-path="path">
+      <ul>
+        <li *ngFor="let item of data"
+          [ngClass]="{'hasChild': item.children, 'isOpen':item.isOpen || traceChildSelected(item), 'selected': item.value===selected || traceChildSelected(item)}">
+          <ng-container *ngTemplateOutlet="menuContentTemplate; context: {$implicit: item, level: level, path:path}"></ng-container>
+        </li>
+      </ul>
+    </ng-template>
+    <!--  -->
+    <ng-template #menuContentTemplate let-data let-level="level" let-path="path">
+      <a (click)="itemClick(data,path)" [ngStyle]="{'padding-left': 8+8*level+'px'}"><i
+          [ngClass]="data.cls"></i><span>{{data.name}}</span></a>
+      <ng-container *ngIf="data.children">
+        <ng-container *ngTemplateOutlet="menuContainerTemplate; context: {$implicit: data.children, level:level+1, path:getPath(path,data)}"></ng-container>
+      </ng-container>
+    </ng-template>
+  </div>
+</ng-scrollbar>

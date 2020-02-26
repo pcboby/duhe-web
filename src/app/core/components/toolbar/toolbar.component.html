@@ -1,0 +1,16 @@
+<div class="toolbar">
+    <ng-container *ngTemplateOutlet="toolbarContainerTemplate; context: {$implicit: dataset}"></ng-container>
+    <ng-template #toolbarContainerTemplate let-data>
+      <ul>
+        <li *ngFor="let item of data" [ngClass]="{'hasChild': item.children}">
+          <ng-container *ngTemplateOutlet="toolbarContentTemplate; context: {$implicit: item}"></ng-container>
+        </li>
+      </ul>
+    </ng-template>
+    <ng-template #toolbarContentTemplate let-data>
+      <a (click)="onItemClickEmit(data)"><i nz-icon [nzType]="data.iconType" nzTheme="outline" [ngClass]="data.iconCls"></i><span>{{data.name}}</span></a>
+      <ng-container *ngIf="data.children">
+        <ng-container *ngTemplateOutlet="toolbarContainerTemplate; context: {$implicit: data.children}"></ng-container>
+      </ng-container>
+    </ng-template>
+  </div>

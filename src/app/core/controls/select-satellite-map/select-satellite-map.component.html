@@ -1,0 +1,11 @@
+<nz-select style="width: 100%; min-width: 120px;" [nzMode]="modeType" nzSize="small" [(ngModel)]="model" [nzPlaceHolder]="placeHolder"
+  nzAllowClear nzShowSearch [nzServerSearch]="true" class="form-control-select-company" [nzDisabled]="disabled">
+  <ng-container *ngFor="let data of dataset">
+    <nz-option nzCustomContent *ngIf="!isLoading" [nzValue]="data[target]" [nzLabel]="data[field]">
+      <span>{{data[field]}}</span>
+    </nz-option>
+  </ng-container>
+  <nz-option *ngIf="isLoading" nzDisabled nzCustomContent>
+    <i nz-icon type="loading" class="loading-icon"></i> 正在加载数据...
+  </nz-option>
+</nz-select>

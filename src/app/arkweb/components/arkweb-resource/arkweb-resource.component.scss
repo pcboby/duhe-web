@@ -1,0 +1,137 @@
+.arkweb-resource {
+  position: absolute;
+  z-index: 29;
+  right: 5px;
+  bottom: 0px;
+
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    list-style: none;
+
+    .i0,
+    .i1,
+    .i2,
+    .i3,
+    .i4 {
+      position: absolute;
+      top: 0;
+      opacity: .1;
+    }
+
+    li {
+      margin: 0;
+      padding: 0;
+      list-style-type: none;
+      list-style: none;
+      display: inline-block;
+      padding: 6px;
+      background-color: #fff;
+      position: relative;
+
+      -moz-transition: all 0.5s ease-in-out;
+      -webkit-transition: all 0.5s ease-in-out;
+      -o-transition: all 0.5s ease-in-out;
+      transition: all 0.5s ease-in-out;
+
+      a {
+        float: left;
+        position: relative;
+        color: #fff;
+        border: 1px solid #fff;
+        border-radius: 3px;
+        overflow: hidden;
+
+        img {
+          width: 86px;
+          height: 60px;
+          display: block;
+          background-color: #f1f1f1;
+        }
+
+        span {
+          position: absolute;
+          bottom: 0;
+          right: 0;
+          line-height: 1em;
+          padding: 2px 3px;
+          font-size: 13px;
+        }
+
+        &.selected,
+        &:hover {
+
+          position: relative;
+          border-color: #2e77e5;
+
+          span {
+            background-color: #2e77e5;
+          }
+        }
+
+      }
+
+      &.in {
+        a {
+          &::before {
+            content: '当前';
+            position: absolute;
+            top: 0;
+            left: 0;
+            line-height: 1em;
+            padding: 2px 3px;
+            font-size: 13px;
+            background-color: #1bca41;
+          }
+        }
+      }
+
+      &.i0 {
+        left: -6px;
+      }
+
+      &.i1 {
+        left: -12px;
+      }
+
+      &.i2 {
+        left: -18px;
+      }
+
+      &.i3 {
+        left: -24px;
+      }
+
+      &.i4 {
+        left: -30px;
+      }
+    }
+
+    &:hover {
+      li {
+        opacity: 1;
+
+        &.i0 {
+          left: -100px;
+        }
+
+        &.i1 {
+          left: -200px;
+        }
+
+        &.i2 {
+          left: -300px;
+        }
+
+        &.i3 {
+          left: -400px;
+        }
+
+        &.i4 {
+          left: -500px;
+        }
+      }
+    }
+  }
+}

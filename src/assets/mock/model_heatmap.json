@@ -1,0 +1,33 @@
+{
+    "title": "矢量数据模型",
+    "data": [{
+        "title": "重点城市",
+        "key": "2001",
+        "radius": 100,
+        "maxOpacity": 0.7,
+        "minOpacity": 0.0,
+        "blur": 0.95,
+        "url": "/assets/mock/flood/shp/cityt.json",
+        "gradient": {
+            "0.90": "red",
+            "0.80": "orange",
+            "0.70": "pink",
+            "0.6": "yellow",
+            "0.5": "blue",
+            "0.3": "white",
+            "0.1": "green"
+        }
+      },
+      {
+        "title": "重点水库",
+        "key": "2003",
+        "url": "/assets/mock/flood/shp/reservoir.json"
+      }, {
+        "title": "河流名称",
+        "key": "2007",
+        "destination": "105.01877,27.98728",
+        "url": "/assets/mock/flood/shp/streamAndtributaryText.json"
+      }
+    ]
+  }
+  

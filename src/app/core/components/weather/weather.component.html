@@ -1,0 +1,17 @@
+<div class="group-weather-container" *ngFor="let data of dataset">
+  <span class="group-weather-container-title">{{data.name}}</span>
+  <ul class="group-weather-container-content">
+    <li *ngFor="let item of data.data">
+      <a>
+          <span class="week">{{item.title}}</span>
+        <!-- <span class="week">{{item.datetime | week}}</span> -->
+        <span class="datetime">{{item.datetime | date: 'MM月dd日'}}</span>
+        <img class="image" [src]="item.weather_image">
+        <span class="weather">{{item.weather}}</span>
+        <span class="temperature">{{item.temperature}}</span>
+        <span class="temperature1">{{item.temperature_between}}</span>
+        <span class="wind">{{item.wind}}</span>
+      </a>
+    </li>
+  </ul>
+</div>

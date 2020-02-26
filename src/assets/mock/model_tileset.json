@@ -1,0 +1,44 @@
+﻿{
+  "title": "倾斜摄影模型",
+  "data": [{
+      "title": "安居镇",
+      "text": "anjuzhen",
+      "type": "OBLIQUE",
+      "key": "1000",
+      "destination": "106.01877,29.98728",
+      "url": "http://10.6.172.177:10200/ObliqueData/anjuzhen/tileset.json"
+    },
+    {
+      "title": "别口乡",
+      "text": "biekouxiang",
+      "type": "OBLIQUE",
+      "key": "1001",
+      "destination": "105.95956,30.12171",
+      "url": "http://10.6.172.177:10200/ObliqueData/biekouxiang/tileset.json"
+    },
+    {
+      "title": "澄江镇",
+      "text": "chengjiangzhen",
+      "type": "OBLIQUE",
+      "key": "1002",
+      "destination": "106.37383,29.86831",
+      "url": "http://10.6.172.177:10200/ObliqueData/chengjiangzhen/tileset.json"
+    },
+    {
+      "title": "丛刊水库",
+      "text": "congkan",
+      "type": "OBLIQUE",
+      "key": "1003",
+      "destination": "105.61086,30.15272",
+      "url": "http://10.6.172.177:10200/ObliqueData/congkan/tileset.json"
+    },
+    {
+      "title": "钓鱼城街道",   
+      "text": "diaoyuchengjiedao",
+      "type": "OBLIQUE",
+      "key": "1004",
+      "destination": "106.28411,29.99609",
+      "url": "http://10.6.172.177:10200/ObliqueData/diaoyuchengjiedao/tileset.json"
+    }
+  ]
+}

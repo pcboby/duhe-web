@@ -1,0 +1,8 @@
+<ul>
+  <li *ngFor="let item of dataset">
+    <a (click)="itemClick(item)">
+      <img src="/assets/themes/default/images/maptype_b.png" alt="">
+      <span>{{item.name}}</span>
+    </a>
+  </li>
+</ul>

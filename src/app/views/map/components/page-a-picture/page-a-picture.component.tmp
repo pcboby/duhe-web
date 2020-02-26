@@ -1,0 +1,108 @@
+<!-- 左侧 -------------------------------------------------------------------------------------------------------------------->
+<app-fix-panel [isLock]="true" style="top: 136px; left: -11px;" [isFixed]="true">
+  <app-control-tool-tab [(ngModel)]="selected" [dataset]="tooltabList"></app-control-tool-tab>
+</app-fix-panel>
+<!--  -->
+<!-- 雨情信息 -------------------------------------------------------------------------------------------------------------------->
+<app-fix-panel *ngIf="selected === 'rain'" mode="BLUE" title="雨情信息" [isLock]="true"
+  style="top: 146px; left: 36px; width: 286px;" [isFixed]="true" (onClose)="selected = null">
+  <app-condition-rain (onRainItemClick)="rainItemClick($event)" (onStationItemClick)="stationItemClick($event)">
+  </app-condition-rain>
+</app-fix-panel>
+<!--  -->
+<app-fix-panel *ngIf="selected === 'rain'" mode="BLACK" [isLock]="true" style="bottom: 5px; left: 5px;"
+  [isFixed]="false">
+  <app-condition-rain-control></app-condition-rain-control>
+</app-fix-panel>
+<!-- 站点雨情详情 -->
+<app-fix-panel *ngIf="detail_rain_isShow" mode="BLUE" title="水库雨情：龙背湾" (onClose)="detail_rain_isShow = false;"
+  style="top: 50%; left: 50%; width: 860px; height: 320px; transform: translate(-50%, -50%);">
+  <app-condition-rain-detail></app-condition-rain-detail>
+</app-fix-panel>
+<!-- 水文站详情 -->
+<app-fix-panel *ngIf="detail_station_isShow" mode="BLUE" title="水文站详情" style="top: 146px; left:322px; width: 280px;"
+  [isFixed]="true" [closed]="!detail_station_isShow" (onClose)="detail_station_isShow = !$event">
+  <app-station-detail></app-station-detail>
+</app-fix-panel>
+<!--  -->
+<!-- 水情信息 -------------------------------------------------------------------------------------------------------------------->
+<app-fix-panel *ngIf="selected === 'water'" mode="BLUE" title="水情信息" [isLock]="true"
+  style="top: 146px; left: 36px; width: 380px;" [isFixed]="true" (onClose)="selected = null">
+  <nz-tabset [nzTabPosition]="'top'" [nzType]="'card'" nzSize="small">
+    <nz-tab [nzTitle]="'水库水情'">
+      <!--  -->
+      <app-condition-water (onWaterItemClick)="waterItemClick($event)"
+        (onReservoirItemClick)="reservoirItemClick($event)"></app-condition-water>
+      <!--  -->
+    </nz-tab>
+    <nz-tab [nzTitle]="'河道水情'">
+      <!--  -->
+      <app-condition-river (onItemClick)="riverItemClick($event)" (onRiverItemClick)="conditionRiverItemClick($event)">
+      </app-condition-river>
+      <!--  -->
+    </nz-tab>
+  </nz-tabset>
+</app-fix-panel>
+
+
+<!-- 水库详情 -->
+<app-fix-panel *ngIf="detail_reservoir_isShow" mode="BLUE" title="水库详情" [isFixed]="true"
+  style="top: 146px; left:416px; width: 320px;" (onClose)="detail_reservoir_isShow = !$event">
+  <app-reservoir-detail></app-reservoir-detail>
+</app-fix-panel>
+<!-- 水库详情/查询后 -->
+<app-fix-panel *ngIf="detail_water_isShow" mode="BLUE" title="水库详情" (onClose)="detail_water_isShow = false;"
+  style="top: 50%; left: 50%; width: 860px; transform: translate(-50%, -50%);">
+  <app-condition-water-detail></app-condition-water-detail>
+</app-fix-panel>
+
+<!-- 河道详情 -->
+<app-fix-panel *ngIf="detail_river_isShow" mode="BLUE" title="河道详情"
+  style="top: 50%; left: 50%; width: 320px; transform: translate(-50%, -50%);" (onClose)="detail_river_isShow = false;">
+  <app-river-detail></app-river-detail>
+</app-fix-panel>
+<!-- 河道详情/查询后 -->
+<app-fix-panel *ngIf="detail_condition_river_isShow" mode="BLUE" title="河道详情"
+  style="top: 50%; left: 50%; width: 860px; transform: translate(-50%, -50%);"
+  (onClose)="detail_condition_river_isShow = false;">
+  <app-condition-river-detail></app-condition-river-detail>
+</app-fix-panel>
+
+
+<!--  -->
+<!-- 工情信息 -------------------------------------------------------------------------------------------------------------------->
+<app-fix-panel *ngIf="selected === 'work'" mode="BLUE" title="工情信息" [isLock]="true"
+  style="top: 146px; left: 36px; width: 286px;" [isFixed]="true" (onClose)="selected = null">
+  <nz-tabset [nzTabPosition]="'top'" [nzType]="'card'" nzSize="small">
+    <nz-tab [nzTitle]="'视频监控'">
+      <!--  -->
+      <app-condition-work (onItemClick)="workItemClick($event)"></app-condition-work>
+      <!--  -->
+    </nz-tab>
+    <nz-tab [nzTitle]="'闸门状态'">
+      <!--  -->
+      <app-condition-gate (onItemClick)="gateItemClick($event)"></app-condition-gate>
+      <!--  -->
+    </nz-tab>
+  </nz-tabset>
+</app-fix-panel>
+<!-- 监控详情 -->
+<app-fix-panel *ngIf="detail_work_isShow" mode="BLUE" title="监控详情" (onClose)="detail_work_isShow = false;"
+  style="top: 50%; left: 50%; width: 860px; transform: translate(-50%, -50%);">
+  <app-condition-work-detail></app-condition-work-detail>
+</app-fix-panel>
+<!-- 闸门详情 -->
+<app-fix-panel *ngIf="detail_gate_isShow" mode="BLUE" title="闸门详情" (onClose)="detail_gate_isShow = false;"
+  style="top: 50%; left: 50%; width: 860px; transform: translate(-50%, -50%);">
+  <app-condition-gate-detail></app-condition-gate-detail>
+</app-fix-panel>
+<!--  -->
+<!--  -->
+<!--  -->
+<!--  -->
+<!-- 视频播放器 -->
+<app-fix-panel *ngIf="detail_video_isShow" mode="BLUE" title="监控：" (onClose)="detail_video_isShow = false;"
+  style="top: 50%; left: 50%; transform: translate(-50%, -50%);">
+  <app-video></app-video>
+</app-fix-panel>
+<!--  -->

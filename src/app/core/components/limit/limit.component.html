@@ -1,0 +1,6 @@
+<div class="flex-row">
+  <div style="flex: none;" *ngIf="label">{{label}}</div>
+  <div>
+    <span class="group-limit-item" *ngFor="let item of dataset"><i [ngStyle]="{'background-color': item.color}"></i>{{item.min}}~{{item.max}}</span>
+  </div>
+</div>

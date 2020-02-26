@@ -1,0 +1,7 @@
+<div class="arkweb-switch" [ngClass]="{'column': type==='column'}">
+  <ul>
+    <li *ngFor="let item of switchList" [ngClass]="{'selected': item.value === selected}">
+      <a (click)="selected = item.value; itemClick(item.value)">{{item.label}}</a>
+    </li>
+  </ul>
+</div>

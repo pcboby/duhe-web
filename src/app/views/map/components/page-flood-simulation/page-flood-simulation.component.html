@@ -1,0 +1,18 @@
+<!--  -->
+<app-fix-panel [isLock]="true" style="bottom: 10px; left: 10px;" [isFixed]="false">
+  <button nz-button nzType="link" style="color: #fff;" (click)="isShow = !isShow;"><i nz-icon nzType="setting"
+      nzTheme="outline" style="font-size: 22px;"></i></button>
+</app-fix-panel>
+<!--  -->
+<app-fix-panel *ngIf="isShow" mode="BLUE" title="初始设置"
+  style="top: 50%; left: 50%;transform: translate(-50%, -50%); width: 960px;" [closed]="!isShow"
+  (onClose)="isShow = !$event">
+  <app-page-flood-simulation-setting></app-page-flood-simulation-setting>
+</app-fix-panel>
+<!-- 播放工具 -->
+<app-fix-panel mode="BLACK" [isLock]="true"
+  style="bottom: 10px; left: 76px; right: 140px; position: absolute; border-radius: 5px;">
+  <app-control-player [(ngModel)]="frameIdx" [frames]="frames" [marks]="frameMarks" [frameMsg]="frameMsg"
+    (ngModelChange)="onChangeFrame($event)" (onMarkClick)="onMarkClick($event)">
+  </app-control-player>
+</app-fix-panel>

@@ -1,0 +1,23 @@
+<nz-collapse nzAccordion class="full-collapse" style="height:100%;">
+  <nz-collapse-panel nzHeader="倾斜摄影数据" [nzActive]="true">
+    <app-database-model-reservoirs></app-database-model-reservoirs>
+  </nz-collapse-panel>
+  <nz-collapse-panel nzHeader="河流">
+    <!--  -->
+    <app-database-rivers></app-database-rivers>
+    <!--  -->
+  </nz-collapse-panel>
+  <nz-collapse-panel nzHeader="测站">
+    <!--  -->
+    <app-database-station></app-database-station>
+    <!--  -->
+  </nz-collapse-panel>
+  <nz-collapse-panel nzHeader="防洪控制点">
+    <app-database-flood-point></app-database-flood-point>
+  </nz-collapse-panel>
+  <nz-collapse-panel nzHeader="水库">
+    <!--  -->
+    <app-database-reservoir></app-database-reservoir>
+    <!--  -->
+  </nz-collapse-panel>
+</nz-collapse>

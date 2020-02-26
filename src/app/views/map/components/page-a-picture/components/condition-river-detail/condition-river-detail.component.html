@@ -1,0 +1,31 @@
+<form nz-form [formGroup]="validateForm" [nzLayout]="'inline'" class="form-search">
+    <nz-form-item>
+      <nz-form-label>开始时间</nz-form-label>
+      <nz-form-control nzErrorTip="请按正确的日期格式输入!">
+        <nz-date-picker nzShowTime formControlName="firstDatetime" nzSize="small"></nz-date-picker>
+      </nz-form-control>
+    </nz-form-item>
+    <nz-form-item>
+      <nz-form-label>结束时间</nz-form-label>
+      <nz-form-control nzErrorTip="请按正确的日期格式输入!">
+        <nz-date-picker nzShowTime formControlName="lastDatetime" nzSize="small"></nz-date-picker>
+      </nz-form-control>
+    </nz-form-item>
+    <nz-form-item>
+      <nz-form-control>
+          <button nz-button [nzType]="'primary'" nzSize="small" (click)="submitForm()" style="margin-right: 10px;">查询</button>
+          &nbsp;
+          <button nz-button [nzType]="'primary'" nzSize="small" (click)="addHistory()" style="margin-right: 10px;">历史同期对比</button>
+      </nz-form-control>
+    </nz-form-item>
+  </form>
+  <!--  -->
+  <nz-row style="margin-top: 10px;">
+    <nz-col nzSpan="24">
+      <div class="group-box" style="height: 380px;">
+        <!--  -->
+        <app-echarts [options]="chartOption"></app-echarts>
+        <!--  -->
+      </div>
+    </nz-col>
+  </nz-row>

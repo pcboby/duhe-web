@@ -1,0 +1,14 @@
+<nz-radio-group [(ngModel)]="rainViewType">
+  <label nz-radio [nzValue]="0" style="color: #fff;">等值面</label>
+  <label nz-radio [nzValue]="1" style="color: #fff;">等值线</label>
+</nz-radio-group>
+<div class="list-steps-style" *ngIf="rainViewType===0">
+  <ul>
+    <li *ngFor="let item of listSteps">
+      <a>
+        <i [ngStyle]="item.style"></i>
+        <span>{{item.min}}~{{item.max}}</span>
+      </a>
+    </li>
+  </ul>
+</div>

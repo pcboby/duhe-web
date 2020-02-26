@@ -1,0 +1,9 @@
+{
+  "data": {
+    "startDatetime": "20190731T140000",
+    "endDatetime": "20190803T140000",
+    "safeDay": 0,
+    "alarmDay": 0,
+    "predictionDay": 3
+  }
+}

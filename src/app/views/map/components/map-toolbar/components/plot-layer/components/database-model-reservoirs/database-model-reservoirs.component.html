@@ -1,0 +1,9 @@
+<nz-tree [nzData]="dataset" nzCheckable nzMultiple nzShowLine
+  [nzCheckedKeys]="defaultCheckedKeys"
+  [nzExpandedKeys]="defaultExpandedKeys"
+  [nzSelectedKeys]="defaultSelectedKeys"
+  (nzClick)="nzEvent($event)"
+  (nzExpandChange)="nzEvent($event)"
+  (nzDblClick)="nzDbClickEvent($event.node.origin)"
+  (nzCheckBoxChange)="onCheckBoxChange($event.node.origin)">
+</nz-tree>

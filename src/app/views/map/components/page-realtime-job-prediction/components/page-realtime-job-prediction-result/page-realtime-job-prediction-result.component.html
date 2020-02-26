@@ -1,0 +1,21 @@
+<nz-tabset [nzTabPosition]="'top'" [nzType]="'card'" nzSize="small">
+  <nz-tab [nzTitle]="'站点信息'">
+    <!--  -->
+    <app-page-realtime-job-prediction-station></app-page-realtime-job-prediction-station>
+    <!--  -->
+  </nz-tab>
+  <nz-tab [nzTitle]="'防洪形势分析'">
+    <nz-tabset nzTabPosition="left" nzType="line" [nzSelectedIndex]="0">
+      <nz-tab [nzTitle]="'洪水组成分析'">
+        <!--  -->
+        <app-page-realtime-job-prediction-flood></app-page-realtime-job-prediction-flood>
+        <!--  -->
+      </nz-tab>
+      <nz-tab [nzTitle]="'防洪工程推荐'">
+        <!--  -->
+        <app-page-realtime-job-prediction-recommend></app-page-realtime-job-prediction-recommend>
+        <!--  -->
+      </nz-tab>
+    </nz-tabset>
+  </nz-tab>
+</nz-tabset>

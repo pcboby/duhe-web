@@ -1,0 +1,15 @@
+<nz-breadcrumb>
+  <nz-breadcrumb-item>
+    <i nz-icon nzType="home"></i>
+  </nz-breadcrumb-item>
+  <nz-breadcrumb-item>
+    <span>{{this.mas}}</span>
+  </nz-breadcrumb-item>
+  <ng-container *ngFor="let item of path">
+    <nz-breadcrumb-item>
+      {{item.name}}
+    </nz-breadcrumb-item>
+  </ng-container>
+
+
+</nz-breadcrumb>

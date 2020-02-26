@@ -1,0 +1,16 @@
+<div class="arkweb-resource">
+  <ul>
+    <li style="z-index: 99;" class="in">
+      <a>
+        <img [src]="selectedItem.images" alt="">
+        <span>{{selectedItem.name}}</span>
+      </a>
+    </li>
+    <li *ngFor="let item of dataset; let idx = index;" [ngClass]="'i' + idx" (click)="onCheckItem(item.id)">
+      <a [ngClass]="{'selected': item.id === selected}">
+        <img [src]="item.images" alt="">
+        <span>{{item.name}}</span>
+      </a>
+    </li>
+  </ul>
+</div>

@@ -1,0 +1,64 @@
+.arkweb-switch {
+  position: absolute;
+  z-index: 29;
+  right: 28px;
+  top: 320px;
+
+  &.column{
+    ul{
+      flex-direction: column;
+      li{
+        &:first-child a{
+          border-top-left-radius: 3px;
+          border-top-right-radius: 3px;
+          border-bottom-left-radius: 0;
+        }
+
+        &:last-child a{
+          border-top-right-radius: 0;
+          border-bottom-right-radius: 3px;
+          border-bottom-left-radius: 3px;
+        }
+      }
+    }
+  }
+
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+
+    li {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      list-style-type: none;
+
+      a {
+        display: inline-block;
+        line-height: 1.2em;
+        padding: .315em .435em;
+        background-color: #fff;
+        color: #000;
+      }
+
+      &:first-child a{
+        border-top-left-radius: 3px;
+        border-bottom-left-radius: 3px;
+      }
+
+      &:last-child a{
+        border-top-right-radius: 3px;
+        border-bottom-right-radius: 3px;
+      }
+
+      &.selected a{
+        background-color: #1890ff;
+        color: #fff;
+      }
+    }
+  }
+}

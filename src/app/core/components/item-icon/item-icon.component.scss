@@ -1,0 +1,14 @@
+.item-icon{
+  display: inline-block;
+  padding: .315em;
+  margin: .315em;
+  text-align: center;
+  border:1px solid #eee;
+  border-radius: .315em;
+  i{
+    font-size: 32px;
+  }
+  span{
+    display: block;
+  }
+}

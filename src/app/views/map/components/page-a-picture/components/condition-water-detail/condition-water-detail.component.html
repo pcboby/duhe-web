@@ -1,0 +1,115 @@
+<form nz-form [formGroup]="validateForm" [nzLayout]="'inline'" class="form-search">
+  <nz-form-item>
+    <nz-form-label>开始时间</nz-form-label>
+    <nz-form-control nzErrorTip="请按正确的日期格式输入!">
+      <nz-date-picker nzShowTime formControlName="firstDatetime" nzSize="small"></nz-date-picker>
+    </nz-form-control>
+  </nz-form-item>
+  <nz-form-item>
+    <nz-form-label>结束时间</nz-form-label>
+    <nz-form-control nzErrorTip="请按正确的日期格式输入!">
+      <nz-date-picker nzShowTime formControlName="lastDatetime" nzSize="small"></nz-date-picker>
+    </nz-form-control>
+  </nz-form-item>
+  <nz-form-item>
+    <nz-form-control>
+        <button nz-button [nzType]="'primary'" nzSize="small" (click)="submitForm()" style="margin-right: 10px;">查询</button>
+        &nbsp;
+        <button nz-button [nzType]="'primary'" nzSize="small" (click)="addHistory()" style="margin-right: 10px;">历史同期对比</button>
+    </nz-form-control>
+  </nz-form-item>
+</form>
+<!--  -->
+<nz-row style="margin-top: 10px;">
+  <nz-col nzSpan="12" style="padding-right:10px;">
+    <div class="group-box" style="height: 380px;">
+      <!--  -->
+      <div class="table GRAY1">
+        <table>
+          <thead>
+            <tr>
+              <th>时间</th>
+              <th>水位(m)</th>
+              <th>入库流量(<font class="m3">m</font>/s)</th>
+              <th>出库流量(<font class="m3">m</font>/s)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td align="center">2019-01-01</td>
+              <td align="center">396</td>
+              <td align="center">92</td>
+              <td align="center">9999</td>
+            </tr>
+            <tr>
+              <td align="center">2019-01-01</td>
+              <td align="center">396</td>
+              <td align="center">92</td>
+              <td align="center">9999</td>
+            </tr>
+            <tr>
+              <td align="center">2019-01-01</td>
+              <td align="center">396</td>
+              <td align="center">92</td>
+              <td align="center">9999</td>
+            </tr>
+            <tr>
+              <td align="center">2019-01-01</td>
+              <td align="center">396</td>
+              <td align="center">92</td>
+              <td align="center">9999</td>
+            </tr>
+            <tr>
+              <td align="center">2019-01-01</td>
+              <td align="center">396</td>
+              <td align="center">92</td>
+              <td align="center">9999</td>
+            </tr>
+            <tr>
+              <td align="center">2019-01-01</td>
+              <td align="center">396</td>
+              <td align="center">92</td>
+              <td align="center">9999</td>
+            </tr>
+            <tr>
+              <td align="center">2019-01-01</td>
+              <td align="center">396</td>
+              <td align="center">92</td>
+              <td align="center">9999</td>
+            </tr>
+            <tr>
+              <td align="center">2019-01-01</td>
+              <td align="center">396</td>
+              <td align="center">92</td>
+              <td align="center">9999</td>
+            </tr>
+            <tr>
+              <td align="center">2019-01-01</td>
+              <td align="center">396</td>
+              <td align="center">92</td>
+              <td align="center">9999</td>
+            </tr>
+            <tr>
+              <td align="center">2019-01-01</td>
+              <td align="center">396</td>
+              <td align="center">92</td>
+              <td align="center">9999</td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="pagination">
+          <nz-pagination [nzPageIndex]="3" [nzTotal]="500" nzShowSizeChanger [nzPageSize]="10" nzSize="small">
+          </nz-pagination>
+        </div>
+      </div>
+      <!--  -->
+    </div>
+  </nz-col>
+  <nz-col nzSpan="12">
+    <div class="group-box" style="height: 380px;">
+      <!--  -->
+      <app-echarts [options]="chartOption"></app-echarts>
+      <!--  -->
+    </div>
+  </nz-col>
+</nz-row>

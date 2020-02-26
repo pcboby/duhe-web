@@ -1,0 +1,50 @@
+﻿{
+  "title": "测站",
+  "key": "'0-0",
+  "expanded": true,
+  "children": [{
+  "title": "水文站",
+  "key": "0-0-0",
+  "children": [{
+      "title": "水文站",
+      "key": "1001",
+      "farDistanceCondition": 1e6,
+      "nearDistanceCondition": 3000,
+      "boudingLabel": "Name",
+      "iconSize": 0.5,
+      "type": "hydrologicStation",
+      "dataType": "JSON",
+      "text": "shuiwenzhan",
+      "vectorType": "POINT",
+      "viewHeight": 180000,
+      "destination": "105.01877,27.98728",
+      "icon": "/assets/themes/default/images/billboardIcons/IconShuiwenzhan.png",
+      "showLabel": true,
+      "showBillboard": true,
+      "url": "/assets/mock/data-manager/shp/shuiwenzhan.json"
+    }
+  ]
+  },{
+  "title": "雨量站",
+  "key": "0-0-1",
+  "children": [{
+      "title": "雨量站",
+      "key": "2001",
+      "farDistanceCondition": 5e5,
+      "nearDistanceCondition": 3000,
+      "boudingLabel": "STNM",
+      "iconSize": 0.5,
+      "type": "hydrologicStation",
+      "dataType": "JSON",
+      "text": "shuiwenzhan",
+      "vectorType": "POINT",
+      "viewHeight": 180000,
+      "destination": "105.01877,27.98728",
+      "icon": "/assets/themes/default/images/billboardIcons/rain.png",
+      "showLabel": true,
+      "showBillboard": true,
+      "url": "/assets/mock/data-manager/shp/RainStation.json"
+    }
+  ]
+}]
+}

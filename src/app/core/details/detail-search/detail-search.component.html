@@ -1,0 +1,32 @@
+<div>
+  <nz-radio-group [(ngModel)]="type" [nzButtonStyle]="'solid'">
+    <label *ngFor="let item of types" nz-radio-button [nzValue]="item.value">{{item.label}}</label>
+  </nz-radio-group>
+</div>
+
+<div style="margin-top: 10px;">
+  <!-- {{keyword}} -->
+  <nz-table #dataGrid [nzSize]="pageModol" [nzFrontPagination]="false"
+  [nzTotal]="pageTotal" [(nzPageIndex)]="pageIndex" [(nzPageSize)]="pageSize" (nzPageIndexChange)="loadData()" [nzLoading]="pageLoading"
+  [nzData]="dataset" [nzBordered]="false">
+    <thead>
+      <tr>
+        <th>#</th>
+        <th>名称</th>
+        <th>类型</th>
+        <th>操作</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let data of dataGrid.data; let idx = index;">
+        <td>{{ (pageIndex - 1) * 10 + idx + 1 }}</td>
+        <td>{{ data.name }}</td>
+        <td>{{ data.type }}</td>
+        <td>
+          <a (click)="showItem(data.type, data)">查看</a>
+          <!-- <nz-divider nzType="vertical"></nz-divider> -->
+        </td>
+      </tr>
+    </tbody>
+  </nz-table>
+</div>

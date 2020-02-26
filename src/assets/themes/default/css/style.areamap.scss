@@ -1,0 +1,122 @@
+.areamap {
+  font-size: 12px;
+  // white-space: nowrap;
+  display: block;
+  height: 372px;
+  min-width: 820px;
+  position: relative;
+  border: 1px solid #ddd;
+  background-color: rgba($color: #fff, $alpha: .3);
+  overflow: hidden;
+  cursor: default;
+
+  .areamap-label{
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 16px;
+  }
+
+  .areamap-container {
+    .areamap-river {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      height: 6px;
+      left: 0;
+      right: 0;
+      background-color: rgba(86, 147, 187, 1);
+      &:hover{
+        background-color: orange;
+      }
+    }
+
+    .areamap-city {
+      position: absolute;
+      top: 50%;
+      height: 2.625em;
+      width: 2.625em;
+      line-height: 2.625em;
+      text-align: center;
+      border: 1px solid rgba(86, 147, 187, 1);
+      background-color: rgba(236, 217, 144, 1);
+      border-radius: 100% 100%;
+      transform: translate(-50%, -50%);
+      &:hover{
+        color: orange;
+      }
+    }
+
+    .areamap-lake {
+      position: absolute;
+      top: 50%;
+      height: 30%;
+      width: 6px;
+      background-color: rgba(86, 147, 187, 1);
+
+      span {
+        position: absolute;
+        top: 100%;
+        left: 3px;
+        width: 4em;
+        height: 4em;
+        line-height: 4em;
+        text-align: center;
+        // border: 1px solid rgba(86, 147, 187, 1);
+        background-color: rgba(86, 147, 187, 1);
+        color: #fff;
+        border-radius: 100% 100%;
+        transform: translate(-50%, -50%);
+      }
+
+      &:hover{
+        background-color: orange;
+        span{
+          background-color: orange;
+        }
+      }
+    }
+
+    .areamap-station {
+      position: absolute;
+      border: 1px solid rgba(86, 147, 187, 1);
+      background-color: rgba($color: #fff, $alpha: .7);
+      text-align: center;
+      line-height: 1.2;
+      height: 2em;
+      width: 3.2em;
+      font-weight: bold;
+      transform: translate(-50%, -50%);
+      box-shadow: 2px 2px 0 rgba($color: #000, $alpha: .1);
+
+      /* text-align: center; */
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      /* display: flex; */
+      /* -webkit-box-pack: center; */
+      -ms-flex-pack: center;
+      /* -webkit-justify-content: center; */
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      align-items: center;
+
+      span {
+        // display: inline-block;
+        transform: scale(.75);
+      }
+
+      &.selected {
+        background-color: rgba(255, 140, 0,.1);
+        border-color: rgb(255, 140, 0);
+      }
+      &:hover{
+        color: orange;
+      }
+    }
+
+  }
+}

@@ -1,0 +1,13 @@
+.ant-breadcrumb{
+  line-height: inherit;
+  color: #9bf300;
+  .ant-breadcrumb-separator{
+    color: inherit;
+  }
+  a {
+    color: inherit;
+  }
+  nz-breadcrumb-item, nz-breadcrumb-item:last-child {
+    color: inherit;
+  }
+}

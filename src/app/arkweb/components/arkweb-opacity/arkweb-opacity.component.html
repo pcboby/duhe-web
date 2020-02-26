@@ -1,0 +1,6 @@
+<div class="flex-row">
+  <div>
+    <nz-slider [(ngModel)]="opacity" [nzDisabled]="disabled" (ngModelChange)="transChange($event)"></nz-slider>
+  </div>
+  <div style="flex: none; line-height: 40px; width: 48px; text-align: center; font-size: 12px;">{{opacity}}%</div>
+</div>

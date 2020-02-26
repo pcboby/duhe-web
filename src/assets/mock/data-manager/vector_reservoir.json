@@ -1,0 +1,22 @@
+﻿{
+  "title": "矢量数据模型",
+  "data": [{
+      "title": "堵河流域水库群",
+      "key": "2001",
+      "farDistanceCondition": 6e5,
+      "nearDistanceCondition": 3000,
+      "boudingLabel": "Name",
+      "iconSize": 0.5,
+      "type": "storage",
+      "dataType": "JSON",
+      "text": "shuiwenzhan",
+      "vectorType": "POINT",
+      "viewHeight": 180000,
+      "destination": "105.01877,27.98728",
+      "icon": "/assets/themes/default/images/billboardIcons/flood/reservoir.png",
+      "showLabel": true,
+      "showBillboard": true,
+      "url": "/assets/mock/shp/Shuiku.json"
+    }
+  ]
+}

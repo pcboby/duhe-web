@@ -1,0 +1,27 @@
+<div>
+  <nz-row>
+    <nz-col>
+      实时雨情
+    </nz-col>
+    <nz-col>
+      <nz-switch nzSize="small" [ngModel]="realRay" (ngModelChange)="changeReal('realRay',$event)"></nz-switch>
+    </nz-col>
+  </nz-row>
+  <nz-row>
+    <nz-col>
+      实时水情
+    </nz-col>
+    <nz-col>
+      <nz-switch nzSize="small" [ngModel]="realWater" (ngModelChange)="changeReal('realWater',$event)"></nz-switch>
+    </nz-col>
+  </nz-row>
+</div>
+<div *ngIf="realRay" class="list-ray-style">
+  <div *ngFor="let item of checkOptions">
+    <label nz-checkbox [(ngModel)]="item.checked" style="display: block;">
+      <i [ngStyle]="item.style"></i>
+      {{item.min}}~{{item.max}}
+      <span style="float: right;">({{item.value}})</span>
+    </label>
+  </div>
+</div>

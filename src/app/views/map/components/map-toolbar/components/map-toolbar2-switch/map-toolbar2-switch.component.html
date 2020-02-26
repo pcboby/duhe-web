@@ -1,0 +1,12 @@
+<a>
+  <i [ngClass]="selectedItem.className"></i>
+  <span>{{selectedItem.name}}</span>
+</a>
+<ul>
+  <li *ngFor="let item of dataset">
+    <a (click)="onSwitch(item.value)">
+      <i [ngClass]="item.className"></i>
+      <span>{{item.name}}</span>
+    </a>
+  </li>
+</ul>

@@ -1,0 +1,18 @@
+<div class="table BLACK">
+    <table>
+      <tr>
+        <th>站名</th>
+        <th>时间</th>
+        <th>水位<br>m</th>
+        <th>流量<br><font class="m3">m</font>/s</th>
+        <th>降雨量<br>mm</th>
+      </tr>
+      <tr *ngFor="let item of dataset">
+        <td class="tc">{{item.stationName}}</td>
+        <td class="tc">{{item.datetime | date:'yyyy-MM-dd'}}</td>
+        <td class="tr">{{item.upLevel | limits}}</td>
+        <td class="tr">{{item.flowIn}}</td>
+        <td class="tr">{{item.flowOut}}</td>
+      </tr>
+    </table>
+  </div>

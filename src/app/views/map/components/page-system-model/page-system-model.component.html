@@ -1,0 +1,74 @@
+<div class="table-operations">
+  <app-page-system-model-search (onsearch)="doSearch($event)"></app-page-system-model-search>
+</div>
+<!--  -->
+<div class="table-operations">
+  <button nz-button nzTitle="新增" nzPlacement="top" nz-tooltip (click)="add()"><i nz-icon type="plus"
+      theme="outline"></i>新增</button>
+  <button nz-button nzTitle="删除" nzPlacement="top" nz-tooltip (click)="del(checkedItems)"
+    [disabled]="checkedItems.length === 0"><i nz-icon type="delete" theme="outline"></i>删除</button>
+  <button nz-button nzTitle="删除" nzPlacement="top" nz-tooltip (click)="del(checkedItems)"
+    [disabled]="checkedItems.length === 0"><i nz-icon type="import" theme="outline"></i>导入</button>
+  <button nz-button nzTitle="删除" nzPlacement="top" nz-tooltip (click)="del(checkedItems)"
+    [disabled]="checkedItems.length === 0"><i nz-icon type="export" theme="outline"></i>导出</button>
+</div>
+<!--  -->
+<div class="flex-row">
+  <div>
+    <!--  -->
+    <div class="table-operations">
+      <nz-table #dataGrid nzShowSizeChanger nzShowQuickJumper [nzShowTotal]="totalTemplate" [nzFrontPagination]="false"
+        [nzTotal]="total" [(nzPageIndex)]="pageIndex" [(nzPageSize)]="pageSize" (nzPageIndexChange)="loadData()"
+        nzSize="small" (nzPageSizeChange)="loadData(true)" [nzData]="dataset" nzBordered>
+        <thead>
+          <tr>
+            <th nzLeft="0px" nzWidth="40px" nzShowCheckbox [(nzChecked)]="allChecked" [nzIndeterminate]="indeterminate"
+              (nzCheckedChange)="checkAll($event)"></th>
+            <th nzLeft="40px">模型编码</th>
+            <th>名称</th>
+            <th>时段数</th>
+            <th>时段类型</th>
+            <th>MINWL</th>
+            <th>MAXWL</th>
+            <th>MINOF</th>
+            <th>MAXOF</th>
+            <th>备注</th>
+            <th nzRight="0px" nzWidth="130px">操作</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let data of dataGrid.data">
+            <td nzLeft="0px" nzWidth="40px" nzShowCheckbox [(nzChecked)]="data.checked" [nzDisabled]="data.disabled"
+              (nzCheckedChange)="refreshChecked()"></td>
+            <td nzLeft="40px">{{data.label1}}</td>
+            <td>{{data.label2}}</td>
+            <td>{{data.label3}}</td>
+            <td>{{data.label4}}</td>
+            <td>{{data.label5}}</td>
+            <td>{{data.label6}}</td>
+            <td>{{data.label7}}</td>
+            <td>{{data.label8}}</td>
+            <td>{{data.label9}}</td>
+            <td nzRight="0px" nzWidth="130px">
+              <button nz-button nzSize="small" nzTitle="查看" nzPlacement="top" nz-tooltip (click)="detail(data)"><i
+                  nz-icon type="search" theme="outline"></i></button>
+              <button nz-button nzSize="small" nzTitle="修改" nzPlacement="top" nz-tooltip (click)="edit(data)"><i nz-icon
+                  type="edit" theme="outline"></i></button>
+              <button nz-button nzSize="small" nzTitle="删除" nzPlacement="top" nz-tooltip
+                (click)="del(data[checkField])"><i nz-icon type="delete" theme="outline"></i></button>
+            </td>
+          </tr>
+        </tbody>
+      </nz-table>
+      <ng-template #totalTemplate let-total>共计 {{total}} 条记录.</ng-template>
+    </div>
+    <!--  -->
+  </div>
+  <div style="flex: none; width: 220px; padding-left: 10px;">
+    <!--  -->
+    <div class="group-box" style="height: 485px;">
+      <app-page-system-model-tree></app-page-system-model-tree>
+    </div>
+    <!--  -->
+  </div>
+</div>

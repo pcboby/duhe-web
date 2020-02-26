@@ -1,0 +1,76 @@
+<div class="group_config">
+  <h3>默认视图范围</h3>
+  <div class="group_config_viewsize">
+      <label class="t"><span>上</span><nz-input-number [nzStep]="1" placeholder="上" [(ngModel)]="viewSize[0]" nzSize="small" style="width: 64px;"></nz-input-number></label>
+      <label class="r"><span>右</span><nz-input-number [nzStep]="1" placeholder="右" [(ngModel)]="viewSize[1]" nzSize="small" style="width: 64px;"></nz-input-number></label>
+      <label class="b"><span>下</span><nz-input-number [nzStep]="1" placeholder="下" [(ngModel)]="viewSize[2]" nzSize="small" style="width: 64px;"></nz-input-number></label>
+      <label class="l"><span>左</span><nz-input-number [nzStep]="1" placeholder="左" [(ngModel)]="viewSize[3]" nzSize="small" style="width: 64px;"></nz-input-number></label>
+  </div>
+  <!--  -->
+  <h3>实时信息刷新周期</h3>
+  <nz-row>
+    <nz-col nzSpan="6" class="group_config_label">雨情信息：</nz-col>
+    <nz-col nzSpan="18" class="group_config_content">
+      <nz-radio-group [(ngModel)]="autoRay">
+        <label nz-radio nzValue="0">不刷新</label>
+        <label nz-radio nzValue="1">刷新</label>
+      </nz-radio-group>
+      <label *ngIf="autoRay==='1'">
+        <span>刷新周期：</span>
+        <nz-input-number nzSize="small" [(ngModel)]="stepRay" [nzMin]="1" [nzMax]="60" [nzStep]="1"></nz-input-number>
+      </label>
+    </nz-col>
+    <nz-col nzSpan="6" class="group_config_label">水情信息：</nz-col>
+    <nz-col nzSpan="18" class="group_config_content">
+      <nz-radio-group [(ngModel)]="autoWater">
+        <label nz-radio nzValue="0">不刷新</label>
+        <label nz-radio nzValue="1">刷新</label>
+      </nz-radio-group>
+      <label *ngIf="autoWater==='1'">
+        <span>刷新周期：</span>
+        <nz-input-number nzSize="small" [(ngModel)]="stepWater" [nzMin]="1" [nzMax]="60" [nzStep]="1"></nz-input-number>
+      </label>
+    </nz-col>
+  </nz-row>
+  <!--  -->
+  <h3>首页栏目</h3>
+  <nz-row>
+    <nz-col nzSpan="6" class="group_config_label">天气预报：</nz-col>
+    <nz-col nzSpan="18" class="group_config_content">
+      <nz-switch nzSize="small" [(ngModel)]="plot_weather_isShow"></nz-switch> &nbsp;&nbsp;&nbsp;
+      <span>{{plot_weather_isShow?'已开启':'已关闭'}}</span>
+    </nz-col>
+    <nz-col nzSpan="6" class="group_config_label">河道水情：</nz-col>
+    <nz-col nzSpan="18" class="group_config_content">
+      <nz-switch nzSize="small" [(ngModel)]="plot_reservoir_isShow"></nz-switch> &nbsp;&nbsp;&nbsp;
+      <span>{{plot_reservoir_isShow?'已开启':'已关闭'}}</span>
+    </nz-col>
+    <nz-col nzSpan="6" class="group_config_label">水库水情：</nz-col>
+    <nz-col nzSpan="18" class="group_config_content">
+      <nz-switch nzSize="small" [(ngModel)]="plot_river_isShow"></nz-switch> &nbsp;&nbsp;&nbsp;
+      <span>{{plot_river_isShow?'已开启':'已关闭'}}</span>
+    </nz-col>
+  </nz-row>
+  <h3>地图加载</h3>
+  <nz-row>
+    <nz-col nzSpan="6" class="group_config_label">卫星图：</nz-col>
+    <nz-col nzSpan="18" class="group_config_content">
+      <app-select-satellite-map [(ngModel)]="data_satellite" (ngModelChange)="onEvent($event)"></app-select-satellite-map>
+      {{data_satellite}}
+    </nz-col>
+    <nz-col nzSpan="6" class="group_config_label">地形图：</nz-col>
+    <nz-col nzSpan="18" class="group_config_content">
+      <app-select-topographic-map [(ngModel)]="data_topographic" (ngModelChange)="onEvent($event)"></app-select-topographic-map>
+      {{data_topographic}}
+    </nz-col>
+    <nz-col nzSpan="6" class="group_config_label">电子图：</nz-col>
+    <nz-col nzSpan="18" class="group_config_content">
+      <app-select-electronic-map [(ngModel)]="data_electronic" (ngModelChange)="onEvent($event)"></app-select-electronic-map>
+      {{data_electronic}}
+    </nz-col>
+  </nz-row>
+  <div class="group_config_btns">
+      <button nz-button nzType="default" (click)="resetAll()">重置所有设置</button>
+      <button nz-button nzType="primary" (click)="saveAll()">保存所有设置</button>
+  </div>
+</div>

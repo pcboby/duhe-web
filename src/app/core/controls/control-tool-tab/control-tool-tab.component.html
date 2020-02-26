@@ -1,0 +1,6 @@
+<ul>
+  <li *ngFor="let item of dataset" (click)="model = model === item.value ? null : item.value"
+    [ngClass]="{'selected': item.value === model}">
+    <a><span>{{item.name}}</span></a>
+  </li>
+</ul>

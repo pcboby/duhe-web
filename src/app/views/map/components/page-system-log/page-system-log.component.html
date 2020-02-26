@@ -1,0 +1,35 @@
+<div class="table-operations">
+    <app-page-system-log-search (onsearch)="doSearch($event)"></app-page-system-log-search>
+  </div>
+  <!--  -->
+  <!--  -->
+  <div class="table-operations">
+    <nz-table #dataGrid nzShowSizeChanger nzShowQuickJumper [nzShowTotal]="totalTemplate" [nzFrontPagination]="false"
+      [nzTotal]="total" [(nzPageIndex)]="pageIndex" [(nzPageSize)]="pageSize" (nzPageIndexChange)="loadData()"
+      nzSize="small" [nzScroll]="{ x: '1600px'}" (nzPageSizeChange)="loadData(true)" [nzData]="dataset" nzBordered>
+      <thead>
+        <tr>
+          <th nzLeft="0px" nzWidth="40px" nzShowCheckbox [(nzChecked)]="allChecked" [nzIndeterminate]="indeterminate"
+            (nzCheckedChange)="checkAll($event)"></th>
+          <th nzLeft="40px">时间</th>
+          <th>操作人</th>
+          <th>分类</th>
+          <th>操作说明</th>
+          <th>客户机</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let data of dataGrid.data">
+          <td nzLeft="0px" nzWidth="40px" nzShowCheckbox [(nzChecked)]="data.checked" [nzDisabled]="data.disabled"
+            (nzCheckedChange)="refreshChecked()"></td>
+          <td nzLeft="40px">{{data.label1}}</td>
+          <td>{{data.label2}}</td>
+          <td>{{data.label3}}</td>
+          <td>{{data.label4}}</td>
+          <td>{{data.label5}}</td>
+        </tr>
+      </tbody>
+    </nz-table>
+    <ng-template #totalTemplate let-total>共计 {{total}} 条记录.</ng-template>
+  </div>
+

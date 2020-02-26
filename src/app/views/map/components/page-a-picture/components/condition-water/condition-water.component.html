@@ -1,0 +1,119 @@
+<form nz-form [formGroup]="validateForm" class="form-search" (ngSubmit)="submitForm()">
+  <nz-form-item>
+    <nz-form-label [nzSm]="6" [nzXs]="24">开始时间</nz-form-label>
+    <nz-form-control [nzSm]="18" [nzXs]="24" nzErrorTip="请按正确的日期格式输入!">
+      <nz-date-picker nzShowTime formControlName="firstDatetime" nzSize="small"></nz-date-picker>
+    </nz-form-control>
+  </nz-form-item>
+  <nz-form-item>
+    <nz-form-label [nzSm]="6" [nzXs]="24">结束时间</nz-form-label>
+    <nz-form-control [nzSm]="18" [nzXs]="24" nzErrorTip="请按正确的日期格式输入!">
+      <nz-date-picker nzShowTime formControlName="lastDatetime" nzSize="small"></nz-date-picker>
+    </nz-form-control>
+  </nz-form-item>
+  <nz-form-item>
+    <nz-form-control class="tr">
+      <button nz-button [nzType]="'primary'" nzSize="small">查询</button>
+    </nz-form-control>
+  </nz-form-item>
+</form>
+<!--  -->
+<nz-alert nzType="info" [nzMessage]="info"></nz-alert>
+<ng-template #info>
+  <div class="group-limit">
+    <div class="flex-row">
+      <div style="flex: none;">时间：</div>
+      <div>
+        <span class="group-limit-item">2019-09-01 12:00~24:00</span>
+      </div>
+    </div>
+  </div>
+</ng-template>
+<!--  -->
+<div class="table GRAY">
+  <table>
+    <thead>
+      <tr>
+        <th>水库</th>
+        <th>时间</th>
+        <th>水位<br>m</th>
+        <th>入库<br><font class="m3">m</font>/s</th>
+        <th>出库<br><font class="m3">m</font>/s</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td align="center"><a (click)="itemReservoirClick(1);"><i nz-icon nzType="environment"
+              nzTheme="outline"></i>&nbsp;<span>水库</span></a></td>
+        <td align="center">2019-01-01</td>
+        <td align="center"><a (click)="itemWaterClick(1);"><span>23</span>&nbsp;<i nz-icon nzType="search"
+              nzTheme="outline"></i></a></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td align="center">水库</td>
+        <td align="center">2019-01-01</td>
+        <td align="center">23</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td align="center">水库</td>
+        <td align="center">2019-01-01</td>
+        <td align="center">23</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td align="center">水库</td>
+        <td align="center">2019-01-01</td>
+        <td align="center">23</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td align="center">水库</td>
+        <td align="center">2019-01-01</td>
+        <td align="center">23</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td align="center">水库</td>
+        <td align="center">2019-01-01</td>
+        <td align="center">23</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td align="center">水库</td>
+        <td align="center">2019-01-01</td>
+        <td align="center">23</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td align="center">水库</td>
+        <td align="center">2019-01-01</td>
+        <td align="center">23</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td align="center">水库</td>
+        <td align="center">2019-01-01</td>
+        <td align="center">23</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td align="center">水库</td>
+        <td align="center">2019-01-01</td>
+        <td align="center">23</td>
+        <td></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</div>

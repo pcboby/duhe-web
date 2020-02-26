@@ -1,0 +1,152 @@
+<nz-tabset>
+    <nz-tab nzTitle="概况">
+      <div class="scroll" style="height: 320px; border: 1px solid #f1f1f1; margin-bottom: 10px;">
+        <p>
+          门古水文站，门古水文站，门古水文站，门古水文站，门古水文站，门古水文站，门古水文站，龙背湾水电站于湖北省，门古水文站，门古水文站。
+        </p>
+        <p>
+          门古水文站，门古水文站，门古水文站，门古水文站，门古水文站，门古水文站，门古水文站，门古水文站，门古水文站，门古水文站，门古水文站，门古水文站，门古水文站。
+        </p>
+        <p>
+          门古水文站，门古水文站，门古水文站，门古水文站，门古水文站，龙背湾水电湾水电站工程位于湖北省，门古水文站，门古水文站。
+        </p>
+        <p>
+          门古水文站，门古水文站，门古水文站，门古水文站，门古水文站，门古水文站，门古水文站，门古水文站，门古水文站，龙背湾水电站工程位工程位于湖北省，门古水文站，门古水文站。
+        </p>
+      </div>
+      <app-swiper style="min-height: 64px; display: block;" [dataset]="pics" [slidesPerView]="3" [showNavigation]="true"
+        (onItemClick)="swiperChange($event)">
+      </app-swiper>
+    </nz-tab>
+    <nz-tab nzTitle="属性">
+      <div class="table GRAY scroll" style="height: 480px; padding: 0;">
+        <table>
+            <tr>
+              <th align="left">测站编码</th>
+              <td align="center"></td>
+            </tr>
+            <tr>
+              <th align="left">测站名称</th>
+              <td align="center"></td>
+            </tr>
+            <tr>
+              <th align="left">河流名称</th>
+              <td align="center"></td>
+            </tr>
+            <tr>
+              <th align="left">水系名称</th>
+              <td align="center"></td>
+            </tr>
+            <tr>
+              <th align="left">流域名称</th>
+              <td align="center"></td>
+            </tr>
+            <tr>
+              <th align="left">经度</th>
+              <td align="center"></td>
+            </tr>
+            <tr>
+              <th align="left">纬度</th>
+              <td align="center"></td>
+            </tr>
+            <tr>
+              <th align="left">站址</th>
+              <td align="center"></td>
+            </tr>
+            <tr>
+              <th align="left">行政区划码</th>
+              <td align="center"></td>
+            </tr>
+            <tr>
+              <th align="left">基面名称</th>
+              <td align="center"></td>
+            </tr>
+            <tr>
+              <th align="left">基面高程</th>
+              <td align="center"></td>
+            </tr>
+            <tr>
+              <th align="left">基面修正值</th>
+              <td align="center"></td>
+            </tr>
+            <tr>
+              <th align="left">站类</th>
+              <td align="center"></td>
+            </tr>
+            <tr>
+              <th align="left">报讯等级</th>
+              <td align="center"></td>
+            </tr>
+            <tr>
+              <th align="left">建站年月</th>
+              <td align="center"></td>
+            </tr>
+            <tr>
+              <th align="left">始报年月</th>
+              <td align="center"></td>
+            </tr>
+            <tr>
+              <th align="left">隶属行业单位</th>
+              <td align="center"></td>
+            </tr>
+            <tr>
+              <th align="left">信息管理单位</th>
+              <td align="center"></td>
+            </tr>
+            <tr>
+              <th align="left">交换管理单位</th>
+              <td align="center"></td>
+            </tr>
+            <tr>
+              <th align="left">测站岸别</th>
+              <td align="center"></td>
+            </tr>
+            <tr>
+              <th align="left">测站方位</th>
+              <td align="center"></td>
+            </tr>
+            <tr>
+              <th align="left">至河口距离</th>
+              <td align="center"></td>
+            </tr>
+            <tr>
+              <th align="left">集水面积</th>
+              <td align="center"></td>
+            </tr>
+            <tr>
+              <th align="left">拼音码</th>
+              <td align="center"></td>
+            </tr>
+            <tr>
+              <th align="left">启用标志</th>
+              <td align="center"></td>
+            </tr>
+            <tr>
+              <th align="left">备注</th>
+              <td align="center"></td>
+            </tr>
+            <tr>
+              <th align="left">时间戳</th>
+              <td align="center"></td>
+            </tr>
+        </table>
+      </div>
+    </nz-tab>
+  </nz-tabset>
+  <!-- <nz-collapse>
+    <nz-collapse-panel nzHeader="站点属性" [nzActive]="true">
+
+    </nz-collapse-panel>
+    <nz-collapse-panel nzHeader="水位雨量过程线">
+      bbb
+    </nz-collapse-panel>
+    <nz-collapse-panel nzHeader="视频监控" [nzActive]="true">
+      <app-camera [dataset]="cameraList" (onItemClick)="cameraPlay($event)"></app-camera>
+    </nz-collapse-panel>
+  </nz-collapse> -->
+
+  <app-fix-panel *ngIf="isShow" (onClose)="isShow=false;" title=" " [isLock]="true" mode="BLACK"
+    style="top:0; left: 0; height: 100%; padding: 50px; width: 100%; background-color: rgba(0, 0, 0, .85);">
+    <app-swiper style="height: 100%; display: block;" [dataset]="pics" [showPagination]="true" [showNavigation]="true">
+    </app-swiper>
+  </app-fix-panel>

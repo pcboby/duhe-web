@@ -1,0 +1,61 @@
+html,
+body {
+  overflow: hidden;
+  background-color: black;
+  color: #fff;
+  background-image: url(../images/login_bg.png);
+  background-size: cover;
+}
+
+.login {
+
+  .ant-input-affix-wrapper .ant-input:not(:first-child) {
+    padding-left: 64px;
+  }
+
+  .login-logo {
+    position: fixed;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 1534px;
+    height: 66px;
+    background-position: -47px -588px;
+  }
+
+  .login-form {
+    padding: 112px 48px 0;
+    position: fixed;
+    top: 25.5%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 450px;
+    height: 520px;
+    background-position: -1108px -20px;
+    .ant-input{
+      border-color: #07b7ff;
+      background-color: rgba($color: #000000, $alpha: .15);
+      color: #fff;
+    }
+    .ant-input-affix-wrapper .ant-input-prefix, .ant-input-affix-wrapper .ant-input-suffix, .ant-checkbox-wrapper{
+      color: #fff;
+    }
+    .ant-btn-primary{
+      border-color: #00ffff;
+      background-color: rgba($color: #00ffff, $alpha: .5);
+      &:hover{
+        background-color: rgba($color: #25c2c2, $alpha: 1);
+      }
+    }
+  }
+
+  .login-copyright {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    line-height: 2.5em;
+    color: rgba($color: #fff, $alpha: .5);
+  }
+}

@@ -1,0 +1,45 @@
+<form nz-form [formGroup]="searchForm" [nzLayout]="'inline'" class="group-form-search">
+    <!-- 输入 -->
+    <nz-form-item>
+      <nz-form-label>模型方案</nz-form-label>
+      <nz-form-control>
+        <input formControlName="keyword" nz-input placeholder="关键字" nzSize="small">
+      </nz-form-control>
+    </nz-form-item>
+    <!--  -->
+    <nz-form-item>
+      <nz-form-label>开始时间</nz-form-label>
+      <nz-form-control>
+        <nz-date-picker formControlName="dateRange" nzShowTime nzSize="small"></nz-date-picker>
+      </nz-form-control>
+    </nz-form-item>
+    <!--  -->
+    <nz-form-item>
+      <nz-form-label>时段类型</nz-form-label>
+      <nz-form-control>
+        <nz-select formControlName="statu" nzSize="small" style="width: 80px;"></nz-select>
+      </nz-form-control>
+    </nz-form-item>
+    <!--  -->
+    <nz-form-item>
+      <nz-form-label>时段个数</nz-form-label>
+      <nz-form-control>
+        <input nz-input formControlName="statu" id="name" name="name" placeholder="" nzSize="small">
+      </nz-form-control>
+    </nz-form-item>
+    <!--  -->
+    <nz-form-item>
+        <nz-form-label>洪水类型</nz-form-label>
+        <nz-form-control>
+          <nz-select formControlName="statu" nzSize="small" style="width: 80px;"></nz-select>
+        </nz-form-control>
+      </nz-form-item>
+
+    <!-- 按钮 -->
+    <nz-form-item style="float:right;">
+      <nz-form-control>
+        <button nz-button nzType="primary" (click)="submitForm($event)" nzSize="small">计算</button>
+        <button nz-button nzType="default" (click)="resetForm($event)" nzSize="small">重置</button>
+      </nz-form-control>
+    </nz-form-item>
+  </form>

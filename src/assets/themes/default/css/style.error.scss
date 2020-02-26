@@ -1,0 +1,14 @@
+.errMessageBox{
+  background-image: url('../images/error.png');
+  background-position: center 10px;
+  background-repeat: no-repeat;
+  padding: 350px 100px 20px 100px;
+  text-align: center;
+  .errMessageBox-message{
+    font-size: 18px;
+    line-height: 2em;
+  }
+  button {
+    margin: 0 10px;
+  }
+}

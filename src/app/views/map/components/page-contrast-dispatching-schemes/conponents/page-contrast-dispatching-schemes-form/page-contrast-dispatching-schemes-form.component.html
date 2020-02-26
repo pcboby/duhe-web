@@ -1,0 +1,31 @@
+<form nz-form [formGroup]="searchForm" [nzLayout]="'inline'" class="group-form-search">
+  <!-- 输入 -->
+  <nz-form-item>
+    <nz-form-label>模型方案</nz-form-label>
+    <nz-form-control>
+      <input formControlName="keyword" nz-input placeholder="关键字" nzSize="small">
+    </nz-form-control>
+  </nz-form-item>
+  <!--  -->
+  <nz-form-item>
+    <nz-form-label>方案名称</nz-form-label>
+    <nz-form-control>
+      <input formControlName="keyword" nz-input placeholder="关键字" nzSize="small">
+    </nz-form-control>
+  </nz-form-item>
+  <!--  -->
+  <nz-form-item>
+    <nz-form-label>制作人</nz-form-label>
+    <nz-form-control>
+      <input formControlName="keyword" nz-input placeholder="关键字" nzSize="small">
+    </nz-form-control>
+  </nz-form-item>
+  <!--  -->
+  <!-- 按钮 -->
+  <nz-form-item style="float:right;">
+    <nz-form-control>
+      <button nz-button nzType="primary" (click)="submitForm($event)" nzSize="small">计算</button>
+      <button nz-button nzType="default" (click)="resetForm($event)" nzSize="small">重置</button>
+    </nz-form-control>
+  </nz-form-item>
+</form>

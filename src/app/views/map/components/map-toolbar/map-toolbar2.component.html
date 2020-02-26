@@ -1,0 +1,42 @@
+<ul class="map-toolbar2">
+  <!-- <li>
+    <app-map-toolbar2-search></app-map-toolbar2-search>
+  </li> -->
+  <li>
+    <app-map-toolbar2-home nz-tooltip nzTitle="回屏"></app-map-toolbar2-home>
+  </li>
+  <li>
+    <app-map-toolbar2-switch nz-tooltip nzTitle="2/3D切换"></app-map-toolbar2-switch>
+  </li>
+  <ng-container *ngTemplateOutlet="contentTemplate; context: {$implicit: dataset, level: 0}"></ng-container>
+</ul>
+
+<ng-template #contentTemplate let-data let-level="level">
+  <li *ngFor="let item of data">
+    <a nz-tooltip [nzTitle]="item.name" [nzPlacement]="level===0?'top':'left'" (click)="toolItemClick(item)">
+      <i [ngClass]="item.iconCls"></i>
+      <span>{{item.name}}</span>
+    </a>
+    <ul *ngIf="item.children">
+      <ng-container *ngTemplateOutlet="contentTemplate; context: {$implicit: item.children, level: level+1}">
+      </ng-container>
+    </ul>
+  </li>
+</ng-template>
+
+
+<!--  -->
+
+<!-- 参数设置 -->
+<app-fix-panel *ngIf="plot_config_isShow" mode="BLUE" title="参数设置"
+  style="top: 50%; left: 50%; width: 460px; transform: translate(-50%,-50%);" [isFixed]="true" [isPlacement]="true"
+  [closed]="!plot_config_isShow" (onClose)="plot_config_isShow = !$event">
+  <app-plot-config></app-plot-config>
+</app-fix-panel>
+<!--  -->
+<!-- 图层数据 -->
+<app-fix-panel [hidden]="!plot_layer_isShow" mode="BLUE" title="图层管理"
+  style="top: 146px; right: 150px; width: 280px; height: 540px;" [isFixed]="true" [closed]="!plot_layer_isShow"
+  (onClose)="plot_layer_isShow = !$event">
+  <app-plot-layer></app-plot-layer>
+</app-fix-panel>

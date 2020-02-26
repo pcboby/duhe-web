@@ -1,0 +1,79 @@
+<!-- <form nz-form [formGroup]="validateForm" class="form-search" (ngSubmit)="submitForm()">
+  <nz-form-item>
+    <nz-form-control>
+      <nz-input-group nzCompact nzSize="small">
+        <nz-select formControlName="type" nzSize="small" style="width: 35%;">
+          <nz-option *ngFor="let item of typeList" [nzLabel]="item.label" [nzValue]="item.value"></nz-option>
+        </nz-select>
+        <input type="text" nz-input formControlName="keyword" style="width:65%;" />
+      </nz-input-group>
+    </nz-form-control>
+  </nz-form-item>
+  <nz-form-item>
+    <nz-form-control class="tr">
+      <button nz-button [nzType]="'primary'" nzSize="small">查询</button>
+    </nz-form-control>
+  </nz-form-item>
+</form> -->
+<div style="padding:4px;">
+  <nz-input-group [nzSuffix]="suffixIconSearch" nzSize="small">
+    <input type="text" nz-input placeholder="input search text" />
+  </nz-input-group>
+  <ng-template #suffixIconSearch>
+    <i nz-icon nzType="search"></i>
+  </ng-template>
+</div>
+<!--  -->
+<div class="table GRAY">
+  <table>
+    <thead>
+      <tr>
+        <th>名称</th>
+        <th>位置</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td align="center"><a (click)="itemClick(1);"><i nz-icon nzType="environment"
+              nzTheme="outline"></i>&nbsp;<span>视频监控</span></a></td>
+        <td align="center">位置位置位置位置位置</td>
+      </tr>
+      <tr>
+        <td align="center">视频监控</td>
+        <td align="center">位置位置位置位置位置</td>
+      </tr>
+      <tr>
+        <td align="center">视频监控</td>
+        <td align="center">位置位置位置位置位置</td>
+      </tr>
+      <tr>
+        <td align="center">视频监控</td>
+        <td align="center">位置位置位置位置位置</td>
+      </tr>
+      <tr>
+        <td align="center">视频监控</td>
+        <td align="center">位置位置位置位置位置</td>
+      </tr>
+      <tr>
+        <td align="center">视频监控</td>
+        <td align="center">位置位置位置位置位置</td>
+      </tr>
+      <tr>
+        <td align="center">视频监控</td>
+        <td align="center">位置位置位置位置位置</td>
+      </tr>
+      <tr>
+        <td align="center">视频监控</td>
+        <td align="center">位置位置位置位置位置</td>
+      </tr>
+      <tr>
+        <td align="center">视频监控</td>
+        <td align="center">位置位置位置位置位置</td>
+      </tr>
+      <tr>
+        <td align="center">视频监控</td>
+        <td align="center">位置位置位置位置位置</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

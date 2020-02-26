@@ -1,0 +1,10 @@
+<div class="list-item-title">
+  <a (click)="toggle()">
+    <h4>{{label}}</h4>
+    <span *ngIf="subLabel">{{subLabel}}</span>
+    <i *ngIf="showOpen" nz-icon [nzType]="opend?'down':'right'" nzTheme="outline"></i>
+  </a>
+</div>
+<div *ngIf="opend || !showOpen" class="list-item-content">
+  <ng-content></ng-content>
+</div>

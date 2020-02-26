@@ -1,0 +1,24 @@
+.arkweb {
+  display: block;
+  height: 100%;
+  width:100%;
+  position: absolute;
+}
+
+
+.distance-legend {
+  right: 0 !important;
+  bottom: 80px !important;
+  padding: 0 !important;
+  border: none !important;
+  background-color: transparent !important;
+}
+
+.compass-outer-ring-background{
+  width: 68px !important;
+  height: 68px !important;
+}
+.compass-gyro-background{
+  width: 35px !important;
+  height: 35px !important;
+}

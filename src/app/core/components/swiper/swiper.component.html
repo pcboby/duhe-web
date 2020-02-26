@@ -1,0 +1,11 @@
+<div class="swiper-container" *ngIf="dataset">
+  <div class="swiper-wrapper">
+    <div class="swiper-slide" *ngFor="let item of dataset">
+      <img [src]="item.src" alt="" style="max-width: 100%;" (click)="itemClick(item)">
+    </div>
+  </div>
+  <!-- Add Arrows -->
+  <div *ngIf="showNavigation" class="swiper-button-next"></div>
+  <div *ngIf="showNavigation" class="swiper-button-prev"></div>
+  <div *ngIf="showPagination" class="swiper-pagination"></div>
+</div>

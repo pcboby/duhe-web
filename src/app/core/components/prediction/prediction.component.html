@@ -1,0 +1,13 @@
+<div class="flex-row">
+  <div>
+    河道：超警戒 <font class="group-font-alarm">{{alarmDay}}</font> 个 &nbsp;&nbsp;&nbsp;&nbsp;
+    超保证 <font class="group-font-safe">{{safeDay}}</font> 个 &nbsp;&nbsp;&nbsp;&nbsp;
+    预见期 <font class="group-font-info">{{predictionDay}}</font> 天 【
+    <span></span>{{startDatetime | date: 'yyyy-MM-dd HH:mm:ss'}} ~
+    {{endDatetime | date: 'yyyy-MM-dd HH:mm:ss'}}<span></span> 】&nbsp;&nbsp;&nbsp;&nbsp;
+    <button nz-button nzType="primary" nzSize="small" (click)="detail_prediction_isShow = true;">预报结果</button>
+  </div>
+  <div class="tr btns">
+  </div>
+</div>
+

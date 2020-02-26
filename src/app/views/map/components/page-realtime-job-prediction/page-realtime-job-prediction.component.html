@@ -1,0 +1,16 @@
+<app-fix-panel *ngIf="detail_prediction_isShow" mode="BLUE" title="预报结果" [isLock]="true" [isFixed]="false"
+  (onClose)="detail_prediction_isShow = false;" style="left: 0; right: 0; bottom: 0;">
+  <app-page-realtime-job-prediction-result></app-page-realtime-job-prediction-result>
+</app-fix-panel>
+<!--  -->
+
+<app-fix-panel *ngIf="isShow" mode="BLUE" title="初始设置"
+  style="top: 186px; left: 50%;transform: translateX(-50%); width: 960px;" [closed]="!isShow"
+  (onClose)="isShow = !$event">
+  <app-page-realtime-job-prediction-setting></app-page-realtime-job-prediction-setting>
+</app-fix-panel>
+
+<!--  -->
+<app-fix-panel [isLock]="true" style="bottom: 10px; left: 10px;" [isFixed]="false">
+    <button nz-button nzType="link" style="color: #fff;" (click)="isShow = !isShow;"><i nz-icon nzType="setting" nzTheme="outline" style="font-size: 22px;"></i></button>
+  </app-fix-panel>

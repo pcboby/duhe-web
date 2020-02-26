@@ -1,0 +1,11 @@
+<!--  -->
+<app-fix-panel [isLock]="true" style="bottom: 10px; left: 10px;" [isFixed]="false">
+  <button nz-button nzType="link" style="color: #fff;" (click)="isShow = !isShow;"><i nz-icon nzType="setting"
+      nzTheme="outline" style="font-size: 22px;"></i></button>
+</app-fix-panel>
+<!--  -->
+<app-fix-panel *ngIf="isShow" mode="BLUE" title="初始设置"
+  style="top: 50%; left: 50%;transform: translate(-50%, -50%); width: 960px;" [closed]="!isShow"
+  (onClose)="isShow = !$event">
+  <app-page-assessment-analysis-setting></app-page-assessment-analysis-setting>
+</app-fix-panel>

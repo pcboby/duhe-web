@@ -1,0 +1,13 @@
+<button nz-button nz-dropdown nzTrigger="click" [nzType]="'link'" [nzDropdownMenu]="menu" [nzPlacement]="placement"
+  [disabled]="disabled" [nzSize]="size" style="padding: 0 .635em; color: #fff;">
+  <ng-content></ng-content>
+</button>
+<nz-dropdown-menu #menu="nzDropdownMenu">
+  <ul nz-menu>
+    <li nz-menu-item *ngFor="let item of model">
+      <label nz-checkbox [(ngModel)]="item.checked">
+        {{item.name}}
+      </label>
+    </li>
+  </ul>
+</nz-dropdown-menu>

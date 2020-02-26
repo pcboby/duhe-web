@@ -1,0 +1,24 @@
+<nz-layout class="layout">
+  <nz-header class="layout-header">
+    <app-header></app-header>
+  </nz-header>
+  <nz-layout class="layout-container">
+    <nz-sider class="layout-sider" [hidden]="slider_isHidden">
+      <app-slider></app-slider>
+    </nz-sider>
+    <nz-layout class="layout-content">
+      <nz-header class="layout-breadcrumb" *ngIf="mapDisabeld">
+        <app-breadcrumb></app-breadcrumb>
+      </nz-header>
+      <nz-header class="layout-breadcrumb" *ngIf="predictionVisabled">
+        <app-prediction></app-prediction>
+      </nz-header>
+      <nz-content [ngClass]="{'scroll': mapDisabeld}" class="layout-content-wraper">
+        <app-wraper></app-wraper>
+      </nz-content>
+    </nz-layout>
+  </nz-layout>
+  <nz-footer class="layout-footer">
+    <app-footer></app-footer>
+  </nz-footer>
+</nz-layout>

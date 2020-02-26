@@ -1,0 +1,48 @@
+﻿{
+  "title": "矢量数据模型",
+  "data": [{
+    "title": "堵河水系",
+    "key": "2001",
+    "vectorType": "arcgis",
+    "format": "image/png",
+    "checked": true,
+    "destination": "105.01877,27.98728",
+    "url": "http://10.6.172.167:6080/arcgis/rest/services/duheshuixi/MapServer"
+    },{
+      "title": "堵河专题图",
+      "key": "2002",
+      "vectorType": "WMTS",
+      "format": "image/png",
+      "destination": "105.01877,27.98728",
+      "url": "https://10.6.172.167:6443/arcgis/rest/services/duheshuixitu/MapServer/WMTS",
+      "layer": "duheshuixitu:15"
+    },
+    {
+      "title": "堵河流域范围",
+      "key": "2003",
+      "farDistanceCondition": 3000000,
+      "nearDistanceCondition": 50,
+      "dataType": "JSON",
+      "text": "duanmian",
+      "vectorType": "POLYGON",
+      "checked": true,
+      "stroke": "rgba(250, 180, 0, 1)",
+      "strokeWidth": 10,
+      "fill": "rgba(210, 250, 220, 0.2)",
+      "isClampToGround": true,
+      "viewHeight": 180000,
+      "destination": "105.01877,27.98728",
+      "url": "/assets/mock/shp/Range.json"
+    },
+    {
+      "title": "地名注记",
+      "key": "2004",
+      "vectorType": "WMTS",
+      "format": "image/png",
+      "destination": "105.01877,27.98728",
+      "url": "http://t0.tianditu.com/cva_w/wmts?service=wmts&request=GetTile&version=1.0.0&LAYER=cva&tileMatrixSet=w&TileMatrix={TileMatrix}&TileRow={TileRow}&TileCol={TileCol}&style=default&format=tiles&tk=b6673f69c76ae272825e3bf1071f8d3f",
+      "layer": "tdtAnnoLayer",
+      "tileMatrixSet": "GoogleMapsCompatible"
+    }
+  ]
+}

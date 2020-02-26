@@ -1,0 +1,7 @@
+<div *ngIf="title" class="fix-panel-header">
+  {{title}}
+  <a (click)="onCloseEmit()" class="btn-close"><i nz-icon nzType="close" nzTheme="outline"></i></a>
+</div>
+<div class="fix-panel-wraper">
+  <ng-content></ng-content>
+</div>

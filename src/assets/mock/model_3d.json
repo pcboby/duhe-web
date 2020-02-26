@@ -1,0 +1,351 @@
+﻿{
+  "title": "三维模型",
+  "data": [{
+      "title": "11",
+      "text": "11",
+      "type": "堤防",
+      "key": "3000",
+      "destination": "106.036003,30.007999",
+      "url": "assets/mock/flood/model/11/tileset.json"
+    },
+    {
+      "title": "白洋湾排水闸",
+      "text": "baiyangwanpaishuizha",
+      "type": "闸门",
+      "key": "3001",
+      "destination": "113.456573,30.014682",
+      "url": "assets/mock/flood/model/baiyangwanpaishuizha.json"
+    },
+    {
+      "title": "草塌河穿堤闸",
+      "text": "caotahechuandizha",
+      "type": "闸门",
+      "key": "3002",
+      "destination": "113.57288,29.940515",
+      "url": "assets/mock/flood/model/caotahechuandizha.json"
+    },
+    {
+      "title": "曾家汉溢洪闸",
+      "text": "zengjiahanyihongzha",
+      "type": "闸门",
+      "key": "3003",
+      "destination": "113.337077,29.591439",
+      "url": "assets/mock/flood/model/zengjiahanyihongzha.json"
+    },
+    {
+      "title": "东荆河堤",
+      "text": "dongjinghedi",
+      "type": "堤防",
+      "key": "3004",
+      "destination": "113.693038,30.124458",
+      "url": "assets/mock/flood/model/dongjinghedi.json"
+    },
+    {
+      "title": "丰盈河排水闸",
+      "text": "fengyinghepaishuizha",
+      "type": "闸门",
+      "key": "3005",
+      "destination": "113.537921,29.950581",
+      "url": "assets/mock/flood/model/fengyinghepaishuizha.json"
+    },
+    {
+      "title": "港北中心排水闸",
+      "text": "gangbeizhongxinpaishuizha",
+      "type": "闸门",
+      "key": "3006",
+      "destination": "113.543447,29.945242",
+      "url": "assets/mock/flood/model/gangbeizhongxinpaishuizha.json"
+    },
+    {
+      "title": "港龙进水闸",
+      "text": "ganglongjinshuizha",
+      "type": "闸门",
+      "key": "3007",
+      "destination": "113.531526,29.956541",
+      "url": "assets/mock/flood/model/ganglongjinshuizha.json"
+    },
+    {
+      "title": "高汊排水闸",
+      "text": "gaochapaishuizha",
+      "type": "闸门",
+      "key": "3008",
+      "destination": "113.473646,30.007662",
+      "url": "assets/mock/flood/model/gaochapaishuizha.json"
+    },
+    {
+      "title": "红三村进水闸",
+      "text": "hongsancunjinshuizha",
+      "type": "闸门",
+      "key": "3009",
+      "destination": "113.431031,30.031894",
+      "url": "assets/mock/flood/model/hongsancunjinshuizha.json"
+    },
+    {
+      "title": "洪湖主隔堤",
+      "text": "honghuzhugedi",
+      "type": "堤防",
+      "key": "3010",
+      "destination": "113.469315,30.064459",
+      "url": "assets/mock/flood/model/honghuzhugedi.json"
+    },
+    {
+      "title": "荆石河进水闸",
+      "text": "jingshihejinshuizha",
+      "type": "闸门",
+      "key": "3011",
+      "destination": "113.439973,30.021679",
+      "url": "assets/mock/flood/model/jingshihejinshuizha.json"
+    },
+    {
+      "title": "南套沟节制闸",
+      "text": "nantaogoujiezhizha",
+      "type": "闸门",
+      "key": "3012",
+      "destination": "113.520483,29.967077",
+      "url": "assets/mock/flood/model/nantaogoujiezhizha.json"
+    },
+    {
+      "title": "内荆河节制闸",
+      "text": "neijinghejiezhizha",
+      "type": "闸门",
+      "key": "3013",
+      "destination": "113.596433,29.936488",
+      "url": "assets/mock/flood/model/neijinghejiezhizha.json"
+    },
+    {
+      "title": "吓行嘴桥",
+      "text": "xiaxingzuiqiao",
+      "type": "桥梁",
+      "key": "3013",
+      "destination": "113.336999,29.591438",
+      "url": "assets/mock/flood/model/xiaxingzuiqiao.json"
+    },
+    {
+      "title": "王家咀桥",
+      "text": "wangjiazuiqiao",
+      "type": "桥梁",
+      "key": "3013",
+      "destination": "113.337152,29.591421",
+      "url": "assets/mock/flood/model/wangjiazuiqiao.json"
+    },
+    {
+      "title": "钢铁桥",
+      "text": "gangtieqiao",
+      "type": "桥梁",
+      "key": "3013",
+      "destination": "113.337121,29.591419",
+      "url": "assets/mock/flood/model/gangtieqiao.json"
+    },
+    {
+      "title": "钢铁桥03",
+      "text": "gangtieqiao03",
+      "type": "桥梁",
+      "key": "3013",
+      "destination": "113.337258,29.591401",
+      "url": "assets/mock/flood/model/gangtieqiao03.json"
+    },
+    {
+      "title": "立帅桥",
+      "text": "lishuaiqiao",
+      "type": "桥梁",
+      "key": "3013",
+      "destination": "113.337334,29.591344",
+      "url": "assets/mock/flood/model/lishuaiqiao.json"
+    },
+    {
+      "title": "粮湖桥",
+      "text": "lianghuqiao",
+      "type": "桥梁",
+      "key": "3013",
+      "destination": "113.337524,29.591274",
+      "url": "assets/mock/flood/model/lianghuqiao.json"
+    },
+    {
+      "title": "太平桥",
+      "text": "taipingqiao",
+      "type": "桥梁",
+      "key": "3013",
+      "destination": "113.337541,29.591276",
+      "url": "assets/mock/flood/model/taipingqiao.json"
+    },
+    {
+      "title": "南太桥",
+      "text": "nantaiqiao",
+      "type": "桥梁",
+      "key": "3013",
+      "destination": "113.337624,29.591257",
+      "url": "assets/mock/flood/model/nantaiqiao.json"
+    },
+    {
+      "title": "团结桥",
+      "text": "tuanjieqiao",
+      "type": "桥梁",
+      "key": "3013",
+      "destination": "113.337655,29.591266",
+      "url": "assets/mock/flood/model/tuanjieqiao.json"
+    },
+    {
+      "title": "友谊桥",
+      "text": "youyiqiao",
+      "type": "桥梁",
+      "key": "3013",
+      "destination": "113.337671,29.59124",
+      "url": "assets/mock/flood/model/youyiqiao.json"
+    },
+    {
+      "title": "幸福桥",
+      "text": "xingfuqiao",
+      "type": "桥梁",
+      "key": "3013",
+      "destination": "113.337639,29.591288",
+      "url": "assets/mock/flood/model/xingfuqiao.json"
+    },
+    {
+      "title": "桥_11",
+      "text": "qiao",
+      "type": "桥梁",
+      "key": "3013",
+      "destination": "113.337769,29.591333",
+      "url": "assets/mock/flood/model/qiao.json"
+    },
+    {
+      "title": "沙咀河排水闸",
+      "text": "shazuihepaishuizha",
+      "type": "闸门",
+      "key": "3013",
+      "destination": "113.504141,29.982117",
+      "url": "assets/mock/flood/model/shazuihepaishuizha.json"
+    },
+    {
+      "title": "水厂001",
+      "text": "shuichang001",
+      "type": "水厂",
+      "key": "3013",
+      "destination": "113.344482,29.662478",
+      "url": "assets/mock/flood/model/shuichang001.json"
+    },
+    {
+      "title": "孙家汉溢洪闸",
+      "text": "sunjiahanyihongzha",
+      "type": "闸门",
+      "key": "3013",
+      "destination": "113.347889,29.617743",
+      "url": "assets/mock/flood/model/sunjiahanyihongzha.json"
+    },
+    {
+      "title": "套口进洪闸",
+      "text": "taokoujinhongzha",
+      "type": "闸门",
+      "key": "3013",
+      "destination": "113.789069,29.934724",
+      "url": "assets/mock/flood/model/taokoujinhongzha.json"
+    },
+    {
+      "title": "鸭栏泄洪闸",
+      "text": "yalanxiehongzha",
+      "type": "闸门",
+      "checked": true,
+      "key": "3013",
+      "destination": "113.338237,29.653939",
+      "url": "assets/mock/flood/model/yalanxiehongzha.json"
+    },
+    {
+      "title": "沿湖村排水闸",
+      "text": "yanhucunpaishuizha",
+      "type": "闸门",
+      "key": "3013",
+      "destination": "113.497211,29.988417",
+      "url": "assets/mock/flood/model/yanhucunpaishuizha.json"
+    },
+    {
+      "title": "腰口隔堤",
+      "text": "yaokougedi",
+      "type": "堤防",
+      "key": "3013",
+      "destination": "113.514007,29.975802",
+      "url": "assets/mock/flood/model/yaokougedi.json"
+    },
+    {
+      "title": "长江干堤_00",
+      "text": "changjianggandi_00",
+      "type": "堤防",
+      "key": "3013",
+      "destination": "113.298529,29.611528",
+      "url": "assets/mock/flood/model/changjianggandi_00.json"
+    },
+    {
+      "title": "长江干堤_01",
+      "text": "changjianggandi_01",
+      "type": "堤防",
+      "key": "3013",
+      "destination": "113.702996,29.927427",
+      "url": "assets/mock/flood/model/changjianggandi_01.json"
+    },
+    {
+      "title": "长江干堤_02",
+      "text": "changjianggandi_02",
+      "type": "堤防",
+      "key": "3013",
+      "destination": "113.890305,30.054958",
+      "url": "assets/mock/flood/model/changjianggandi_02.json"
+    },
+    {
+      "title": "长江干渠_001",
+      "text": "changjiangganqu_001",
+      "type": "堤防",
+      "key": "3013",
+      "destination": "113.345108,29.662154",
+      "url": "assets/mock/flood/model/changjiangganqu_001.json"
+    },
+    {
+      "title": "长江干渠_003",
+      "text": "changjiangganqu_003",
+      "type": "堤防",
+      "checked": true,
+      "key": "3013",
+      "destination": "113.344327,29.662484",
+      "url": "assets/mock/flood/model/changjiangganqu_003.json"
+    },
+    {
+      "title": "支渠",
+      "text": "zhiqu",
+      "type": "堤防",
+      "key": "3013",
+      "destination": "113.352805,29.621933",
+      "url": "assets/mock/flood/model/zhiqu.json"
+    },
+    {
+      "title": "支渠闸_00",
+      "text": "zhiquzha_00",
+      "type": "闸门",
+      "key": "3013",
+      "destination": "113.337159,29.591404",
+      "url": "assets/mock/flood/model/zhiquzha_00.json"
+    },
+    {
+      "title": "支渠闸_01",
+      "text": "zhiquzha_01",
+      "type": "闸门",
+      "key": "3013",
+      "destination": "113.337342,29.591367",
+      "url": "assets/mock/flood/model/zhiquzha_01.json"
+    },
+    {
+      "title": "支渠闸_02",
+      "text": "zhiquzha_02",
+      "type": "闸门",
+      "key": "3013",
+      "destination": "113.326928,29.564801",
+      "url": "assets/mock/flood/model/zhiquzha_02.json"
+    },
+    {
+      "title": "陆城镇房屋",
+      "text": "luchengzhenfangwu",
+      "type": "房屋",
+      "checked": true,
+      "key": "3013",
+      "destination": "113.293282,29.590389",
+      "url": "assets/mock/flood/model/陆城镇房屋.json"
+    }
+  ]
+}
