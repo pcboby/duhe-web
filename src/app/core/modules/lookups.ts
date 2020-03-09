@@ -11,85 +11,11 @@ export const navigationList = [{
 }, {
   name: '水文预报',
   value: 'HydrologicalForecast',
-  predictionVisabled: false,
-  cls: 'icon icon-FloodForecast',
-  children: [{
-    name: '实时作业预报',
-    value: 'RealtimeJobPrediction',
-    predictionVisabled: true,
-    cls: 'icon icon-3-1'
-  }, {
-    name: '自动预报配置',
-    value: 'AutomaticPredictionConfiguration',
-    mapDisabled: true,
-    cls: 'icon icon-3-2'
-  }, {
-    name: '预报结果管理',
-    value: 'ForecastResultManagement',
-    mapDisabled: true,
-    cls: 'icon icon-3-4'
-  }]
+  cls: 'icon icon-FloodForecast'
 }, {
   name: '防洪调度',
   value: 'FloodDispatch',
-  cls: 'icon icon-FloodDispatch',
-  children: [{
-      name: '联合调度',
-      value: 'JointDispatch',
-      cls: 'icon icon-4-1'
-    },
-    {
-      name: '调度成果管理',
-      value: 'DispatchingResultsManagement',
-      cls: 'icon icon-4-2',
-      children: [{
-        name: '联合调度方案',
-        value: 'JointSchedulingScheme',
-        mapDisabled: true,
-        cls: 'icon icon-point'
-      }, {
-        name: '调度方案对比',
-        value: 'ContrastDispatchingSchemes',
-        mapDisabled: true,
-        cls: 'icon icon-point'
-      }]
-    },
-    {
-      name: '历史调度成果',
-      value: 'HistoricalDispatchingResults',
-      cls: 'icon icon-4-3',
-      children: [{
-        name: '历史调度方案',
-        value: 'HistorySchedulingScheme',
-        mapDisabled: true,
-        cls: 'icon icon-point'
-      }, {
-        name: '推荐调度方案',
-        value: 'RecommendedSchedulingScheme',
-        mapDisabled: true,
-        cls: 'icon icon-point'
-      }]
-    },
-    {
-      name: '灾害评估',
-      value: 'DisasterAssessment',
-      cls: 'icon icon-4-4',
-      children: [{
-        name: '洪水淹没模拟',
-        value: 'FloodSimulation',
-        cls: 'icon icon-point'
-      }, {
-        name: '模拟成果管理',
-        value: 'SimulatedResultsManagement',
-        mapDisabled: true,
-        cls: 'icon icon-point'
-      }, {
-        name: '洪灾评估分析',
-        value: 'AssessmentAnalysis',
-        cls: 'icon icon-point'
-      }]
-    }
-  ]
+  cls: 'icon icon-FloodDispatch'
 }, {
   name: '日常管理',
   value: 'DailyManagement',

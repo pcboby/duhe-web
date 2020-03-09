@@ -34,19 +34,19 @@ export class NavigationService {
 
   // 是否显示预报
   get predictionVisabled() {
-    const mas = this.master.find(item => item.value === this.selected_master).predictionVisabled;
+    const mas = this.master.find(item => item.value === this.selected_master)['predictionVisabled'];
     let sub = false;
     if (this.sub) {
       const e = this.selectedPath.find(item => item.value === this.selected_sub);
-      if (e && e.predictionVisabled !== undefined) {
-        sub = e.predictionVisabled;
+      if (e && e['predictionVisabled'] !== undefined) {
+        sub = e['predictionVisabled'];
       }
     }
     return mas || sub;
   }
 
   // 主选中
-  selected_master = 'APicture'; // Home | APicture;
+  selected_master = 'HydrologicalForecast'; // Home | APicture;
   // 次选中
   selected_sub: any;
 

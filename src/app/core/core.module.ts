@@ -87,7 +87,8 @@ import {
   PredictionComponent,
   VideoComponent,
   SwiperComponent,
-  SwitchYearComponent
+  SwitchYearComponent,
+  Toolbar2Component
 } from './components';
 import {
   ArkwebModule
@@ -153,6 +154,7 @@ const components = [
   LayoutComponent,
   PlotUserComponent,
   ToolbarComponent,
+  Toolbar2Component,
   MapAreaComponent,
   PanelComponent,
   FixPanelComponent,

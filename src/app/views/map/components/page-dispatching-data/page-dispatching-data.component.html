@@ -6,11 +6,11 @@
 <!--  -->
 <div class="flex-row">
   <div>
-    <button nz-button nzTitle="打印" nzPlacement="top" nz-tooltip (click)="add()" nzSize="small"><i nz-icon type="printer"
+    <button nz-button nzTitle="打印" nzPlacement="top" nz-tooltip (click)="add()" nzSize="small"><i nz-icon nzType="printer"
         theme="outline"></i>打印</button>
     &nbsp;
     <button nz-button nzTitle="导出" nzPlacement="top" nz-tooltip (click)="del(checkedItems)" nzSize="small"
-      [disabled]="checkedItems.length === 0"><i nz-icon type="export" theme="outline"></i>导出</button>
+      [disabled]="checkedItems.length === 0"><i nz-icon nzType="export" theme="outline"></i>导出</button>
   </div>
   <div class="tr" style="line-height: 32px;">
     2019-01-01 00:00:00 单位（水位：m, 流量：<font class="m3">m</font>/s, 蓄水量：k<font class="m3">m</font>）

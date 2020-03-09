@@ -49,61 +49,63 @@
   <!-- ------------------------------------------------------------------------------------------------------------ -->
   <!-- 水文预报 -->
   <ng-container *ngSwitchCase="'HydrologicalForecast'">
+    <app-page-hydrological-forecast></app-page-hydrological-forecast>
     <!-- page sub -->
-    <ng-container [ngSwitch]="sub">
-      <!-- 实时作业预报 -->
+    <!-- <ng-container [ngSwitch]="sub">
+      实时作业预报
       <ng-container *ngSwitchCase="'RealtimeJobPrediction'">
         <app-page-realtime-job-prediction></app-page-realtime-job-prediction>
       </ng-container>
-      <!-- 自动预报配置 -->
+      自动预报配置
       <ng-container *ngSwitchCase="'AutomaticPredictionConfiguration'">
         <app-page-automatic-prediction-configuration></app-page-automatic-prediction-configuration>
       </ng-container>
-      <!-- 预报结果管理 -->
+      预报结果管理
       <ng-container *ngSwitchCase="'ForecastResultManagement'">
         <app-page-forecast-result-management></app-page-forecast-result-management>
       </ng-container>
-    </ng-container>
+    </ng-container> -->
     <!--  -->
   </ng-container>
   <!-- ------------------------------------------------------------------------------------------------------------ -->
   <!-- 防洪调度 -->
   <ng-container *ngSwitchCase="'FloodDispatch'">
+    <app-page-flood-dispatch></app-page-flood-dispatch>
     <!-- page sub -->
-    <ng-container [ngSwitch]="sub">
-      <!-- 联合调度 -->
+    <!-- <ng-container [ngSwitch]="sub">
+      联合调度
       <ng-container *ngSwitchCase="'JointDispatch'">
         <app-page-joint-dispatch></app-page-joint-dispatch>
       </ng-container>
-      <!-- 调度成果管理/联合调度方案 -->
+      调度成果管理/联合调度方案
       <ng-container *ngSwitchCase="'JointSchedulingScheme'">
         <app-page-joint-scheduling-scheme></app-page-joint-scheduling-scheme>
       </ng-container>
-      <!-- 调度成果管理/调度方案对比 -->
+      调度成果管理/调度方案对比
       <ng-container *ngSwitchCase="'ContrastDispatchingSchemes'">
         <app-page-contrast-dispatching-schemes></app-page-contrast-dispatching-schemes>
       </ng-container>
-      <!-- 历史调度成果/历史调度方案 -->
+      历史调度成果/历史调度方案
       <ng-container *ngSwitchCase="'HistorySchedulingScheme'">
         <app-page-history-scheduling-scheme></app-page-history-scheduling-scheme>
       </ng-container>
-      <!-- 历史调度成果/推荐调度方案 -->
+      历史调度成果/推荐调度方案
       <ng-container *ngSwitchCase="'RecommendedSchedulingScheme'">
         <app-page-recommended-scheduling-scheme></app-page-recommended-scheduling-scheme>
       </ng-container>
-      <!-- 灾害评估/洪水淹没模拟 -->
+      灾害评估/洪水淹没模拟
       <ng-container *ngSwitchCase="'FloodSimulation'">
         <app-page-flood-simulation></app-page-flood-simulation>
       </ng-container>
-      <!-- 灾害评估/模拟成果管理 -->
+      灾害评估/模拟成果管理
       <ng-container *ngSwitchCase="'SimulatedResultsManagement'">
         <app-page-simulated-results-management></app-page-simulated-results-management>
       </ng-container>
-      <!-- 灾害评估/洪灾评估分析 -->
+      灾害评估/洪灾评估分析
       <ng-container *ngSwitchCase="'AssessmentAnalysis'">
         <app-page-assessment-analysis></app-page-assessment-analysis>
       </ng-container>
-    </ng-container>
+    </ng-container> -->
     <!--  -->
   </ng-container>
   <!-- ------------------------------------------------------------------------------------------------------------ -->

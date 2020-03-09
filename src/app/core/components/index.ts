@@ -17,6 +17,7 @@ export * from './prediction/prediction.component';
 //
 export * from './plot-user/plot-user.component';
 export * from './toolbar/toolbar.component';
+export * from './toolbar2/toolbar2.component';
 export * from './panel/panel.component';
 export * from './fix-panel/fix-panel.component';
 export * from './map-area/map-area.component';

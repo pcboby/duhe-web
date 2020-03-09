@@ -1,0 +1,44 @@
+.toolbar2 {
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    list-style: none;
+    li {
+      display: block;
+      padding: 4px;
+      a {
+        display: block;
+        padding: 0 0 0 40px;
+        position: relative;
+        height: 40px;
+        line-height: 40px;
+        color: #fff;
+        background-color: rgba($color: #000, $alpha: 0.5);
+        border-radius: 20px;
+        span.img {
+          position: absolute;
+          left: 4px;
+          top: 4px;
+          padding: 4px;
+          border-radius: 100% 100%;
+          background-color: #1890ff;
+          box-shadow: 0 0 4px rgba($color: #000, $alpha: 0.5);
+          i {
+            display: block;
+            width: 24px;
+            height: 24px;
+          }
+        }
+        span.txt {
+          padding: 4px 12px 4px 4px;
+        }
+      }
+      &:hover {
+        a {
+          background-color: rgba($color: #1890ff, $alpha: .75);
+        }
+      }
+    }
+  }
+}

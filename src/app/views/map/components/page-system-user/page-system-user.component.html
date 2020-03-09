@@ -3,14 +3,14 @@
 </div>
 <!--  -->
 <div class="table-operations">
-  <button nz-button nzTitle="新增" nzPlacement="top" nz-tooltip (click)="add()"><i nz-icon type="plus"
+  <button nz-button nzTitle="新增" nzPlacement="top" nz-tooltip (click)="add()"><i nz-icon nzType="plus"
       theme="outline"></i>新增</button>
   <button nz-button nzTitle="删除" nzPlacement="top" nz-tooltip (click)="del(checkedItems)"
-    [disabled]="checkedItems.length === 0"><i nz-icon type="delete" theme="outline"></i>删除</button>
+    [disabled]="checkedItems.length === 0"><i nz-icon nzType="delete" theme="outline"></i>删除</button>
   <button nz-button nzTitle="删除" nzPlacement="top" nz-tooltip (click)="del(checkedItems)"
-    [disabled]="checkedItems.length === 0"><i nz-icon type="import" theme="outline"></i>导入</button>
+    [disabled]="checkedItems.length === 0"><i nz-icon nzType="import" theme="outline"></i>导入</button>
   <button nz-button nzTitle="删除" nzPlacement="top" nz-tooltip (click)="del(checkedItems)"
-    [disabled]="checkedItems.length === 0"><i nz-icon type="export" theme="outline"></i>导出</button>
+    [disabled]="checkedItems.length === 0"><i nz-icon nzType="export" theme="outline"></i>导出</button>
 </div>
 <!--  -->
 <div class="table-operations">
@@ -46,11 +46,11 @@
         <td>{{data.label8}}</td>
         <td nzRight="0px" nzWidth="130px">
           <button nz-button nzSize="small" nzTitle="查看" nzPlacement="top" nz-tooltip (click)="detail(data)"><i nz-icon
-              type="search" theme="outline"></i></button>
+              nzType="search" theme="outline"></i></button>
           <button nz-button nzSize="small" nzTitle="修改" nzPlacement="top" nz-tooltip (click)="edit(data)"><i nz-icon
-              type="edit" theme="outline"></i></button>
+              nzType="edit" theme="outline"></i></button>
           <button nz-button nzSize="small" nzTitle="删除" nzPlacement="top" nz-tooltip (click)="del(data[checkField])"><i
-              nz-icon type="delete" theme="outline"></i></button>
+              nz-icon nzType="delete" theme="outline"></i></button>
         </td>
       </tr>
     </tbody>

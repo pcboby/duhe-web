@@ -1,0 +1,10 @@
+<div class="toolbar2">
+  <ul>
+    <li *ngFor="let item of dataset" (click)="itemClick(item)">
+      <a>
+        <span class="img"> <i [ngClass]="item.iconCls"></i></span>
+        <span class="txt">{{ item.label }}</span>
+      </a>
+    </li>
+  </ul>
+</div>

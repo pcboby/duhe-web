@@ -3,22 +3,22 @@
     <nz-button-group>
       <button nz-button nzType="default" nzTitle="重播" nzPlacement="top" nz-tooltip
         [disabled]="disabled || model === 0 || modeType==='stop'" (click)="back()">
-        <i nz-icon type="step-backward" theme="outline"></i><span>重播</span>
+        <i nz-icon nzType="step-backward" theme="outline"></i><span>重播</span>
       </button>
       <button nz-button nzType="default" nzTitle="开始" nzPlacement="top" nz-tooltip [disabled]="disabled"
         (click)="play()" [hidden]="modeType === 'play'">
-        <i nz-icon type="caret-right" theme="outline"></i>
+        <i nz-icon nzType="caret-right" theme="outline"></i>
         <span>开始</span>
         <!-- <span>暂停</span> -->
       </button>
       <button nz-button nzType="default" nzTitle="暂停" nzPlacement="top" nz-tooltip [disabled]="disabled"
         (click)="pause()" [hidden]="modeType !== 'play'">
-        <i nz-icon type="pause" theme="outline"></i>
+        <i nz-icon nzType="pause" theme="outline"></i>
         <span>暂停</span>
       </button>
       <button nz-button nzType="default" nzTitle="结束" nzPlacement="top" nz-tooltip
         [disabled]="disabled || modeType=== 'stop'" (click)="stop()">
-        <i nz-icon type="step-forward" theme="outline"></i><span>结束</span>
+        <i nz-icon nzType="step-forward" theme="outline"></i><span>结束</span>
       </button>
     </nz-button-group>
   </div>
