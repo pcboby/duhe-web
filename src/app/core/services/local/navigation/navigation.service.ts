@@ -46,7 +46,7 @@ export class NavigationService {
   }
 
   // 主选中
-  selected_master = 'HydrologicalForecast'; // Home | APicture;
+  selected_master = 'FloodDispatch'; // Home | APicture;
   // 次选中
   selected_sub: any;
 

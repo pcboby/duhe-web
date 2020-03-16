@@ -1,0 +1,47 @@
+<ng-container *ngFor="let item of dataset" [ngSwitch]="item.mode">
+  <ng-container *ngSwitchCase="'line'">
+    <div [ngClass]="{
+      'horizontal':item.local==='horizontal',
+      'vertical':item.local==='vertical',
+      'action' : item.type
+    }" class="line" [ngStyle]="item.style" (click)="event(item)"></div>
+  </ng-container>
+  <ng-container *ngSwitchCase="'text'">
+    <div [ngClass]="item.mode" [ngStyle]="item.style" (click)="event(item)">
+      {{item.label}}
+    </div>
+  </ng-container>
+  <ng-container *ngSwitchCase="'point'">
+    <div [ngClass]="{
+      'top':item.local==='top',
+      'right':item.local==='right',
+      'action' : item.type
+    }" class="point" [ngStyle]="item.style" (click)="event(item)">
+      <i></i>
+      <span>{{item.label}}</span>
+    </div>
+  </ng-container>
+  <ng-container *ngSwitchCase="'box'">
+    <div [ngClass]="{
+      'horizontal':item.local==='horizontal',
+      'vertical':item.local==='vertical',
+      'green': item.color === 'green',
+      'action' : item.type
+    }" class="box" [ngStyle]="item.style" (click)="event(item)">
+      {{item.label}}
+    </div>
+  </ng-container>
+  <!-- <ng-container *ngSwitchCase="false">
+
+</ng-container>
+<ng-container *ngSwitchDefault>
+
+</ng-container> -->
+</ng-container>
+
+<div class="legend">
+  <h5>说明：</h5>
+  <p><i class="hydropower"></i> <span>水电站</span></p>
+  <p><i class="reservoir"></i> <span>控制性水库</span></p>
+  <p><i class="hydrological"></i> <span>水文站</span></p>
+</div>

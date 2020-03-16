@@ -1,5 +1,4 @@
-import { PageFloodDispatchComponent } from './components/page-flood-dispatch/page-flood-dispatch.component';
-import { PageHydrologicalForecastComponent } from './components/page-hydrological-forecast/page-hydrological-forecast.component';
+
 
 
 
@@ -152,7 +151,12 @@ import {
   ConditionGateComponent,
   ConditionGateDetailComponent,
   RiverDetailComponent,
-  ConditionRainControlComponent
+  ConditionRainControlComponent,
+  FloodDispatchContrastComponent,
+  PageHydrologicalForecastComponent,
+  PageFloodDispatchComponent,
+  FloodDispatchRealComponent,
+  FloodDispatchDataComponent
 } from './components';
 
 const components = [
@@ -194,6 +198,9 @@ const components = [
   PageHydrologicalForecastComponent,
   // 
   PageFloodDispatchComponent,
+  FloodDispatchRealComponent,
+  FloodDispatchDataComponent,
+  FloodDispatchContrastComponent,
   // //
   // PageAutomaticPredictionConfigurationComponent,
   // PageForecastResultManagementComponent,

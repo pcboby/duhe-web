@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PageFloodDispatchComponent implements OnInit {
 
+  viewer = null;
+
   dataset = [{
     label: '实时防洪调度',
     iconCls: 'icon icon-4-1'

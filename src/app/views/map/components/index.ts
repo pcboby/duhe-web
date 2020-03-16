@@ -64,6 +64,9 @@ export * from './page-hydrological-forecast/page-hydrological-forecast.component
 
 // 防洪调度
 export * from './page-flood-dispatch/page-flood-dispatch.component';
+export * from './page-flood-dispatch/components/flood-dispatch-real/flood-dispatch-real.component';
+export * from './page-flood-dispatch/components/flood-dispatch-data/flood-dispatch-data.component';
+export * from './page-flood-dispatch/components/flood-dispatch-contrast/flood-dispatch-contrast.component';
 // export * from './page-joint-dispatch/page-joint-dispatch.component';
 // export * from './page-joint-dispatch/components/page-joint-dispatch-setting/page-joint-dispatch-setting.component';
 // export * from './page-joint-dispatch/components/page-joint-dispatch-setting/components/page-joint-dispatch-setting-form/page-joint-dispatch-setting-form.component';

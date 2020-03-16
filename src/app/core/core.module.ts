@@ -1,3 +1,5 @@
+import { DialogMapMiniHydrologicalComponent } from './controls/control-map-mini/components/dialog-map-mini-hydrological/dialog-map-mini-hydrological.component';
+import { DialogMapMiniHydropowerComponent } from './controls/control-map-mini/components/dialog-map-mini-hydropower/dialog-map-mini-hydropower.component';
 import { ItemPlayComponent } from './components/item-play/item-play.component';
 import { ItemIconComponent } from './components/item-icon/item-icon.component';
 import { ListItemComponent } from './components/list-item/list-item.component';
@@ -103,7 +105,10 @@ import {
   ControlToolTabComponent,
   SelectSatelliteMapComponent,
   SelectElectronicMapComponent,
-  SelectTopographicMapComponent
+  SelectTopographicMapComponent,
+  InputGroupComponent,
+  ControlMapMiniComponent,
+  DialogMapMiniReservoirComponent
 } from './controls';
 
 
@@ -126,6 +131,15 @@ const modules = [
 ];
 // -----------------------------------------------------------------------------------------------------------------------
 const controls = [
+  InputGroupComponent,
+  ControlMapMiniComponent,
+  DialogMapMiniHydropowerComponent,
+  DialogMapMiniReservoirComponent,
+  DialogMapMiniHydrologicalComponent,
+
+
+
+
   ButtonDropmenuComponent,
   ControlPlayerComponent,
   ControlToolTabComponent,
