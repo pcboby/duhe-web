@@ -1,0 +1,20 @@
+<form nz-form [formGroup]="validateForm">
+  <nz-form-item>
+    <nz-form-label [nzSpan]="6" nzRequired>方案名称</nz-form-label>
+    <nz-form-control [nzSpan]="16">
+      <app-input-group></app-input-group>
+    </nz-form-control>
+  </nz-form-item>
+  <nz-form-item>
+    <nz-form-label [nzSpan]="6" nzRequired>方案描述</nz-form-label>
+    <nz-form-control [nzSpan]="16">
+      <textarea nz-input rows="4"></textarea>
+    </nz-form-control>
+  </nz-form-item>
+  <nz-form-item>
+    <nz-form-label [nzSpan]="6" nzRequired>是否发布</nz-form-label>
+    <nz-form-control [nzSpan]="16">
+      <label nz-checkbox></label>
+    </nz-form-control>
+  </nz-form-item>
+</form>

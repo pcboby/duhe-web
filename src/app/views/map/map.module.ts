@@ -156,7 +156,13 @@ import {
   PageHydrologicalForecastComponent,
   PageFloodDispatchComponent,
   FloodDispatchRealComponent,
-  FloodDispatchDataComponent
+  FloodDispatchDataComponent,
+  RealCalculationResultsComponent,
+  RealCalculationSaveComponent,
+  RealCalculationResultsChartComponent,
+  RealCalculationResultsGridComponent,
+  RealCalculationResultsTreeComponent,
+  RealCalculationResultsDashComponent
 } from './components';
 
 const components = [
@@ -199,6 +205,12 @@ const components = [
   // 
   PageFloodDispatchComponent,
   FloodDispatchRealComponent,
+  RealCalculationResultsComponent,
+  RealCalculationResultsDashComponent,
+  RealCalculationResultsChartComponent,
+  RealCalculationResultsGridComponent,
+  RealCalculationResultsTreeComponent,
+  RealCalculationSaveComponent,
   FloodDispatchDataComponent,
   FloodDispatchContrastComponent,
   // //
