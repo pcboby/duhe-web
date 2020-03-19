@@ -8,7 +8,6 @@ body {
 }
 
 .login {
-
   .ant-input-affix-wrapper .ant-input:not(:first-child) {
     padding-left: 64px;
   }
@@ -32,18 +31,20 @@ body {
     width: 450px;
     height: 520px;
     background-position: -1108px -20px;
-    .ant-input{
+    .ant-input {
       border-color: #07b7ff;
-      background-color: rgba($color: #000000, $alpha: .15);
+      background-color: rgba($color: #000000, $alpha: 0.15);
       color: #fff;
     }
-    .ant-input-affix-wrapper .ant-input-prefix, .ant-input-affix-wrapper .ant-input-suffix, .ant-checkbox-wrapper{
+    .ant-input-affix-wrapper .ant-input-prefix,
+    .ant-input-affix-wrapper .ant-input-suffix,
+    .ant-checkbox-wrapper {
       color: #fff;
     }
-    .ant-btn-primary{
+    .ant-btn-primary {
       border-color: #00ffff;
-      background-color: rgba($color: #00ffff, $alpha: .5);
-      &:hover{
+      background-color: rgba($color: #00ffff, $alpha: 0.5);
+      &:hover {
         background-color: rgba($color: #25c2c2, $alpha: 1);
       }
     }
@@ -56,6 +57,147 @@ body {
     right: 0;
     text-align: center;
     line-height: 2.5em;
-    color: rgba($color: #fff, $alpha: .5);
+    color: rgba($color: #fff, $alpha: 0.5);
   }
+}
+
+// -----------------------------------
+.login2-banner {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  ul,
+  li {
+    display: block;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    list-style-type: none;
+  }
+  ul.banner-lab {
+    position: absolute;
+    top: 0;
+    left: 3%;
+    bottom: 0;
+    padding-left: 120px;
+    padding-top: 3%;
+    &::before{
+      position: absolute;
+      content: '';
+      height: 100%;
+      top: 0;
+      left: 100px;
+      border-right: 2px dotted rgba($color: #fff, $alpha: 0.5);
+    }
+    li {
+      padding: 20px 0;
+      a {
+        position: relative;
+        display: block;
+        color: #fff;
+        i {
+          display: block;
+          width: 100px;
+          height: 100px;
+          border-radius: 100% 100%;
+          background-size: cover;
+          background-position: center center;
+          border: 3px solid #fff;
+        }
+        span {
+          position: absolute;
+          color: inherit;
+          right: 100%;
+          top: 50%;
+          transform: translateY(-50%);
+          white-space: nowrap;
+          font-size: 15px;
+          padding-right: 36px;
+          &::after{
+            font-family: 'FontAwesome';
+            position: absolute;
+            font-size: 22px;
+            right: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            content: '\f10c';
+          }
+        }
+      }
+      &.selected {
+        a{
+          color: #00ffff;
+          i{
+            border-color: #00ffff;
+          }
+          span::after{
+            content: '\f192';
+          }
+        }
+      }
+    }
+  }
+  ul.banner {
+    width: 100%;
+    height: 100%;
+    li {
+      position: absolute;
+      top: 0;
+      left: 0;
+      opacity: 0;
+      transition: 1s;
+      width: 100%;
+      height: 100%;
+      background-size: cover;
+      background-position: center center;
+      a {
+        display: none;
+        i {
+        }
+        span {
+        }
+      }
+      &.selected {
+        opacity: 1;
+      }
+    }
+  }
+}
+.login2-form {
+  position: absolute;
+  top: 40%;
+  left: 80%;
+  transform: translate(-50%, -50%);
+  padding-top: 200px;
+  background-image: url(../images/login-logo.png);
+  background-repeat: no-repeat;
+  background-position: top center;
+  form {
+    width: 404px;
+    padding: 52px;
+    background: linear-gradient(
+      to bottom,
+      rgba($color: #0290fd, $alpha: 0.8),
+      rgba($color: #ffffff, $alpha: 0.8)
+    );
+
+    h4 {
+      font-size: 28px;
+      color: #fff;
+      line-height: 64px;
+      text-align: center;
+    }
+  }
+}
+.login2-label {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 6%;
+  height: 90px;
+  background-image: url(../images/login-label.png);
+  background-repeat: no-repeat;
+  background-position: center;
 }

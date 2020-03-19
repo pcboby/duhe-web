@@ -8,7 +8,8 @@ import {
 import {
   LayoutComponent,
   LoginComponent,
-  ErrorComponent
+  ErrorComponent,
+  Login2Component
 } from './core/components';
 
 const routes: Routes = [{
@@ -20,7 +21,7 @@ const routes: Routes = [{
   component: ErrorComponent
 }, {
   path: 'login', // 登录
-  component: LoginComponent
+  component: Login2Component
 }, {
   path: 'map',
   component: LayoutComponent,

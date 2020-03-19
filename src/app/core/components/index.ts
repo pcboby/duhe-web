@@ -9,6 +9,8 @@ export * from './footer/footer.component';
 export * from './layout/layout.component';
 //
 export * from './login/login.component';
+export * from './login2/login2.component';
+export * from './banner/banner.component';
 export * from './error/error.component';
 
 // 预报

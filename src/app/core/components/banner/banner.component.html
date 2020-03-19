@@ -1,0 +1,21 @@
+
+<ul class="banner">
+  <li *ngFor="let item of dataset; let idx = index;" [ngClass]="{'selected': idx === selected}" [ngStyle]="{
+    'background-image':'url('+item.url+')'
+  }">
+    <a>
+      <i></i>
+      <span>{{item.label}}</span>
+    </a>
+  </li>
+</ul>
+<ul class="banner-lab">
+  <li *ngFor="let item of dataset; let idx = index;" [ngClass]="{'selected': idx === selected}">
+    <a (click)="selected = idx">
+      <i [ngStyle]="{
+        'background-image':'url('+item.url+')'
+      }"></i>
+      <span>{{item.label}}</span>
+    </a>
+  </li>
+</ul>

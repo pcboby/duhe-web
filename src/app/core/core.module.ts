@@ -90,7 +90,9 @@ import {
   VideoComponent,
   SwiperComponent,
   SwitchYearComponent,
-  Toolbar2Component
+  Toolbar2Component,
+  Login2Component,
+  BannerComponent
 } from './components';
 import {
   ArkwebModule
@@ -156,6 +158,9 @@ const details = [
 ]
 // -----------------------------------------------------------------------------------------------------------------------
 const components = [
+  Login2Component,
+  BannerComponent,
+  
   LoginComponent,
   ErrorComponent,
   SpinnerComponent,
