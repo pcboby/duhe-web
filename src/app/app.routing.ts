@@ -31,6 +31,22 @@ const routes: Routes = [{
     // canActivate: [AuthIntercepterService]
   }]
 }, {
+  path: 'program',
+  component: LayoutComponent,
+  children: [{
+    path: '',
+    loadChildren: () => import('./views/program/program.module').then(m => m.ProgramModule),
+    // canActivate: [AuthIntercepterService]
+  }]
+}, {
+  path: 'system',
+  component: LayoutComponent,
+  children: [{
+    path: '',
+    loadChildren: () => import('./views/system/system.module').then(m => m.SystemModule),
+    // canActivate: [AuthIntercepterService]
+  }]
+}, {
   path: '**', // 路由判定
   redirectTo: 'error',
   pathMatch: 'full'

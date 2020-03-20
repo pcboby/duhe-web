@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./banner.component.scss']
 })
 export class BannerComponent implements OnInit {
-  selected = 0;
+  selected = 1;
   dataset = [
     {
       label: '白沙河',

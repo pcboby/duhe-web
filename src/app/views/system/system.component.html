@@ -1,0 +1,46 @@
+<!--  ------------------------------------------------------------------------------------------------------------------------  -->
+<!-- page master -->
+<ng-container [ngSwitch]="mas">
+  
+  <!-- ------------------------------------------------------------------------------------------------------------ -->
+  <!-- 系统管理 -->
+  <ng-container *ngSwitchCase="'SystemManagement'">
+    <!-- page sub -->
+    <ng-container [ngSwitch]="sub">
+      <!-- 权限管理/用户管理 -->
+      <ng-container *ngSwitchCase="'UserManagement'">
+        <app-page-system-user></app-page-system-user>
+      </ng-container>
+      <!-- 权限管理/角色管理 -->
+      <ng-container *ngSwitchCase="'RoleManagement'">
+        <app-page-system-role></app-page-system-role>
+      </ng-container>
+      <!-- 应用配置/对象配置 -->
+      <ng-container *ngSwitchCase="'objectConfig'">
+        <app-page-system-object></app-page-system-object>
+      </ng-container>
+      <!-- 应用配置/模块配置 -->
+      <ng-container *ngSwitchCase="'moduleConfig'">
+        <app-page-system-module></app-page-system-module>
+      </ng-container>
+      <!-- 应用配置/模型配置 -->
+      <ng-container *ngSwitchCase="'modelConfig'">
+        <app-page-system-model></app-page-system-model>
+      </ng-container>
+      <!-- 日志管理 -->
+      <ng-container *ngSwitchCase="'logManagement'">
+        <app-page-system-log></app-page-system-log>
+      </ng-container>
+    </ng-container>
+    <!--  -->
+  </ng-container>
+  <!-- ------------------------------------------------------------------------------------------------------------ -->
+  <ng-container *ngSwitchDefault>
+
+  </ng-container>
+  <!-- ------------------------------------------------------------------------------------------------------------ -->
+</ng-container>
+
+
+<!-- loader -->
+<app-spinner></app-spinner>

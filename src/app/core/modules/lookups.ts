@@ -2,22 +2,27 @@ export const lookups = {};
 
 export const navigationList = [{
   name: '首页',
+  link: '/map',
   value: 'Home',
   cls: 'icon icon-Home'
 }, {
   name: '一张图',
+  link: '/map',
   value: 'APicture',
   cls: 'icon icon-APicture'
 }, {
   name: '水文预报',
+  link: '/map',
   value: 'HydrologicalForecast',
   cls: 'icon icon-FloodForecast'
 }, {
   name: '防洪调度',
+  link: '/map',
   value: 'FloodDispatch',
   cls: 'icon icon-FloodDispatch'
 }, {
   name: '日常管理',
+  link: '/program',
   value: 'DailyManagement',
   mapDisabled: true,
   cls: 'icon icon-DailyManagement',
@@ -54,6 +59,7 @@ export const navigationList = [{
   }]
 }, {
   name: '系统设置',
+  link: '/system',
   value: 'SystemManagement',
   mapDisabled: true,
   cls: 'icon icon-SystemManagement',

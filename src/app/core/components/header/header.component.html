@@ -2,8 +2,8 @@
   <div class="header-logo"></div>
   <div class="header-menu">
     <ul>
-      <li *ngFor="let item of menu" [ngClass]="{'selected': item.value===selected}" (click)="selected = item.value">
-        <a>
+      <li *ngFor="let item of menu" [ngClass]="{'selected': item.value===selected}">
+        <a (click)="selected = item.value; go(item.link)">
           <i [ngClass]="item.cls"></i>
           <span>{{item.name}}</span>
         </a>

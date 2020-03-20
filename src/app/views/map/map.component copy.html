@@ -1,0 +1,180 @@
+<!--  ------------------------------------------------------------------------------------------------------------------------  -->
+<!-- map -->
+<div [hidden]="mapDisabled">
+  <!-- 地图 -->
+  <app-arkweb></app-arkweb>
+  <!-- 地图工具：数据源切换 -->
+  <app-arkweb-resource></app-arkweb-resource>
+  <!-- 2/3D切换 -->
+  <!-- <app-arkweb-switch-to ngType="column"></app-arkweb-switch-to> -->
+  <!-- 地图工具：设置透明度 -->
+  <app-fix-panel [isLock]="true" style="bottom: -14px; right: 10px; width: 280px;">
+    <app-arkweb-opacity></app-arkweb-opacity>
+  </app-fix-panel>
+  <!-- 自定义地图工具：工具栏 -->
+  <app-fix-panel [isLock]="true" style="top:10px; right:10px;" [isFixed]="false">
+    <!-- <app-map-toolbar></app-map-toolbar> -->
+    <app-map-toolbar2></app-map-toolbar2>
+  </app-fix-panel>
+  <!-- 自定义地图工具：查询栏 -->
+  <!-- <app-fix-panel [isLock]="true" style="top:10px; left:10px; width: 380px;" [isFixed]="false">
+    <app-map-search></app-map-search>
+  </app-fix-panel> -->
+
+  <!--  -->
+  <!--  -->
+  <!--  -->
+  <!--  -->
+</div>
+
+<!-- <app-fix-panel title="临时" [isLock]="false" mode="BLUE" style="top: 100px; left: 800px; width: 400px;">
+  {{path | json}}
+  {{mas}} - {{sub}} - {{mapDisabled}}
+</app-fix-panel> -->
+
+
+<!--  ------------------------------------------------------------------------------------------------------------------------  -->
+<!-- page master -->
+<ng-container [ngSwitch]="mas">
+  <!-- ------------------------------------------------------------------------------------------------------------ -->
+  <!-- 首页 -->
+  <ng-container *ngSwitchCase="'Home'">
+    <app-page-home></app-page-home>
+  </ng-container>
+  <!-- ------------------------------------------------------------------------------------------------------------ -->
+  <!-- 一张图 -->
+  <ng-container *ngSwitchCase="'APicture'">
+    <app-page-a-picture></app-page-a-picture>
+  </ng-container>
+  <!-- ------------------------------------------------------------------------------------------------------------ -->
+  <!-- 水文预报 -->
+  <ng-container *ngSwitchCase="'HydrologicalForecast'">
+    <app-page-hydrological-forecast></app-page-hydrological-forecast>
+    <!-- page sub -->
+    <!-- <ng-container [ngSwitch]="sub">
+      实时作业预报
+      <ng-container *ngSwitchCase="'RealtimeJobPrediction'">
+        <app-page-realtime-job-prediction></app-page-realtime-job-prediction>
+      </ng-container>
+      自动预报配置
+      <ng-container *ngSwitchCase="'AutomaticPredictionConfiguration'">
+        <app-page-automatic-prediction-configuration></app-page-automatic-prediction-configuration>
+      </ng-container>
+      预报结果管理
+      <ng-container *ngSwitchCase="'ForecastResultManagement'">
+        <app-page-forecast-result-management></app-page-forecast-result-management>
+      </ng-container>
+    </ng-container> -->
+    <!--  -->
+  </ng-container>
+  <!-- ------------------------------------------------------------------------------------------------------------ -->
+  <!-- 防洪调度 -->
+  <ng-container *ngSwitchCase="'FloodDispatch'">
+    <app-page-flood-dispatch></app-page-flood-dispatch>
+    <!-- page sub -->
+    <!-- <ng-container [ngSwitch]="sub">
+      联合调度
+      <ng-container *ngSwitchCase="'JointDispatch'">
+        <app-page-joint-dispatch></app-page-joint-dispatch>
+      </ng-container>
+      调度成果管理/联合调度方案
+      <ng-container *ngSwitchCase="'JointSchedulingScheme'">
+        <app-page-joint-scheduling-scheme></app-page-joint-scheduling-scheme>
+      </ng-container>
+      调度成果管理/调度方案对比
+      <ng-container *ngSwitchCase="'ContrastDispatchingSchemes'">
+        <app-page-contrast-dispatching-schemes></app-page-contrast-dispatching-schemes>
+      </ng-container>
+      历史调度成果/历史调度方案
+      <ng-container *ngSwitchCase="'HistorySchedulingScheme'">
+        <app-page-history-scheduling-scheme></app-page-history-scheduling-scheme>
+      </ng-container>
+      历史调度成果/推荐调度方案
+      <ng-container *ngSwitchCase="'RecommendedSchedulingScheme'">
+        <app-page-recommended-scheduling-scheme></app-page-recommended-scheduling-scheme>
+      </ng-container>
+      灾害评估/洪水淹没模拟
+      <ng-container *ngSwitchCase="'FloodSimulation'">
+        <app-page-flood-simulation></app-page-flood-simulation>
+      </ng-container>
+      灾害评估/模拟成果管理
+      <ng-container *ngSwitchCase="'SimulatedResultsManagement'">
+        <app-page-simulated-results-management></app-page-simulated-results-management>
+      </ng-container>
+      灾害评估/洪灾评估分析
+      <ng-container *ngSwitchCase="'AssessmentAnalysis'">
+        <app-page-assessment-analysis></app-page-assessment-analysis>
+      </ng-container>
+    </ng-container> -->
+    <!--  -->
+  </ng-container>
+  <!-- ------------------------------------------------------------------------------------------------------------ -->
+  <!-- 日常管理 -->
+  <ng-container *ngSwitchCase="'DailyManagement'">
+    <!-- page sub -->
+    <ng-container [ngSwitch]="sub">
+      <!-- 信息通报 -->
+      <ng-container *ngSwitchCase="'MessageNews'">
+        <app-page-message-news></app-page-message-news>
+      </ng-container>
+      <!-- 水资源公报 -->
+      <ng-container *ngSwitchCase="'WaterNews'">
+        <app-page-water-news></app-page-water-news>
+      </ng-container>
+      <!-- 调度运用计划 -->
+      <ng-container *ngSwitchCase="'Runningaily'">
+        <app-page-runningaily></app-page-runningaily>
+      </ng-container>
+      <!-- 统计报表/水库水情 -->
+      <ng-container *ngSwitchCase="'DispatchingData'">
+        <app-page-dispatching-data></app-page-dispatching-data>
+      </ng-container>
+      <!-- 统计报表/河道水情 -->
+      <ng-container *ngSwitchCase="'DispatchingSchemes'">
+        <app-page-dispatching-schemes></app-page-dispatching-schemes>
+      </ng-container>
+    </ng-container>
+    <!--  -->
+  </ng-container>
+  <!-- ------------------------------------------------------------------------------------------------------------ -->
+  <!-- 系统管理 -->
+  <ng-container *ngSwitchCase="'SystemManagement'">
+    <!-- page sub -->
+    <ng-container [ngSwitch]="sub">
+      <!-- 权限管理/用户管理 -->
+      <ng-container *ngSwitchCase="'UserManagement'">
+        <app-page-system-user></app-page-system-user>
+      </ng-container>
+      <!-- 权限管理/角色管理 -->
+      <ng-container *ngSwitchCase="'RoleManagement'">
+        <app-page-system-role></app-page-system-role>
+      </ng-container>
+      <!-- 应用配置/对象配置 -->
+      <ng-container *ngSwitchCase="'objectConfig'">
+        <app-page-system-object></app-page-system-object>
+      </ng-container>
+      <!-- 应用配置/模块配置 -->
+      <ng-container *ngSwitchCase="'moduleConfig'">
+        <app-page-system-module></app-page-system-module>
+      </ng-container>
+      <!-- 应用配置/模型配置 -->
+      <ng-container *ngSwitchCase="'modelConfig'">
+        <app-page-system-model></app-page-system-model>
+      </ng-container>
+      <!-- 日志管理 -->
+      <ng-container *ngSwitchCase="'logManagement'">
+        <app-page-system-log></app-page-system-log>
+      </ng-container>
+    </ng-container>
+    <!--  -->
+  </ng-container>
+  <!-- ------------------------------------------------------------------------------------------------------------ -->
+  <ng-container *ngSwitchDefault>
+
+  </ng-container>
+  <!-- ------------------------------------------------------------------------------------------------------------ -->
+</ng-container>
+
+
+<!-- loader -->
+<app-spinner></app-spinner>

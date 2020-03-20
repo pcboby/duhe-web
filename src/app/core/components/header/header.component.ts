@@ -1,13 +1,6 @@
-import {
-  Component,
-  OnInit
-} from '@angular/core';
-import {
-  NavigationService
-} from '../../services';
-import {
-  Router
-} from '@angular/router';
+import { Component, OnInit } from '@angular/core';
+import { NavigationService } from '../../services';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-header',
@@ -15,7 +8,6 @@ import {
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent implements OnInit {
-
   user = {
     // photo: 'http://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png',
     name: 'administrator'
@@ -62,11 +54,14 @@ export class HeaderComponent implements OnInit {
     }
   }
 
+  go(link) {
+    if (link) {
+      this.router.navigate([link]);
+    }
+  }
 
   // 登出
   logout() {
     this.router.navigate(['/login']);
   }
-
-
 }

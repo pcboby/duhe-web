@@ -1,0 +1,42 @@
+<!--  ------------------------------------------------------------------------------------------------------------------------  -->
+<!-- page master -->
+<ng-container [ngSwitch]="mas">
+  
+  <!-- ------------------------------------------------------------------------------------------------------------ -->
+  <!-- 日常管理 -->
+  <ng-container *ngSwitchCase="'DailyManagement'">
+    <!-- page sub -->
+    <ng-container [ngSwitch]="sub">
+      <!-- 信息通报 -->
+      <ng-container *ngSwitchCase="'MessageNews'">
+        <app-page-message-news></app-page-message-news>
+      </ng-container>
+      <!-- 水资源公报 -->
+      <ng-container *ngSwitchCase="'WaterNews'">
+        <app-page-water-news></app-page-water-news>
+      </ng-container>
+      <!-- 调度运用计划 -->
+      <ng-container *ngSwitchCase="'Runningaily'">
+        <app-page-runningaily></app-page-runningaily>
+      </ng-container>
+      <!-- 统计报表/水库水情 -->
+      <ng-container *ngSwitchCase="'DispatchingData'">
+        <app-page-dispatching-data></app-page-dispatching-data>
+      </ng-container>
+      <!-- 统计报表/河道水情 -->
+      <ng-container *ngSwitchCase="'DispatchingSchemes'">
+        <app-page-dispatching-schemes></app-page-dispatching-schemes>
+      </ng-container>
+    </ng-container>
+    <!--  -->
+  </ng-container>
+  <!-- ------------------------------------------------------------------------------------------------------------ -->
+  <ng-container *ngSwitchDefault>
+
+  </ng-container>
+  <!-- ------------------------------------------------------------------------------------------------------------ -->
+</ng-container>
+
+
+<!-- loader -->
+<app-spinner></app-spinner>
