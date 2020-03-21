@@ -92,7 +92,9 @@ import {
   SwitchYearComponent,
   Toolbar2Component,
   Login2Component,
-  BannerComponent
+  BannerComponent,
+  Layout2Component,
+  Header2Component
 } from './components';
 import {
   ArkwebModule
@@ -165,12 +167,14 @@ const components = [
   ErrorComponent,
   SpinnerComponent,
   HeaderComponent,
+  Header2Component,
   BreadcrumbComponent,
   PredictionComponent,
   SliderComponent,
   WraperComponent,
   FooterComponent,
   LayoutComponent,
+  Layout2Component,
   PlotUserComponent,
   ToolbarComponent,
   Toolbar2Component,

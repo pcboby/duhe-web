@@ -9,7 +9,8 @@ import {
   LayoutComponent,
   LoginComponent,
   ErrorComponent,
-  Login2Component
+  Login2Component,
+  Layout2Component
 } from './core/components';
 
 const routes: Routes = [{
@@ -24,7 +25,7 @@ const routes: Routes = [{
   component: Login2Component
 }, {
   path: 'map',
-  component: LayoutComponent,
+  component: Layout2Component,
   children: [{
     path: '',
     loadChildren: () => import('./views/map/map.module').then(m => m.MapModule),

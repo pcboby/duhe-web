@@ -2,11 +2,13 @@
 export * from './spinner/spinner.component';
 
 export * from './header/header.component';
+export * from './header2/header2.component';
 export * from './breadcrumb/breadcrumb.component';
 export * from './wraper/wraper.component';
 export * from './slider/slider.component';
 export * from './footer/footer.component';
 export * from './layout/layout.component';
+export * from './layout2/layout2.component';
 //
 export * from './login/login.component';
 export * from './login2/login2.component';

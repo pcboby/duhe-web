@@ -11,7 +11,7 @@
 </ul>
 <ul class="banner-lab">
   <li *ngFor="let item of dataset; let idx = index;" [ngClass]="{'selected': idx === selected}">
-    <a (click)="selected = idx">
+    <a (click)="setView(idx)">
       <i [ngStyle]="{
         'background-image':'url('+item.url+')'
       }"></i>

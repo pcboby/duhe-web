@@ -78,6 +78,7 @@ body {
   }
   ul.banner-lab {
     position: absolute;
+    z-index: 1;
     top: 0;
     left: 3%;
     bottom: 0;
@@ -195,9 +196,21 @@ body {
   position: absolute;
   left: 0;
   right: 0;
-  bottom: 6%;
+  bottom: 5%;
   height: 90px;
   background-image: url(../images/login-label.png);
   background-repeat: no-repeat;
   background-position: center;
+}
+.login2-bg-b {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 25%;
+  background: linear-gradient(
+    to bottom,
+    rgba($color: #000, $alpha: 0),
+    rgba($color: #000, $alpha: 0.65)
+  );
 }

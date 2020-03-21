@@ -11,60 +11,118 @@ font.m3{
   }
 }
 
+.header{
+  .header-menu li {
+    i.icon.icon-Home {
+      background-position: -451px -50px;
+    }
 
-.header-menu li {
-  i.icon.icon-Home {
-    background-position: -451px -50px;
+    &:hover>a>i.icon.icon-Home,
+    &.selected>a>i.icon.icon-Home {
+      background-position: -451px -110px;
+    }
+
+    i.icon.icon-APicture {
+      background-position: -523px -50px;
+    }
+
+    &:hover>a>i.icon.icon-APicture,
+    &.selected>a>i.icon.icon-APicture {
+      background-position: -523px -110px;
+    }
+
+    i.icon.icon-FloodForecast {
+      background-position: -595px -50px;
+    }
+
+    &:hover>a>i.icon.icon-FloodForecast,
+    &.selected>a>i.icon.icon-FloodForecast {
+      background-position: -595px -110px;
+    }
+
+    i.icon.icon-FloodDispatch {
+      background-position: -667px -50px;
+    }
+
+    &:hover>a>i.icon.icon-FloodDispatch,
+    &.selected>a>i.icon.icon-FloodDispatch {
+      background-position: -667px -110px;
+    }
+
+    i.icon.icon-DailyManagement {
+      background-position: -739px -50px;
+    }
+
+    &:hover>a>i.icon.icon-DailyManagement,
+    &.selected>a>i.icon.icon-DailyManagement {
+      background-position: -739px -110px;
+    }
+
+    i.icon.icon-SystemManagement {
+      background-position: -811px -50px;
+    }
+
+    &:hover>a>i.icon.icon-SystemManagement,
+    &.selected>a>i.icon.icon-SystemManagement {
+      background-position: -811px -110px;
+    }
   }
+}
+.header2{
+  .header-menu li {
+    i.icon.icon-Home {
+      background-image: url(../images/icon/1-1.png);
+    }
 
-  &:hover>a>i.icon.icon-Home,
-  &.selected>a>i.icon.icon-Home {
-    background-position: -451px -110px;
-  }
+    &:hover>a>i.icon.icon-Home,
+    &.selected>a>i.icon.icon-Home {
+      background-image: url(../images/icon/1-2.png);
+    }
 
-  i.icon.icon-APicture {
-    background-position: -523px -50px;
-  }
+    i.icon.icon-APicture {
+      background-image: url(../images/icon/2-1.png);
+    }
 
-  &:hover>a>i.icon.icon-APicture,
-  &.selected>a>i.icon.icon-APicture {
-    background-position: -523px -110px;
-  }
+    &:hover>a>i.icon.icon-APicture,
+    &.selected>a>i.icon.icon-APicture {
+      background-image: url(../images/icon/2-2.png);
+    }
 
-  i.icon.icon-FloodForecast {
-    background-position: -595px -50px;
-  }
+    i.icon.icon-FloodForecast {
+      background-image: url(../images/icon/3-1.png);
+    }
 
-  &:hover>a>i.icon.icon-FloodForecast,
-  &.selected>a>i.icon.icon-FloodForecast {
-    background-position: -595px -110px;
-  }
+    &:hover>a>i.icon.icon-FloodForecast,
+    &.selected>a>i.icon.icon-FloodForecast {
+      background-image: url(../images/icon/3-2.png);
+    }
 
-  i.icon.icon-FloodDispatch {
-    background-position: -667px -50px;
-  }
+    i.icon.icon-FloodDispatch {
+      background-image: url(../images/icon/4-1.png);
+    }
 
-  &:hover>a>i.icon.icon-FloodDispatch,
-  &.selected>a>i.icon.icon-FloodDispatch {
-    background-position: -667px -110px;
-  }
+    &:hover>a>i.icon.icon-FloodDispatch,
+    &.selected>a>i.icon.icon-FloodDispatch {
+      background-image: url(../images/icon/4-2.png);
+    }
 
-  i.icon.icon-DailyManagement {
-    background-position: -739px -50px;
-  }
+    i.icon.icon-DailyManagement {
+      background-image: url(../images/icon/5-1.png);
+    }
 
-  &:hover>a>i.icon.icon-DailyManagement,
-  &.selected>a>i.icon.icon-DailyManagement {
-    background-position: -739px -110px;
-  }
+    &:hover>a>i.icon.icon-DailyManagement,
+    &.selected>a>i.icon.icon-DailyManagement {
+      background-image: url(../images/icon/5-2.png);
+    }
 
-  i.icon.icon-SystemManagement {
-    background-position: -811px -50px;
-  }
+    i.icon.icon-SystemManagement {
+      background-image: url(../images/icon/6-1.png);
+    }
 
-  &:hover>a>i.icon.icon-SystemManagement,
-  &.selected>a>i.icon.icon-SystemManagement {
-    background-position: -811px -110px;
+    &:hover>a>i.icon.icon-SystemManagement,
+    &.selected>a>i.icon.icon-SystemManagement {
+      background-image: url(../images/icon/6-2.png);
+    }
   }
 }
 

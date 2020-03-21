@@ -5,6 +5,12 @@
   position: absolute;
 }
 
+#navigationDiv{
+  position: absolute;
+  z-index: 9;
+  top: 20px;
+  right: 10px;
+}
 
 .distance-legend {
   right: 0 !important;
@@ -14,11 +20,11 @@
   background-color: transparent !important;
 }
 
-.compass-outer-ring-background{
-  width: 68px !important;
-  height: 68px !important;
-}
-.compass-gyro-background{
-  width: 35px !important;
-  height: 35px !important;
-}
+// .compass-outer-ring-background{
+//   width: 68px !important;
+//   height: 68px !important;
+// }
+// .compass-gyro-background{
+//   width: 35px !important;
+//   height: 35px !important;
+// }

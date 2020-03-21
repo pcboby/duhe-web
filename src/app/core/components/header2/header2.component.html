@@ -1,0 +1,35 @@
+<div class="header2">
+  <div class="header-logo"></div>
+  <div class="header-menu">
+    <ul>
+      <li
+        *ngFor="let item of menu"
+        [ngClass]="{ selected: item.value === selected }"
+      >
+        <a (click)="selected = item.value; go(item.link)">
+          <i [ngClass]="item.cls"></i>
+          <span>{{ item.name }}</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+  <div class="header-quick">
+    <a nz-dropdown [nzDropdownMenu]="quickMenu">
+      <app-plot-user [dataset]="user"></app-plot-user>
+      <i nz-icon nzType="down" style="margin-left: 10px;"></i>
+    </a>
+    <nz-dropdown-menu #quickMenu="nzDropdownMenu">
+      <ul nz-menu>
+        <li nz-menu-item nzDisabled>
+          <i nz-icon nzType="info-circle" nzTheme="outline"></i>
+          <span>系统帮助</span>
+        </li>
+        <li nz-menu-divider></li>
+        <li nz-menu-item (click)="logout()">
+          <i nz-icon nzType="logout" nzTheme="outline"></i>
+          <span>安全退出</span>
+        </li>
+      </ul>
+    </nz-dropdown-menu>
+  </div>
+</div>
