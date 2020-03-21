@@ -19,7 +19,7 @@
   }
 
   .fix-panel-header {
-    line-height: 24px;
+    line-height: 32px;
     padding: 4px 8px;
     a.btn-close{
       float: right;
@@ -38,10 +38,16 @@
   .fix-panel-footer {}
 
   &.BLUE {
-    background-color: rgba($color: #428dff, $alpha: .9);
+    // background-color: rgba($color: #428dff, $alpha: .9);
+    border:2px solid #31a1cb;
 
     .fix-panel-header {
-      border-bottom: 1px solid rgba($color: #63a2ff, $alpha: .9);
+      border-bottom: 2px solid #31a1cb;
+      background: linear-gradient(
+        to bottom,
+        rgba($color: #31a1cb, $alpha: 0.75),
+        rgba($color: #000000, $alpha: 0.75)
+      );
       color: #fff;
       .btn-close svg{
         fill: #fff;
@@ -50,7 +56,7 @@
     .fix-panel-wraper {
       background-color: #fff;
       color: #000;
-      margin:2px;
+      margin:0;
     }
   }
 
