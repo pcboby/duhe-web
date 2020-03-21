@@ -104,34 +104,54 @@
         list-style: none;
         list-style-type: none;
         margin: 0;
-        padding: 0;
+        padding: 0 .5em;
         display: inline-block;
         a {
           display: block;
-          position: relative;
-          color: #fff;
+          height: 46px;
+          line-height: 40px;
+          padding: 0 1em 6px 1em;
+          min-width: 5em;
+          text-align: center;
+          border-radius: 25px 25px;
+          color: rgba($color: #fff, $alpha: 0.8);
+          border: 1px solid rgba($color: #fff, $alpha: 0.5);
+          box-shadow: 0 0 5px rgba($color: #000, $alpha: .5);
+          background: linear-gradient(
+            to bottom,
+            rgba($color: #000, $alpha: 0.3),
+            rgba($color: #fff, $alpha: 0.3)
+          );
           font-size: 15px;
-          background-image: url(../images/menu-item-bg.png);
-          background-repeat: no-repeat;
-          width: 144px;
-          height: 58px;
-          line-height: 48px;
-          padding: 2px 4px 6px 56px;
           i {
-            position: absolute;
+            display: inline-block;
+            vertical-align: middle;
             width: 32px;
             height: 32px;
             top: 10px;
             left: 18px;
+            margin-right: 5px;
           }
           span {
-            display: block;
+            display: inline-block;
+            vertical-align: middle;
+          }
+        }
+        &.selected, &:hover{
+          a{
+            color: #00ffff;
           }
         }
         &.selected {
           a {
-            color: #00ffff;
-            background-image: url(../images/menu-item-bg-selected.png);
+            border-color: rgba($color: #00ffff, $alpha: 0.7);
+            box-shadow:  0 0 8px rgba($color: #00ffff, $alpha: 1);
+            background: linear-gradient(
+              to bottom,
+              rgba($color: #000, $alpha: 0.3),
+              rgba($color: #00ffff, $alpha: 0.3)
+            );
+            // background-image: url(../images/menu-item-bg-selected.png);
           }
         }
       }

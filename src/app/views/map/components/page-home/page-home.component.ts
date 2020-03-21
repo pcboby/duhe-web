@@ -8,6 +8,22 @@ import { MapService } from '../../../../core/services/local/map/map.service';
 })
 export class PageHomeComponent implements OnInit {
 
+  viewer = null;
+
+  dataset = [{
+    label: '降雨预报',
+    iconCls: 'icon icon-4-1'
+  }, {
+    label: '降雨实况',
+    iconCls: 'icon icon-4-1'
+  }, {
+    label: '河道实况',
+    iconCls: 'icon icon-4-1'
+  }, {
+    label: '水库实况',
+    iconCls: 'icon icon-4-1'
+  }];
+
   // get dropList() {
   //   return this.map.homeTooltabList;
   // }
