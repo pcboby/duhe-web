@@ -148,4 +148,43 @@ nz-collapse>.ant-collapse {
   border-top: 1px dotted #1890ff;
 }
 
+// ------------------------
+.ant-modal{
+  .ant-modal-content{
+    background: transparent !important;
+    border: 2px solid #31a1cb;
+    border-radius: 0;
+    .ant-modal-close,.ant-modal-close:hover{
+      color: #fff;
+      .ant-modal-close-x{
+        width: 42px;
+        height: 42px;
+        line-height: 42px;
+      }
+    }
+    .ant-modal-header{
+      background-color: transparent;
+      border-radius: 0;
+      border-bottom: 2px solid #31a1cb;
+      padding: 10px;
+      background: linear-gradient(
+        to bottom,
+        rgba($color: #31a1cb, $alpha: 0.75),
+        rgba($color: #000000, $alpha: 0.75)
+      );
+      .ant-modal-title{
+        color: #fff;
+        font-size: 12px;
+      }
+    }
+    .ant-modal-body{
+      background-color: #fff;
+    }
+    .ant-modal-footer{
+      background-color: #fff;
+      border-radius: 0;
+    }
+  }
+}
+
 
