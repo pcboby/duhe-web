@@ -157,6 +157,7 @@ nz-collapse>.ant-collapse {
     .ant-modal-close,.ant-modal-close:hover{
       color: #fff;
       .ant-modal-close-x{
+        font-size: 12px;
         width: 42px;
         height: 42px;
         line-height: 42px;
@@ -183,6 +184,7 @@ nz-collapse>.ant-collapse {
     .ant-modal-footer{
       background-color: #fff;
       border-radius: 0;
+      text-align: center;
     }
   }
 }

@@ -490,9 +490,6 @@
     cursor: pointer;
     &.point:hover{
       color: #019125;
-      i{
-        background-image: url(../images/map-mini-point-selected.png);
-      }
     }
     &.box:hover{
       border-color: #009e35;
@@ -525,9 +522,17 @@
     transform: translate(-50%, -50%);
     i {
       display: block;
+      background-color: #fff;
       width: 16px;
       height: 16px;
-      background-image: url(../images/map-mini-point.png);
+      line-height: 16px;
+      text-align: center;
+      font-size: 16px;
+      font-family: 'FontAwesome';
+      font-style: normal;
+      &::after{
+        content: '\f192';
+      }
     }
     span {
       position: absolute;
@@ -602,7 +607,16 @@
           border-radius: 3px;
         }
         &.hydrological{
-          background-image: url(../images/map-mini-point.png);
+          width: 16px;
+          height: 16px;
+          line-height: 16px;
+          text-align: center;
+          font-size: 16px;
+          font-family: 'FontAwesome';
+          font-style: normal;
+          &::after{
+            content: '\f192';
+          }
         }
       }
       span {
