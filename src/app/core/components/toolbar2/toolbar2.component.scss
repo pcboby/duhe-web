@@ -32,8 +32,11 @@
           box-shadow: 0 0 4px rgba($color: #000, $alpha: 0.5);
           i {
             display: block;
+            font-size: 18px;
             width: 24px;
             height: 24px;
+            line-height: 24px;
+            text-align: center;
           }
         }
         .txt {

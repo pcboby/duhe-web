@@ -11,13 +11,13 @@ export class PageFloodDispatchComponent implements OnInit {
 
   dataset = [{
     label: '实时防洪调度',
-    iconCls: 'icon icon-4-1'
+    iconCls: 'untitled untitled-4-1'
   }, {
     label: '调度成果管理',
-    iconCls: 'icon icon-4-1'
+    iconCls: 'untitled untitled-4-2'
   }, {
     label: '调度方案对比',
-    iconCls: 'icon icon-4-1'
+    iconCls: 'untitled untitled-4-3'
   }];
 
   constructor() { }
