@@ -106,6 +106,7 @@ export class PageHomeComponent implements OnInit {
     }
   }];
 
+
   constructor(private map: MapService) { }
 
   ngOnInit() {

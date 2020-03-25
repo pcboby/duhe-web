@@ -1,5 +1,6 @@
 export * from './button-dropmenu/button-dropmenu.component';
 export * from './control-player/control-player.component';
+export * from './control-player2/control-player2.component';
 export * from './control-tool-tab/control-tool-tab.component';
 
 export * from './control-search/control-search.component';

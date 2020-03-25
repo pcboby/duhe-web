@@ -113,7 +113,8 @@ import {
   SelectTopographicMapComponent,
   InputGroupComponent,
   ControlMapMiniComponent,
-  DialogMapMiniReservoirComponent
+  DialogMapMiniReservoirComponent,
+  ControlPlayer2Component
 } from './controls';
 
 
@@ -147,6 +148,7 @@ const controls = [
 
   ButtonDropmenuComponent,
   ControlPlayerComponent,
+  ControlPlayer2Component,
   ControlToolTabComponent,
   SelectSatelliteMapComponent,
   SelectTopographicMapComponent,

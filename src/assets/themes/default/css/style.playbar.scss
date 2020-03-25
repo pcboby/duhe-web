@@ -9,8 +9,6 @@
     margin: 12px;
   }
 
-
-
   .slider-marks {
     ul {
       position: relative;
@@ -40,7 +38,7 @@
             position: absolute;
             bottom: 16px;
             transform: translateX(-50%);
-            content: '';
+            content: "";
             width: 0;
             height: 0;
             border-left: 8px solid transparent;
@@ -52,7 +50,7 @@
             position: absolute;
             top: 16px;
             transform: translateX(-50%);
-            content: '';
+            content: "";
             width: 0;
             height: 0;
             border-left: 8px solid transparent;
@@ -73,5 +71,50 @@
       }
     }
   }
+}
 
+// -----------------------------------------
+.player2 {
+  display: flex;
+  flex-direction: row;
+  color: #fff;
+  .controler {
+    flex: none;
+    padding-right: 20px;
+    padding-top: 3px;
+  }
+  .slider {
+    flex: 1;
+    .ant-slider {
+      .ant-slider-mark-text {
+        color: rgba($color: #fff, $alpha: 0.75);
+
+        &.ant-slider-mark-active {
+          // color: #0ff;
+        }
+      }
+    }
+    .ant-slider-track {
+      height: 8px;
+      margin-top: -2px;
+      // background-color: #0ff;
+    }
+    .ant-slider-rail {
+      background-color: rgba($color: #000000, $alpha: 0.5);
+      height: 8px;
+      margin-top: -2px;
+    }
+    .ant-slider-mark {
+      top: 24px;
+    }
+    .ant-slider-dot {
+      top: 14px;
+      margin-left: -2px;
+      width: 4px;
+      height: 4px;
+    }
+    .ant-slider-dot-active {
+      // border-color: #0ff;
+    }
+  }
 }
