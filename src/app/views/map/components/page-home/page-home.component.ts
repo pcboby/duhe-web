@@ -10,7 +10,8 @@ export class PageHomeComponent implements OnInit {
 
   viewer = null;
 
-  dataset = [{
+  // 
+  data_toolbar = [{
     label: '降雨预报',
     iconCls: 'untitled untitled-1-1'
   }, {
@@ -24,22 +25,86 @@ export class PageHomeComponent implements OnInit {
     iconCls: 'untitled untitled-1-4'
   }];
 
-  // get dropList() {
-  //   return this.map.homeTooltabList;
-  // }
-  // set dropList(val) {
-  //   this.map.homeTooltabList = val;
-  // }
+  // 
+  data_legend=[{
+    label: '河道',
+    src: 'assets/download/icon-0001.png'
+  }, {
+    label: '水库',
+    src: 'assets/download/icon-0001.png'
+  }, {
+    label: '超警超汛',
+    src: 'assets/download/icon-0001.png'
+  }, {
+    label: '超保证',
+    src: 'assets/download/icon-0001.png'
+  }];
 
-  get plot_weather_isShow() {
-    return this.map.plot_weather_isShow;
-  }
-  get plot_reservoir_isShow() {
-    return this.map.plot_reservoir_isShow;
-  }
-  get plot_river_isShow() {
-    return this.map.plot_river_isShow;
-  }
+  // 
+  data_legend2=[{
+    label: '0',
+    style: {
+      width: '5px',
+      height: '16px',
+      backgroundColor: '#d0fefd'
+    }
+  },{
+    label: '1',
+    style: {
+      width: '5px',
+      height: '16px',
+      backgroundColor: '#23fffa'
+    }
+  },{
+    label: '2',
+    style: {
+      width: '5px',
+      height: '16px',
+      backgroundColor: '#21b9fc'
+    }
+  },{
+    label: '4',
+    style: {
+      width: '5px',
+      height: '16px',
+      backgroundColor: '#0579b3'
+    }
+  },{
+    label: '6',
+    style: {
+      width: '5px',
+      height: '16px',
+      backgroundColor: '#0250cd'
+    }
+  },{
+    label: '8',
+    style: {
+      width: '5px',
+      height: '16px',
+      backgroundColor: '#0c2ed4'
+    }
+  },{
+    label: '10',
+    style: {
+      width: '5px',
+      height: '16px',
+      backgroundColor: '#8816ef'
+    }
+  },{
+    label: '20',
+    style: {
+      width: '5px',
+      height: '16px',
+      backgroundColor: '#6c059e'
+    }
+  },{
+    label: '>50',
+    style: {
+      width: '5px',
+      height: '16px',
+      backgroundColor: '#4d056a'
+    }
+  }];
 
   constructor(private map: MapService) { }
 

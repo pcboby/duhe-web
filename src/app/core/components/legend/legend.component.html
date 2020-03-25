@@ -1,0 +1,13 @@
+<div class="legend">
+  <h4 *ngIf="title">{{title}}</h4>
+  <ul>
+    <li *ngFor="let item of dataset">
+      <a>
+        <i *ngIf="item.style" [ngStyle]="item.style"></i>
+        <i *ngIf="item.iconCls" [ngClass]="item.iconCls"></i>
+        <img *ngIf="item.src" [src]="item.src">
+        <span>{{item.label}}</span>
+      </a>
+    </li>
+  </ul>
+</div>

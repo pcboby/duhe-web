@@ -37,6 +37,8 @@ export * from './echarts/echarts.component';
 export * from './swiper/swiper.component';
 export * from './switch-year/switch-year.component';
 
+export * from './legend/legend.component';
+
 //
 export * from './list-item/list-item.component';
 export * from './item-icon/item-icon.component';

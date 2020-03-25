@@ -32,7 +32,17 @@
   </app-panel>
 </app-fix-panel> -->
 
+<!-- 左侧工具拦 -->
 <app-fix-panel [isLock]="true" style="top:86px; left: 16px;"
   [isFixed]="true">
-  <app-toolbar2 [dataset]="dataset" (onItemClick)="viewer = $event.label"></app-toolbar2>
+  <app-toolbar2 [dataset]="data_toolbar" (onItemClick)="viewer = $event.label"></app-toolbar2>
+</app-fix-panel>
+
+<!-- 左侧图例 -->
+<app-fix-panel [isLock]="true" style="left: 16px; bottom: 46px;">
+  <app-legend [title]="'图例'" [dataset]="data_legend"></app-legend>
+</app-fix-panel>
+<!-- 右侧图例 -->
+<app-fix-panel [isLock]="true" style="right: 20px; top: 332px;">
+  <app-legend [title]="'降雨量'" [dataset]="data_legend2"></app-legend>
 </app-fix-panel>

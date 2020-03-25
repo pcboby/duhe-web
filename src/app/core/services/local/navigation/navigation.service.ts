@@ -46,7 +46,7 @@ export class NavigationService {
   }
 
   // 主选中
-  selected_master = 'FloodDispatch'; // Home | APicture;
+  selected_master = 'Home'; // Home | APicture;
   // 次选中
   selected_sub: any;
 
