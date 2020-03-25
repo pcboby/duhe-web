@@ -16,8 +16,8 @@ export class ControlMapMiniComponent implements OnInit {
       local: 'horizontal',
       style: {
         top: '40%',
-        left: '2%',
-        width: '94%'
+        left: '0%',
+        width: '98%'
       }
     },
     {
@@ -30,9 +30,9 @@ export class ControlMapMiniComponent implements OnInit {
     },
     {
       mode: 'box',
+      type: 'hydropower',
       local: 'vertical',
       label: '竹叶关',
-      type: 'hydropower',
       style: {
         top: '40%',
         left: '10%'
@@ -40,9 +40,9 @@ export class ControlMapMiniComponent implements OnInit {
     },
     {
       mode: 'box',
+      type: 'hydropower',
       local: 'vertical',
       label: '竹叶关2',
-      type: 'hydropower',
       style: {
         top: '40%',
         left: '16%'
@@ -50,9 +50,9 @@ export class ControlMapMiniComponent implements OnInit {
     },
     {
       mode: 'box',
+      type: 'hydropower',
       local: 'vertical',
       label: '双河口',
-      type: 'hydropower',
       style: {
         top: '40%',
         left: '22%'
@@ -60,10 +60,10 @@ export class ControlMapMiniComponent implements OnInit {
     },
     {
       mode: 'box',
+      type: 'hydropower',
       local: 'vertical',
       label: '鄂坪',
-      color: 'green',
-      type: 'reservoir',
+      action: true,
       style: {
         top: '40%',
         left: '28%'
@@ -71,9 +71,9 @@ export class ControlMapMiniComponent implements OnInit {
     },
     {
       mode: 'box',
+      type: 'hydropower',
       local: 'vertical',
       label: '周家垸',
-      type: 'hydropower',
       style: {
         top: '40%',
         left: '34%'
@@ -81,9 +81,9 @@ export class ControlMapMiniComponent implements OnInit {
     },
     {
       mode: 'box',
+      type: 'hydropower',
       local: 'vertical',
       label: '白果坪',
-      type: 'hydropower',
       style: {
         top: '40%',
         left: '40%'
@@ -93,9 +93,9 @@ export class ControlMapMiniComponent implements OnInit {
       mode: 'line',
       local: 'vertical',
       style: {
-        top: '2%',
+        top: '0%',
         left: '46%',
-        height: '38%'
+        height: '40%'
       }
     },
     {
@@ -108,9 +108,9 @@ export class ControlMapMiniComponent implements OnInit {
     },
     {
       mode: 'box',
+      type: 'hydropower',
       local: 'horizontal',
       label: '冯家湾',
-      type: 'hydropower',
       style: {
         top: '20%',
         left: '46%'
@@ -118,9 +118,10 @@ export class ControlMapMiniComponent implements OnInit {
     },
     {
       mode: 'point',
+      type: 'hydrological',
       local: 'top',
       label: '新洲',
-      type: 'hydrological',
+      action: 'true',
       style: {
         top: '40%',
         left: '50%'
@@ -145,10 +146,10 @@ export class ControlMapMiniComponent implements OnInit {
     },
     {
       mode: 'box',
+      type: 'hydropower',
       local: 'horizontal',
       label: '白沙河',
-      color: 'green',
-      type: 'reservoir',
+      action: true,
       style: {
         top: '48%',
         left: '58%'
@@ -156,9 +157,9 @@ export class ControlMapMiniComponent implements OnInit {
     },
     {
       mode: 'box',
+      type: 'hydropower',
       local: 'horizontal',
       label: '龙滩',
-      type: 'hydropower',
       style: {
         top: '58%',
         left: '58%'
@@ -166,9 +167,9 @@ export class ControlMapMiniComponent implements OnInit {
     },
     {
       mode: 'box',
+      type: 'hydropower',
       local: 'horizontal',
       label: '大峡',
-      type: 'hydropower',
       style: {
         top: '68%',
         left: '58%'
@@ -176,9 +177,9 @@ export class ControlMapMiniComponent implements OnInit {
     },
     {
       mode: 'box',
+      type: 'hydropower',
       local: 'horizontal',
       label: '红岩二级',
-      type: 'hydropower',
       style: {
         top: '78%',
         left: '58%'
@@ -186,9 +187,9 @@ export class ControlMapMiniComponent implements OnInit {
     },
     {
       mode: 'box',
+      type: 'hydropower',
       local: 'horizontal',
       label: '红岩一级',
-      type: 'hydropower',
       style: {
         top: '88%',
         left: '58%'
@@ -213,9 +214,9 @@ export class ControlMapMiniComponent implements OnInit {
     },
     {
       mode: 'box',
+      type: 'hydropower',
       local: 'horizontal',
       label: '松树岭',
-      type: 'hydropower',
       style: {
         top: '48%',
         left: '70%'
@@ -223,10 +224,10 @@ export class ControlMapMiniComponent implements OnInit {
     },
     {
       mode: 'box',
+      type: 'hydropower',
       local: 'horizontal',
       label: '龙背湾',
-      color: 'green',
-      type: 'reservoir',
+      action: true,
       style: {
         top: '58%',
         left: '70%'
@@ -234,9 +235,10 @@ export class ControlMapMiniComponent implements OnInit {
     },
     {
       mode: 'point',
+      type: 'hydrological',
       local: 'right',
       label: '老码头',
-      type: 'hydrological',
+      action: true,
       style: {
         top: '68%',
         left: '70%'
@@ -269,9 +271,9 @@ export class ControlMapMiniComponent implements OnInit {
     },
     {
       mode: 'box',
+      type: 'hydropower',
       local: 'vertical',
       label: '邱家榜',
-      type: 'hydropower',
       style: {
         top: '80%',
         left: '76%'
@@ -296,10 +298,10 @@ export class ControlMapMiniComponent implements OnInit {
     },
     {
       mode: 'box',
+      type: 'hydropower',
       local: 'horizontal',
       label: '霍河',
-      color: 'green',
-      type: 'reservoir',
+      action: true,
       style: {
         top: '58%',
         left: '85%'
@@ -315,10 +317,10 @@ export class ControlMapMiniComponent implements OnInit {
     },
     {
       mode: 'box',
+      type: 'hydropower',
       local: 'vertical',
       label: '潘口',
-      color: 'green',
-      type: 'reservoir',
+      action: true,
       style: {
         top: '40%',
         left: '75%'
@@ -326,9 +328,9 @@ export class ControlMapMiniComponent implements OnInit {
     },
     {
       mode: 'box',
+      type: 'hydropower',
       local: 'vertical',
       label: '小漩',
-      type: 'hydropower',
       style: {
         top: '40%',
         left: '81%'
@@ -336,9 +338,10 @@ export class ControlMapMiniComponent implements OnInit {
     },
     {
       mode: 'point',
+      type: 'hydrological',
       local: 'top',
       label: '新竹',
-      type: 'hydrological',
+      action: true,
       style: {
         top: '40%',
         left: '85%'
@@ -349,29 +352,30 @@ export class ControlMapMiniComponent implements OnInit {
       local: 'vertical',
       style: {
         top: '15%',
-        left: '96%',
+        left: '98%',
         height: '55%'
       }
     },
     {
       mode: 'box',
+      type: 'hydropower',
       local: 'vertical',
       label: '黄龙滩',
-      color: 'green',
-      type: 'reservoir',
+      action: true,
       style: {
         top: '40%',
-        left: '89%'
+        left: '90%'
       }
     },
     {
       mode: 'point',
+      type: 'hydrological',
       local: 'top',
       label: '黄龙滩',
-      type: 'hydrological',
+      action: true,
       style: {
         top: '40%',
-        left: '93%'
+        left: '94%'
       }
     },
     {
@@ -379,63 +383,35 @@ export class ControlMapMiniComponent implements OnInit {
       label: '汉水',
       style: {
         top: '65%',
-        left: '96%'
+        left: '98%'
       }
     }
   ];
 
-  @HostBinding('class')
-  get class() {
-    return 'group-map-mini';
-  }
 
   constructor(private modalService: NzModalService) {}
 
   ngOnInit() {}
 
   event(item) {
-    switch (item.type) {
-      case 'hydropower':
-        // this.dialogHydropower(item);
-        break;
-      // 控制性水库
-      case 'reservoir':
-        this.dialogReservoir(item);
-        break;
-      // 水文站
-      case 'hydrological':
-        this.dialogHydrological(item);
-        break;
+    console.log(item);
+    if (item.action) { // 如果可控
+      switch (item.type) {
+        // 水电站
+        case 'hydropower':
+          this.dialogHydropower(item);
+          break;
+        // 水文站
+        case 'hydrological':
+          this.dialogHydrological(item);
+          break;
 
-      default:
-        console.log(item);
-        break;
+        default:
+          break;
+      }
     }
   }
-  // 水电站
   dialogHydropower(item) {
-    const modal = this.modalService.create({
-      nzTitle: '水电站：' + item.label,
-      nzContent: DialogMapMiniHydropowerComponent,
-      nzComponentParams: {
-        // upload_path: this.upload_path
-      },
-      nzWidth: 420,
-      nzFooter: [{
-        label: '保存',
-        // disabled: (scope) => !scope.validateForm.valid,
-        onClick: (scope) => {
-          // const params = scope.validateForm.value;
-        }
-      }, {
-        label: '取消',
-        onClick: () => {
-          modal.close();
-        }
-      }]
-    });
-  }
-  dialogReservoir(item) {
     const modal = this.modalService.create({
       nzTitle: '控制性水库：' + item.label,
       nzContent: DialogMapMiniReservoirComponent,
@@ -443,40 +419,46 @@ export class ControlMapMiniComponent implements OnInit {
         // upload_path: this.upload_path
       },
       nzWidth: 420,
-      nzFooter: [{
-        label: '保存',
-        // disabled: (scope) => !scope.validateForm.valid,
-        onClick: (scope) => {
-          // const params = scope.validateForm.value;
+      nzFooter: [
+        {
+          label: '保存',
+          // disabled: (scope) => !scope.validateForm.valid,
+          onClick: scope => {
+            // const params = scope.validateForm.value;
+          }
+        },
+        {
+          label: '取消',
+          onClick: () => {
+            modal.close();
+          }
         }
-      }, {
-        label: '取消',
-        onClick: () => {
-          modal.close();
-        }
-      }]
+      ]
     });
   }
   dialogHydrological(item) {
     const modal = this.modalService.create({
-      nzTitle: '水文站：' + item.label,
+      nzTitle: '控制性水文站：' + item.label,
       nzContent: DialogMapMiniHydrologicalComponent,
       nzComponentParams: {
         // upload_path: this.upload_path
       },
       nzWidth: 420,
-      nzFooter: [{
-        label: '保存',
-        // disabled: (scope) => !scope.validateForm.valid,
-        onClick: (scope) => {
-          // const params = scope.validateForm.value;
+      nzFooter: [
+        {
+          label: '保存',
+          // disabled: (scope) => !scope.validateForm.valid,
+          onClick: scope => {
+            // const params = scope.validateForm.value;
+          }
+        },
+        {
+          label: '取消',
+          onClick: () => {
+            modal.close();
+          }
         }
-      }, {
-        label: '取消',
-        onClick: () => {
-          modal.close();
-        }
-      }]
+      ]
     });
   }
 }

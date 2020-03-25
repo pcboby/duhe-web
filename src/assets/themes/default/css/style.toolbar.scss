@@ -100,7 +100,7 @@
           background-color: rgba($color: #eeffdf, $alpha: 1);
 
           >span {
-            color: #9bf300;
+            color: #00ffff;
           }
         }
 
@@ -114,7 +114,7 @@
                 background-color: rgba($color: #eeffdf, $alpha: 1);
 
                 >span {
-                  color: #9bf300;
+                  color: #00ffff;
                 }
               }
             }
@@ -171,7 +171,7 @@
       }
 
       &:hover {
-        color: #13e800;
+        color: #00ffff;
 
         i {
           background-color: rgba($color: #4aa064, $alpha: .5);
@@ -201,7 +201,7 @@
         display: block;
 
         a {
-          color: #1eadff;
+          color: #fff;
 
           i {
             // background-color: rgba($color: #000, $alpha: .5);

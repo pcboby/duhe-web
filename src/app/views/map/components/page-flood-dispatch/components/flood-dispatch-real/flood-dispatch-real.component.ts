@@ -10,9 +10,7 @@ import { RealCalculationSaveComponent } from './components/real-calculation-save
   styleUrls: ['./flood-dispatch-real.component.css']
 })
 export class FloodDispatchRealComponent implements OnInit {
-  
   validateForm: FormGroup;
-
 
   constructor(private fb: FormBuilder, private modalService: NzModalService) {}
 
@@ -24,6 +22,7 @@ export class FloodDispatchRealComponent implements OnInit {
     });
   }
 
+  // 提交计算
   submitForm(value: any): void {
     for (const key in this.validateForm.controls) {
       this.validateForm.controls[key].markAsDirty();
@@ -34,15 +33,39 @@ export class FloodDispatchRealComponent implements OnInit {
       nzTitle: '计算结果',
       nzContent: RealCalculationResultsComponent,
       nzWidth: 920,
-      nzFooter: null
+      nzFooter: [{
+        label: '保存计算结果',
+        type: 'primary',
+        onClick: (scope) => {
+          // const params = scope.validateForm.value;
+          this.saveResult();
+        }
+      }, {
+        label: '取消',
+        onClick: () => {
+          m.close();
+        }
+      }]
     });
 
-    m.afterClose.subscribe((evt) => this.saveResult());
   }
+  // 保存计算结果
   saveResult(d?) {
     const m = this.modalService.create({
       nzTitle: '结果保存',
-      nzContent: RealCalculationSaveComponent
+      nzContent: RealCalculationSaveComponent,
+      nzFooter: [{
+        label: '保存',
+        type: 'primary',
+        onClick: (scope) => {
+          m.close();
+        }
+      }, {
+        label: '取消',
+        onClick: () => {
+          m.close();
+        }
+      }]
     });
   }
 

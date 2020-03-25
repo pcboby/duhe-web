@@ -479,103 +479,111 @@
 // ------------------------------------------------------------------------------------------------------------------------------
 
 .group-map-mini {
-  display: block;
-  background-color: white;
-  min-height: 320px;
-  min-width: 640px;
   position: relative;
   border: 1px solid #ddd;
+  background-color: white;
+  padding: 10px;
   margin: 5px auto;
-  .action {
-    cursor: pointer;
-    &.point:hover{
-      color: #019125;
-    }
-    &.box:hover{
-      border-color: #009e35;
-      color: #019125;
-    }
-    &.box.green:hover{
-      background-color: #00b62d;
-      border-color: #009e35;
-      color: #fff;
-    }
-  }
-  .line {
-    position: absolute;
-    background-color: black;
-    &.horizontal {
-      height: 2px;
-    }
-    &.vertical {
-      width: 2px;
-    }
-  }
-  .text {
-    position: absolute;
-    transform: translate(-50%, -50%);
-    background-color: white;
-    line-height: 1.315em;
-  }
-  .point {
-    position: absolute;
-    transform: translate(-50%, -50%);
-    i {
-      display: block;
-      background-color: #fff;
-      width: 16px;
-      height: 16px;
-      line-height: 16px;
-      text-align: center;
-      font-size: 16px;
-      font-family: 'FontAwesome';
-      font-style: normal;
-      &::after{
-        content: '\f192';
-      }
-    }
-    span {
+  .group-map-mini-container {
+    display: block;
+    position: relative;
+    min-height: 320px;
+    min-width: 640px;
+    //
+    .line {
       position: absolute;
+      background-color: black;
+      &.horizontal {
+        height: 2px;
+      }
+      &.vertical {
+        width: 2px;
+      }
+    }
+    //
+    .text {
+      position: absolute;
+      transform: translate(-50%, -50%);
+      background-color: white;
+      line-height: 1.315em;
       white-space: nowrap;
-      line-height: 1em;
     }
-    &.top {
-      span {
-        top: -1em;
-        transform: translate(-25%, -50%);
+    //
+    .point {
+      position: absolute;
+      transform: translate(-50%, -50%);
+      i {
+        display: block;
+        background-color: #fff;
+        width: 16px;
+        height: 16px;
+        line-height: 16px;
+        text-align: center;
+        font-size: 16px;
+        font-family: "FontAwesome";
+        font-style: normal;
+        &::after {
+          content: "\f192";
+        }
       }
-    }
-    &.right {
       span {
-        left: 1em;
-        transform: translate(0.5em, -100%);
+        position: absolute;
+        white-space: nowrap;
+        line-height: 1em;
       }
-    }
-  }
-  .box {
-    border: 1px solid #ddd;
-    position: absolute;
-    transform: translate(-50%, -50%);
-    background-color: white;
-    line-height: 1.135em;
-    border-radius: 3px;
-    &.horizontal {
-      min-width: 5em;
-      text-align: center;
-      padding: 0.315em 0.635em;
-    }
-    &.vertical {
-      writing-mode: tb-rl;
-      padding: 0.635em 0.315em;
-    }
-    &.green {
-      background-color: #019125;
-      border-color: #006422;
-      color: #fff;
-    }
-  }
+      &.top {
+        span {
+          top: -1em;
+          transform: translate(-25%, -50%);
+        }
+      }
+      &.right {
+        span {
+          left: 1em;
+          transform: translate(0.5em, -100%);
+        }
+      }
 
-  .legend {
+      &.action {
+        cursor: pointer;
+        color: #006422;
+        &:hover {
+          color: #019125;
+        }
+      }
+    }
+    //
+    .box {
+      border: 1px solid #ddd;
+      position: absolute;
+      transform: translate(-50%, -50%);
+      background-color: white;
+      line-height: 1.135em;
+      border-radius: 3px;
+      &.horizontal {
+        min-width: 5em;
+        text-align: center;
+        padding: 0.315em 0.635em;
+      }
+      &.vertical {
+        writing-mode: tb-rl;
+        padding: 0.635em 0.315em;
+      }
+
+      &.action {
+        cursor: pointer;
+        background-color: #019125;
+        border-color: #006422;
+        color: #fff;
+        &:hover {
+          background-color: #00b62d;
+          border-color: #009e35;
+          color: #fff;
+        }
+      }
+    }
+  }
+  .group-map-mini-legend {
     position: absolute;
     left: 10px;
     bottom: 10px;
@@ -596,26 +604,29 @@
         display: inline-block;
         width: 16px;
         height: 16px;
-        &.hydropower{
+        line-height: 16px;
+        text-align: center;
+        font-size: 16px;
+        vertical-align: middle;
+        &.box {
           border: 1px solid #ddd;
           background-color: #fff;
           border-radius: 3px;
+          &.action {
+            border: 1px solid #006422;
+            background-color: #019125;
+            border-radius: 3px;
+          }
         }
-        &.reservoir{
-          border: 1px solid #006422;
-          background-color: #019125;
-          border-radius: 3px;
-        }
-        &.hydrological{
-          width: 16px;
-          height: 16px;
-          line-height: 16px;
-          text-align: center;
-          font-size: 16px;
-          font-family: 'FontAwesome';
+
+        &.point {
+          font-family: "FontAwesome";
           font-style: normal;
-          &::after{
-            content: '\f192';
+          &::before {
+            content: "\f192";
+          }
+          &.action {
+            color: #019125;
           }
         }
       }
