@@ -88,9 +88,10 @@
     .ant-slider {
       .ant-slider-mark-text {
         color: rgba($color: #fff, $alpha: 0.75);
+        transform: translate3d(-50%, 0px, 0px) scale(.85) !important;
 
         &.ant-slider-mark-active {
-          // color: #0ff;
+          color: #0ff;
         }
       }
     }
