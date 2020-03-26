@@ -162,7 +162,9 @@ import {
   RealCalculationResultsChartComponent,
   RealCalculationResultsGridComponent,
   RealCalculationResultsTreeComponent,
-  RealCalculationResultsDashComponent
+  RealCalculationResultsDashComponent,
+  FloodDispatchDataFormComponent,
+  FloodDispatchDataGridComponent
 } from './components';
 
 const components = [
@@ -211,7 +213,11 @@ const components = [
   RealCalculationResultsGridComponent,
   RealCalculationResultsTreeComponent,
   RealCalculationSaveComponent,
+
   FloodDispatchDataComponent,
+  FloodDispatchDataFormComponent,
+  FloodDispatchDataGridComponent,
+
   FloodDispatchContrastComponent,
   // //
   // PageAutomaticPredictionConfigurationComponent,

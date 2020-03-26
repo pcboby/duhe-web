@@ -66,13 +66,16 @@ export * from './page-hydrological-forecast/page-hydrological-forecast.component
 export * from './page-flood-dispatch/page-flood-dispatch.component';
 export * from './page-flood-dispatch/components/flood-dispatch-real/flood-dispatch-real.component';
 export * from './page-flood-dispatch/components/flood-dispatch-real/components/real-calculation-results/real-calculation-results.component';
-export * from './page-flood-dispatch/components/flood-dispatch-real/components/real-calculation-results/components/real-calculation-results-dash/real-calculation-results-dash.component';
-export * from './page-flood-dispatch/components/flood-dispatch-real/components/real-calculation-results/components/real-calculation-results-chart/real-calculation-results-chart.component';
-export * from './page-flood-dispatch/components/flood-dispatch-real/components/real-calculation-results/components/real-calculation-results-grid/real-calculation-results-grid.component';
-export * from './page-flood-dispatch/components/flood-dispatch-real/components/real-calculation-results/components/real-calculation-results-tree/real-calculation-results-tree.component';
+export * from './page-flood-dispatch/potals/real-calculation-results-dash/real-calculation-results-dash.component';
+export * from './page-flood-dispatch/potals/real-calculation-results-chart/real-calculation-results-chart.component';
+export * from './page-flood-dispatch/potals/real-calculation-results-grid/real-calculation-results-grid.component';
+export * from './page-flood-dispatch/potals/real-calculation-results-tree/real-calculation-results-tree.component';
 export * from './page-flood-dispatch/components/flood-dispatch-real/components/real-calculation-save/real-calculation-save.component';
 
 export * from './page-flood-dispatch/components/flood-dispatch-data/flood-dispatch-data.component';
+export * from './page-flood-dispatch/components/flood-dispatch-data/components/flood-dispatch-data-form/flood-dispatch-data-form.component';
+export * from './page-flood-dispatch/components/flood-dispatch-data/components/flood-dispatch-data-grid/flood-dispatch-data-grid.component';
+
 export * from './page-flood-dispatch/components/flood-dispatch-contrast/flood-dispatch-contrast.component';
 // export * from './page-joint-dispatch/page-joint-dispatch.component';
 // export * from './page-joint-dispatch/components/page-joint-dispatch-setting/page-joint-dispatch-setting.component';
