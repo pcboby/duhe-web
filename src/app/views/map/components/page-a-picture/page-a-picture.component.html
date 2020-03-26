@@ -1,7 +1,11 @@
-<app-fix-panel [isLock]="true" style="top: 86px; left: 16px;" [isFixed]="true">
+<!-- <app-fix-panel [isLock]="true" style="top: 86px; left: 16px;" [isFixed]="true">
   <app-control-search [(ngModel)]="keyword"></app-control-search>
 </app-fix-panel>
 
 <app-fix-panel *ngIf="keyword" [isLock]="true" style="top: 142px; left: 24px;" [isFixed]="true" [mode]="'BLUE'">
   <app-detail-search [keyword]="keyword" (onItemClick)="showItem($event)"></app-detail-search>
+</app-fix-panel> -->
+
+<app-fix-panel [isLock]="true" style="top: 86px; left: 16px; width: 340px;" [isFixed]="true">
+  <app-control-search2 [(ngModel)]="keyword" (onItemClick)="onEvent($event)"></app-control-search2>
 </app-fix-panel>

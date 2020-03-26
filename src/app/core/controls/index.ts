@@ -4,6 +4,7 @@ export * from './control-player2/control-player2.component';
 export * from './control-tool-tab/control-tool-tab.component';
 
 export * from './control-search/control-search.component';
+export * from './control-search2/control-search2.component';
 
 export * from './select-satellite-map/select-satellite-map.component';
 export * from './select-topographic-map/select-topographic-map.component';

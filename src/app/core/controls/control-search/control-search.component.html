@@ -1,6 +1,13 @@
-<nz-input-group [nzPrefix]="prefixTemplateUser">
+<!-- <nz-input-group [nzPrefix]="prefixTemplateUser">
   <input type="text" nz-input [placeholder]="" [(ngModel)]="model"/>
 </nz-input-group>
 <ng-template #prefixTemplateUser>
   <i nz-icon nzType="search"></i>
+</ng-template> -->
+
+<nz-input-group nzSearch [nzAddOnAfter]="suffixIconButton">
+  <input type="text" (focus)="a()" [(ngModel)]="model" nz-input placeholder="input search text" />
+</nz-input-group>
+<ng-template #suffixIconButton>
+  <button nz-button nzType="primary" nzSearch><i nz-icon nzType="search"></i></button>
 </ng-template>

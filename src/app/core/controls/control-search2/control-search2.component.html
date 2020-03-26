@@ -1,0 +1,62 @@
+<div class="group-search2">
+  <nz-input-group nzSearch [nzAddOnAfter]="suffixIconButton">
+    <input type="text" (focus)="setFocus(true)" (blur)="setFocus(false)" [(ngModel)]="model" nz-input [placeholder]="placeholder" />
+  </nz-input-group>
+  <ng-template #suffixIconButton>
+    <button nz-button nzType="primary" nzSearch (click)="search()"><i nz-icon nzType="search"></i></button>
+  </ng-template>
+
+  <div class="group-search2-dialog" *ngIf="isFocus && !model">
+    <div class="group-search2-links">
+      <ul>
+        <li>
+          <a (click)="search($event)">
+            <i class="untitled untitled-007B" style="background-color: #e39461;"></i>
+            <span>河流</span>
+          </a> 
+        </li>
+        <li>
+          <a (click)="search($event)">
+            <i class="untitled untitled-007C" style="background-color: #a9c067;"></i>
+            <span>水库</span>
+          </a> 
+        </li>
+        <li>
+          <a (click)="search($event)">
+            <i class="untitled untitled-007D" style="background-color: #5ea5d7;"></i>
+            <span>测站</span>
+          </a> 
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="group-search2-dialog" *ngIf="dataset">
+    <a class="group-search2-close" (click)="clear()"><i nz-icon nzType="close" nzTheme="outline"></i></a>
+    <div class="group-search2-title">共搜索出999条记录</div>
+    <div class="group-search2-list">
+      <ul>
+        <li *ngFor="let item of dataset">
+          <a class="group-search2-list-item" (click)="itemClick(item)">
+            <i nz-icon nzType="environment" nzTheme="outline"></i>
+            <h4>黄龙滩</h4>
+            <p>
+              鄂:十堰市
+              <span style="float: right;">河流</span>
+            </p>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <nz-pagination
+    [(nzPageIndex)]="pageIndex"
+    [nzTotal]="50"
+    [nzSize]="'small'"
+    class="group-search2-pagination"
+  ></nz-pagination>
+  </div>
+
+  <!-- <div class="group-search2-dialog" *ngIf="!dataset && model">
+    <nz-empty></nz-empty>
+  </div> -->
+</div>

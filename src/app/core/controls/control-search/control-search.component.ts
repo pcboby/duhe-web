@@ -46,4 +46,9 @@ export class ControlSearchComponent implements OnInit, OnDestroy {
 
   ngOnDestroy() {
   }
+
+  a() {
+    console.log('onfocus');
+    
+  }
 }

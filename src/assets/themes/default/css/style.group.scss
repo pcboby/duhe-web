@@ -46,6 +46,156 @@
   }
 }
 
+.group-search2 {
+  display: block;
+  position: relative;
+  min-width: 168px;
+  width: 100%;
+  .ant-input {
+    background-color: rgba($color: #000, $alpha: 0.3);
+    border-color: rgba($color: #fff, $alpha: 0.3);
+    color: #fff;
+    &:focus {
+      border-color: #0ff;
+    }
+  }
+  .ant-input-group-addon {
+    background-color: transparent;
+  }
+  .ant-btn-primary {
+    border-color: rgba($color: #fff, $alpha: 0.3);
+    background: linear-gradient(
+      to bottom,
+      rgba(49, 161, 203, 0.75),
+      rgba(0, 0, 0, 0.75)
+    );
+  }
+
+  .group-search2-dialog {
+    position: absolute;
+    top: 100%;
+    margin-top: 10px;
+    background-color: #fff;
+    color: #000;
+    padding: 0;
+    min-width: 280px;
+    box-shadow: 0 0 5px rgba($color: #000, $alpha: 0.5);
+  }
+  .group-search2-close {
+    position: absolute;
+    top: 7px;
+    right: 12px;
+    font-size: 14px;
+    color: #999;
+    &:hover{
+      color: #000;
+    }
+  }
+  .group-search2-title {
+    margin: 0;
+    line-height: 36px;
+    background-color: #d9e8ff;
+    padding: 0 10px;
+  }
+  .group-search2-links{
+    padding: 10px;
+    ul{
+      list-style: none;
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+      li{
+        list-style: none;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: inline-block;
+        a{
+          display: block;
+          line-height: 24px;
+          color: #999;
+          padding: 5px 10px;
+          i{
+            display: inline-block;
+            width: 24px;
+            height: 24px;
+            line-height: 24px;
+            font-size: 18px;
+            text-align: center;
+            background-color: gray;
+            color: #fff;
+            vertical-align: middle;
+            border-radius: 100% 100%;
+            margin-right: 5px;
+          }
+          span{}
+
+          &:hover{
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+  .group-search2-list {
+    line-height: 2em;
+    ul {
+      display: block;
+      list-style: none;
+      list-style-type: none;
+      margin: 0;
+      padding: 10px;
+
+      li {
+        display: block;
+        list-style: none;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        &:nth-child(even) {
+          background-color: #f5f5f5;
+        }
+        &:hover {
+          background-color: #d9e8ff;
+        }
+      }
+    }
+    .group-search2-list-item {
+      display: block;
+      position: relative;
+      padding: 4px 8px 8px 32px;
+      color: #595959;
+      i {
+        position: absolute;
+        font-size: 18px;
+        left: 8px;
+        top: 12px;
+        color: #0091ff;
+      }
+      h4 {
+        margin: 0;
+        line-height: 32px;
+        color: #0091ff;
+        font-size: 14px;
+        font-weight: normal;
+      }
+      p {
+        margin: 0;
+        line-height: 1.875em;
+      }
+      &:hover{
+        cursor: pointer;
+      }
+    }
+  }
+  .group-search2-pagination{
+    display: block;
+    text-align: right;
+    padding: 0 10px 10px 10px;
+  }
+}
+
 //
 
 .group-prediction {
@@ -221,53 +371,53 @@
 
 .group-weather2 {
   line-height: 24px;
-  .group-weather2-b{
+  .group-weather2-b {
     margin: 0 5px;
-    border:1px solid #d9e8ff;
+    border: 1px solid #d9e8ff;
     border-radius: 4px;
     padding: 5px;
-    &:first-child{
+    &:first-child {
       margin-left: 0;
     }
-    &:last-child{
+    &:last-child {
       margin-right: 0;
     }
-    
-    &.block{
+
+    &.block {
       background-color: #d9e8ff;
     }
 
-    p{
+    p {
       margin: 0;
       padding: 0;
-      i{
+      i {
         display: inline-block;
         width: 16px;
         height: 16px;
+        line-height: 16px;
         text-align: center;
-        margin-right: 10px;
+        margin-right: 5px;
         vertical-align: middle;
         font-size: 16px;
       }
     }
 
-    .group-weather2-b-n{
+    .group-weather2-b-n {
       font-size: 24px;
       text-align: center;
       line-height: 48px;
       font-weight: bold;
     }
   }
-  .group-weather2-m{
+  .group-weather2-m {
     font-size: 14px;
     color: #8cbaff;
-    padding-top: .5em;
+    padding-top: 0.5em;
   }
-  .group-weather2-n{
+  .group-weather2-n {
     font-size: 12px;
     color: #bbb;
   }
-
 }
 
 .group-cameera {
