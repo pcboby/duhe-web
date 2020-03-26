@@ -29,6 +29,7 @@ export * from './camera/camera.component';
 export * from './video/video.component';
 //
 export * from './weather/weather.component';
+export * from './weather2/weather2.component';
 
 export * from './limit/limit.component';
 

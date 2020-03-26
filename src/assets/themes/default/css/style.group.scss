@@ -219,6 +219,57 @@
   }
 }
 
+.group-weather2 {
+  line-height: 24px;
+  .group-weather2-b{
+    margin: 0 5px;
+    border:1px solid #d9e8ff;
+    border-radius: 4px;
+    padding: 5px;
+    &:first-child{
+      margin-left: 0;
+    }
+    &:last-child{
+      margin-right: 0;
+    }
+    
+    &.block{
+      background-color: #d9e8ff;
+    }
+
+    p{
+      margin: 0;
+      padding: 0;
+      i{
+        display: inline-block;
+        width: 16px;
+        height: 16px;
+        text-align: center;
+        margin-right: 10px;
+        vertical-align: middle;
+        font-size: 16px;
+      }
+    }
+
+    .group-weather2-b-n{
+      font-size: 24px;
+      text-align: center;
+      line-height: 48px;
+      font-weight: bold;
+    }
+  }
+  .group-weather2-m{
+    font-size: 14px;
+    color: #8cbaff;
+    padding-top: .5em;
+  }
+  .group-weather2-n{
+    font-size: 12px;
+    color: #bbb;
+  }
+
+}
+
 .group-cameera {
   ul {
     margin: 0;

@@ -51,3 +51,8 @@
 <app-fix-panel [isLock]="true" style="bottom: 48px; left: 240px; right: 240px;">
   <app-control-player2></app-control-player2>
 </app-fix-panel>
+
+<!-- 天气预报 -->
+<app-fix-panel [title]="data_weather.name" mode="BLUE" style="top:275px; left: 26px;" [isFixed]="true">
+  <app-weather2></app-weather2>
+</app-fix-panel>

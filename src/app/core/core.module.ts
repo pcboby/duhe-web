@@ -95,7 +95,8 @@ import {
   BannerComponent,
   Layout2Component,
   Header2Component,
-  LegendComponent
+  LegendComponent,
+  Weather2Component
 } from './components';
 import {
   ArkwebModule
@@ -187,6 +188,7 @@ const components = [
   PanelComponent,
   FixPanelComponent,
   WeatherComponent,
+  Weather2Component,
   LimitComponent,
   EchartsComponent,
   CameraComponent,
