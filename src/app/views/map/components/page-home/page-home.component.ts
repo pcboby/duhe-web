@@ -28,16 +28,16 @@ export class PageHomeComponent implements OnInit {
   // 
   data_legend=[{
     label: '河道',
-    src: 'assets/download/icon-0001.png'
+    src: 'assets/download/icon-0002.png'
   }, {
     label: '水库',
     src: 'assets/download/icon-0001.png'
   }, {
     label: '超警超汛',
-    src: 'assets/download/icon-0001.png'
+    src: 'assets/download/icon-0003.png'
   }, {
     label: '超保证',
-    src: 'assets/download/icon-0001.png'
+    src: 'assets/download/icon-0004.png'
   }];
 
   // 
