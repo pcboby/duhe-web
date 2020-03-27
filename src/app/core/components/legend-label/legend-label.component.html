@@ -1,0 +1,10 @@
+<div class="group-legend-label">
+  <ul>
+    <li *ngFor="let item of dataset">
+      <a>
+        <i [ngStyle]="item.style"></i>
+        <span>{{item.label}}</span>
+      </a>
+    </li>
+  </ul>
+</div>

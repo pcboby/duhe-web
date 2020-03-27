@@ -39,6 +39,7 @@ export * from './swiper/swiper.component';
 export * from './switch-year/switch-year.component';
 
 export * from './legend/legend.component';
+export * from './legend-label/legend-label.component';
 
 //
 export * from './list-item/list-item.component';

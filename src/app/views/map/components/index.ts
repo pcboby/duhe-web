@@ -77,6 +77,8 @@ export * from './page-flood-dispatch/components/flood-dispatch-data/components/f
 export * from './page-flood-dispatch/components/flood-dispatch-data/components/flood-dispatch-data-grid/flood-dispatch-data-grid.component';
 
 export * from './page-flood-dispatch/components/flood-dispatch-contrast/flood-dispatch-contrast.component';
+export * from './page-flood-dispatch/components/flood-dispatch-contrast/components/flood-dispatch-contrast-form/flood-dispatch-contrast-form.component';
+export * from './page-flood-dispatch/components/flood-dispatch-contrast/components/flood-dispatch-contrast-grid/flood-dispatch-contrast-grid.component';
 // export * from './page-joint-dispatch/page-joint-dispatch.component';
 // export * from './page-joint-dispatch/components/page-joint-dispatch-setting/page-joint-dispatch-setting.component';
 // export * from './page-joint-dispatch/components/page-joint-dispatch-setting/components/page-joint-dispatch-setting-form/page-joint-dispatch-setting-form.component';

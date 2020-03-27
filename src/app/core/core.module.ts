@@ -96,7 +96,8 @@ import {
   Layout2Component,
   Header2Component,
   LegendComponent,
-  Weather2Component
+  Weather2Component,
+  LegendLabelComponent
 } from './components';
 import {
   ArkwebModule
@@ -170,6 +171,7 @@ const components = [
   BannerComponent,
 
   LegendComponent,
+  LegendLabelComponent,
   
   LoginComponent,
   ErrorComponent,

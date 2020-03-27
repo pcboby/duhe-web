@@ -679,6 +679,35 @@
 }
 // ------------------------------------------------------------------------------------------------------------------------------
 
+.group-legend-label{
+  line-height: 2em;
+  ul{
+    list-style-type: none;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    li{
+      list-style-type: none;
+      list-style: none;
+      margin: 0;
+      padding: 4px 8px;
+      display: inline-block;
+      a{
+        color: inherit;
+        i{
+          display: inline-block;
+          font-family: 'FontAwesome';
+          font-style: normal;
+          margin-right: 4px;
+          &::before{
+            content: '\f111';
+          }
+        }
+        span{}
+      }
+    }
+  }
+}
 .group-map-mini {
   position: relative;
   border: 1px solid #ddd;

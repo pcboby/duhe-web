@@ -164,7 +164,9 @@ import {
   RealCalculationResultsTreeComponent,
   RealCalculationResultsDashComponent,
   FloodDispatchDataFormComponent,
-  FloodDispatchDataGridComponent
+  FloodDispatchDataGridComponent,
+  FloodDispatchContrastFormComponent,
+  FloodDispatchContrastGridComponent,
 } from './components';
 
 const components = [
@@ -219,6 +221,8 @@ const components = [
   FloodDispatchDataGridComponent,
 
   FloodDispatchContrastComponent,
+  FloodDispatchContrastFormComponent,
+  FloodDispatchContrastGridComponent,
   // //
   // PageAutomaticPredictionConfigurationComponent,
   // PageForecastResultManagementComponent,

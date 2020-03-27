@@ -60,7 +60,7 @@ export class ControlSearch2Component implements OnInit {
     } else {
       setTimeout(() => {
         this.isFocus = b;
-      }, 100);
+      }, 300);
     }
   }
 
@@ -74,7 +74,7 @@ export class ControlSearch2Component implements OnInit {
 
   clear() {
     this.dataset = null;
-    this.model = null;
+    // this.model = null;
   }
 
   itemClick(d) {

@@ -6,10 +6,28 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./flood-dispatch-contrast.component.css']
 })
 export class FloodDispatchContrastComponent implements OnInit {
+  data_labels = [
+    {
+      label: '方案一',
+      style: {
+        color: 'red'
+      }
+    },
+    {
+      label: '方案二',
+      style: {
+        color: 'red'
+      }
+    },
+    {
+      label: '方案三',
+      style: {
+        color: 'red'
+      }
+    }
+  ];
 
-  constructor() { }
+  constructor() {}
 
-  ngOnInit() {
-  }
-
+  ngOnInit() {}
 }
