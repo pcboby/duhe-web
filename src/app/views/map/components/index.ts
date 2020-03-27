@@ -49,6 +49,8 @@ export * from './page-hydrological-forecast/components/hydrological-forecast-con
 export * from './page-hydrological-forecast/components/hydrological-forecast-config/components/hydrological-forecast-config-grid/hydrological-forecast-config-grid.component';
 
 export * from './page-hydrological-forecast/components/hydrological-forecast-data/hydrological-forecast-data.component';
+export * from './page-hydrological-forecast/components/hydrological-forecast-data/components/hydrological-forecast-data-form/hydrological-forecast-data-form.component';
+export * from './page-hydrological-forecast/components/hydrological-forecast-data/components/hydrological-forecast-data-grid/hydrological-forecast-data-grid.component';
 
 export * from './page-hydrological-forecast/components/hydrological-forecast-swiper/hydrological-forecast-swiper.component';
 

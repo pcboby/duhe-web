@@ -173,6 +173,8 @@ import {
   HydrologicalForecastWorkComponent,
   HydrologicalForecastConfigFormComponent,
   HydrologicalForecastConfigGridComponent,
+  HydrologicalForecastDataFormComponent,
+  HydrologicalForecastDataGridComponent,
 } from './components';
 
 const components = [
@@ -212,10 +214,15 @@ const components = [
   ReservoirDetailComponent,
   // 
   PageHydrologicalForecastComponent,
+
   HydrologicalForecastConfigComponent,
   HydrologicalForecastConfigFormComponent,
   HydrologicalForecastConfigGridComponent,
+  
   HydrologicalForecastDataComponent,
+  HydrologicalForecastDataFormComponent,
+  HydrologicalForecastDataGridComponent,
+
   HydrologicalForecastSwiperComponent,
   HydrologicalForecastWorkComponent,
   // 
