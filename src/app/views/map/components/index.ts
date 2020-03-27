@@ -43,6 +43,17 @@ export * from './page-a-picture/components/river-detail/river-detail.component';
 
 // 水文预报
 export * from './page-hydrological-forecast/page-hydrological-forecast.component';
+
+export * from './page-hydrological-forecast/components/hydrological-forecast-config/hydrological-forecast-config.component';
+export * from './page-hydrological-forecast/components/hydrological-forecast-config/components/hydrological-forecast-config-form/hydrological-forecast-config-form.component';
+export * from './page-hydrological-forecast/components/hydrological-forecast-config/components/hydrological-forecast-config-grid/hydrological-forecast-config-grid.component';
+
+export * from './page-hydrological-forecast/components/hydrological-forecast-data/hydrological-forecast-data.component';
+
+export * from './page-hydrological-forecast/components/hydrological-forecast-swiper/hydrological-forecast-swiper.component';
+
+export * from './page-hydrological-forecast/components/hydrological-forecast-work/hydrological-forecast-work.component';
+
 // export * from './page-automatic-prediction-configuration/page-automatic-prediction-configuration.component';
 // export * from './page-forecast-result-management/page-forecast-result-management.component';
 // export * from './page-forecast-result-management/components/page-forecast-result-management-search/page-forecast-result-management-search.component';

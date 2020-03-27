@@ -1,5 +1,29 @@
 
 <app-fix-panel [isLock]="true" style="top:86px; left: 16px;"
   [isFixed]="true">
-  <app-toolbar2 [dataset]="dataset" (onItemClick)="itemClick($event)"></app-toolbar2>
+  <app-toolbar2 [dataset]="dataset" (onItemClick)="viewer = $event.label"></app-toolbar2>
 </app-fix-panel>
+
+
+<ng-container [ngSwitch]="viewer">
+  <ng-container *ngSwitchCase="'实时滚动预报'">
+    <app-fix-panel mode="BLUE" [title]="'实时滚动预报'" [isFixed]="true" (onClose)="viewer = null" style="top: 50%; left: 50%; transform: translate(-50%,-50%); width: 800px;">
+      <app-hydrological-forecast-swiper></app-hydrological-forecast-swiper>
+    </app-fix-panel>
+  </ng-container>
+  <ng-container *ngSwitchCase="'实时作业预报'">
+    <app-fix-panel mode="BLUE" [title]="'实时作业预报'" [isFixed]="true" (onClose)="viewer = null" style="top: 50%; left: 50%; transform: translate(-50%,-50%); width: 1000px;">
+      <app-hydrological-forecast-work></app-hydrological-forecast-work>
+    </app-fix-panel>
+  </ng-container>
+  <ng-container *ngSwitchCase="'预报成果管理'">
+    <app-fix-panel mode="BLUE" [title]="'预报成果管理'" [isFixed]="true" [isScroll]="true" (onClose)="viewer = null" style="top: 50%; left: 50%; transform: translate(-50%,-50%); width: 1000px; max-height: 720px;">
+      <app-hydrological-forecast-data></app-hydrological-forecast-data>
+    </app-fix-panel>
+  </ng-container>
+  <ng-container *ngSwitchCase="'模型参数管理'">
+    <app-fix-panel mode="BLUE" [title]="'模型参数管理'" [isFixed]="true" (onClose)="viewer = null" style="top: 50%; left: 50%; transform: translate(-50%,-50%); width: 1000px;">
+      <app-hydrological-forecast-config></app-hydrological-forecast-config>
+    </app-fix-panel>
+  </ng-container>
+</ng-container>

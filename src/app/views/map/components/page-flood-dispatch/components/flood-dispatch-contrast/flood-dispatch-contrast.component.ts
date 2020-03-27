@@ -10,19 +10,19 @@ export class FloodDispatchContrastComponent implements OnInit {
     {
       label: '方案一',
       style: {
-        color: 'red'
+        color: '#62c3fa'
       }
     },
     {
       label: '方案二',
       style: {
-        color: 'red'
+        color: '#87d03f'
       }
     },
     {
       label: '方案三',
       style: {
-        color: 'red'
+        color: '#edf73f'
       }
     }
   ];

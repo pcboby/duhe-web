@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PageHydrologicalForecastComponent implements OnInit {
 
+  viewer = null;
+
   dataset = [{
     label: '实时滚动预报',
     iconCls: 'untitled untitled-3-1'
@@ -26,8 +28,5 @@ export class PageHydrologicalForecastComponent implements OnInit {
   ngOnInit() {
   }
 
-  itemClick(event) {
-    console.log(event);
-  }
 
 }

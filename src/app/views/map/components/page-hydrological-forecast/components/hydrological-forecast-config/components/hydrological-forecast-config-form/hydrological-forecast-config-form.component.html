@@ -1,0 +1,26 @@
+<form nz-form [nzLayout]="'inline'" [formGroup]="validateForm">
+  <nz-form-item>
+    <nz-form-label>时间选择</nz-form-label>
+    <nz-form-control>
+      <app-input-group></app-input-group>
+    </nz-form-control>
+  </nz-form-item>
+  <nz-form-item>
+    <nz-form-label>模型选择</nz-form-label>
+    <nz-form-control>
+      <app-input-group></app-input-group>
+    </nz-form-control>
+  </nz-form-item>
+  <nz-form-item>
+    <nz-form-label>断面选择</nz-form-label>
+    <nz-form-control>
+      <nz-date-picker></nz-date-picker>
+    </nz-form-control>
+  </nz-form-item>
+  <nz-form-item>
+    <nz-form-control>
+      <button nz-button nzType="primary">查询</button>
+      <button nz-button>重置</button>
+    </nz-form-control>
+  </nz-form-item>
+</form>
