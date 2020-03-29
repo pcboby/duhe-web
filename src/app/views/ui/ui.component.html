@@ -1,0 +1,53 @@
+<nz-row style="padding: 10px;">
+  <nz-col nzSpan="16" style="padding-right: 10px;">
+    <!--  -->
+    <div class="group-box" style="background-color: #fff;">
+      <form nz-form [formGroup]="validateForm">
+        <h3>常规组件：</h3>
+        <nz-form-item>
+          <nz-form-label [nzSm]="4" [nzXs]="24" nzRequired nzFor="type">字符（text）</nz-form-label>
+          <nz-form-control [nzSm]="20" [nzXs]="24">
+            <app-input-group formControlName="text"></app-input-group>
+          </nz-form-control>
+        </nz-form-item>
+        <h3>业务组件：</h3>
+        <nz-form-item>
+          <nz-form-label [nzSm]="4" [nzXs]="24" nzRequired nzFor="type">类型（type）</nz-form-label>
+          <nz-form-control [nzSm]="20" [nzXs]="24">
+            <app-select-type formControlName="type"></app-select-type>
+          </nz-form-control>
+        </nz-form-item>
+        <nz-form-item>
+          <nz-form-label [nzSm]="4" [nzXs]="24" nzRequired nzFor="basin">流域范围（basin）</nz-form-label>
+          <nz-form-control [nzSm]="20" [nzXs]="24">
+            <app-select-basin formControlName="basin"></app-select-basin>
+          </nz-form-control>
+        </nz-form-item>
+        <nz-form-item>
+          <nz-form-label [nzSm]="4" [nzXs]="24" nzRequired nzFor="unit">管辖单位（unit）</nz-form-label>
+          <nz-form-control [nzSm]="20" [nzXs]="24">
+            <app-select-unit formControlName="unit"></app-select-unit>
+          </nz-form-control>
+        </nz-form-item>
+        <nz-form-item>
+          <nz-form-label [nzSm]="4" [nzXs]="24" nzRequired nzFor="step">时段步长（step）</nz-form-label>
+          <nz-form-control [nzSm]="20" [nzXs]="24">
+            <app-select-step formControlName="step"></app-select-step>
+          </nz-form-control>
+        </nz-form-item>
+        <nz-form-item>
+          <nz-form-label [nzSm]="4" [nzXs]="24" nzRequired nzFor="step">播放器（frameIdx）</nz-form-label>
+          <nz-form-control [nzSm]="20" [nzXs]="24">
+            <app-control-player2 formControlName="step"></app-control-player2>
+          </nz-form-control>
+        </nz-form-item>
+      </form>
+    </div>
+    <!--  -->
+  </nz-col>
+  <nz-col nzSpan="8">
+    <div class="group-box" style="background-color: #fff;">
+      {{ validateForm.value | json }}
+    </div>
+  </nz-col>
+</nz-row>

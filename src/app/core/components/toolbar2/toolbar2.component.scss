@@ -43,7 +43,7 @@
           padding: 4px 12px 4px 4px;
         }
       }
-      &:hover {
+      &:hover, &.selected {
         a {
           // background-color: rgba($color: #1890ff, $alpha: .75);
           border-color: rgba($color: #00ffff, $alpha: 0.3);

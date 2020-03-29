@@ -1,58 +1,63 @@
-<!--  -->
-<!-- <app-fix-panel [isLock]="true" style="bottom: 10px; left: 10px;" [isFixed]="false">
-  <app-button-dropmenu [(ngModel)]="dropList" [ngPlacement]="'topLeft'" [ngType]="'link'">
-    <i nz-icon nzType="setting" nzTheme="outline" style="font-size: 22px;"></i>
-  </app-button-dropmenu>
-</app-fix-panel> -->
-<!--  -->
-<!-- <app-fix-panel *ngIf="plot_weather_isShow" style="top: 10px; left: 10px; width: 420px;" [isFixed]="false">
-  <app-panel title="气象信息" mode="BLUE">
-    <app-plot-real-weather></app-plot-real-weather>
-  </app-panel>
-</app-fix-panel>
-
-<app-fix-panel *ngIf="plot_river_isShow" style="top:382px; left: 424px; width:720px;"
-  [isFixed]="false">
-  <app-panel title="水库水情" mode="BLUE">
-    <app-plot-real-water></app-plot-real-water>
-  </app-panel>
-</app-fix-panel>
-
-<app-fix-panel *ngIf="plot_reservoir_isShow" style="top:382px; left: 10px; width:420px;"
-  [isFixed]="false">
-  <app-panel title="河道水情" mode="BLUE">
-    <app-plot-real-river></app-plot-real-river>
-  </app-panel>
-</app-fix-panel>
-
-<app-fix-panel [isLock]="true" style="top:300px; right: 0;"
-  [isFixed]="false">
-  <app-panel mode="BLUE">
-    <app-plot-control></app-plot-control>
-  </app-panel>
-</app-fix-panel> -->
-
 <!-- 左侧工具拦 -->
-<app-fix-panel [isLock]="true" style="top:86px; left: 16px;"
-  [isFixed]="true">
-  <app-toolbar2 [dataset]="data_toolbar" (onItemClick)="viewer = $event.label"></app-toolbar2>
+<app-fix-panel [isLock]="true" style="top:86px; left: 16px;" [isFixed]="true">
+  <app-toolbar2
+    [dataset]="data_toolbar"
+    [selected]="viewer"
+    (onItemClick)="viewer = viewer === $event.label ? null : $event.label"
+  ></app-toolbar2>
 </app-fix-panel>
 
-<!-- 左侧图例 -->
-<app-fix-panel [isLock]="true" style="left: 16px; bottom: 46px;">
-  <app-legend [title]="'图例'" [dataset]="data_legend"></app-legend>
-</app-fix-panel>
-<!-- 右侧图例 -->
-<app-fix-panel [isLock]="true" style="right: 20px; top: 332px;">
-  <app-legend [title]="'降雨量'" [dataset]="data_legend2"></app-legend>
-</app-fix-panel>
+<ng-container [ngSwitch]="viewer">
+  <!-- ------------------------------------------- -->
+  <ng-container *ngSwitchCase="'降雨预报'">
+    <!-- 左侧图例 -->
+    <app-fix-panel [isLock]="true" style="left: 16px; bottom: 46px;">
+      <app-legend [title]="'图例'" [dataset]="data_legend"></app-legend>
+    </app-fix-panel>
+    <!-- 右侧图例 -->
+    <app-fix-panel [isLock]="true" style="right: 20px; top: 332px;">
+      <app-legend [title]="'降雨量'" [dataset]="data_legend2"></app-legend>
+    </app-fix-panel>
+    <!-- 底部播放栏 -->
+    <app-fix-panel [isLock]="true" style="bottom: 48px; left: 240px; right: 240px;">
+      <app-control-player2></app-control-player2>
+    </app-fix-panel>
+    <!-- 天气预报 -->
+    <app-fix-panel
+      [title]="data_weather.name" mode="BLUE" style="top:275px; left: 26px;" [isFixed]="true">
+      <app-weather2></app-weather2>
+    </app-fix-panel>
+  </ng-container>
+  <!-- ------------------------------------------- -->
+  <ng-container *ngSwitchCase="'降雨实况'">
+    <!-- 左侧图例 -->
+    <app-fix-panel [isLock]="true" style="left: 16px; bottom: 46px;">
+      <app-legend [title]="'图例'" [dataset]="data_legend"></app-legend>
+    </app-fix-panel>
+    <!-- 右侧图例 -->
+    <app-fix-panel [isLock]="true" style="right: 20px; top: 332px;">
+      <app-legend [title]="'降雨量'" [dataset]="data_legend2"></app-legend>
+    </app-fix-panel>
+  </ng-container>
+  <!-- ------------------------------------------- -->
+  <ng-container *ngSwitchCase="'河道实况'">
+    <!-- 河道实况 -->
+    <app-fix-panel title="河道实况" mode="BLUE" style="top:275px; left: 26px;" [isFixed]="true">
+      <app-plot-real-river></app-plot-real-river>
+    </app-fix-panel>
+  </ng-container>
+  <!-- ------------------------------------------- -->
+  <ng-container *ngSwitchCase="'水库实况'">
+    <!-- 水库实况 -->
+    <app-fix-panel title="水库实况" mode="BLUE" style="top:275px; left: 26px;" [isFixed]="true">
+      <app-plot-real-water></app-plot-real-water>
+    </app-fix-panel>
+  </ng-container>
+  <!-- ------------------------------------------- -->
+  <ng-container *ngSwitchCase="false"> </ng-container>
+  <ng-container *ngSwitchDefault> </ng-container>
+</ng-container>
 
-<!-- 底部播放栏 -->
-<app-fix-panel [isLock]="true" style="bottom: 48px; left: 240px; right: 240px;">
-  <app-control-player2></app-control-player2>
-</app-fix-panel>
 
-<!-- 天气预报 -->
-<app-fix-panel [title]="data_weather.name" mode="BLUE" style="top:275px; left: 26px;" [isFixed]="true">
-  <app-weather2></app-weather2>
-</app-fix-panel>
+
+

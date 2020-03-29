@@ -117,7 +117,11 @@ import {
   ControlMapMiniComponent,
   DialogMapMiniReservoirComponent,
   ControlPlayer2Component,
-  ControlSearch2Component
+  ControlSearch2Component,
+  SelectTypeComponent,
+  SelectBasinComponent,
+  SelectUnitComponent,
+  SelectStepComponent
 } from './controls';
 
 
@@ -157,7 +161,12 @@ const controls = [
   SelectTopographicMapComponent,
   SelectElectronicMapComponent,
   ControlSearchComponent,
-  ControlSearch2Component
+  ControlSearch2Component,
+
+  SelectTypeComponent,
+  SelectBasinComponent,
+  SelectUnitComponent,
+  SelectStepComponent
 ];
 const details = [
   DetailSearchComponent,

@@ -230,3 +230,38 @@ export const aPictureTooltabList = [{
   name: '工情信息',
   value: 'work'
 }];
+
+export const dataTypes = [{
+  name: '河流',
+  value: 'HL'
+}, {
+  name: '测站',
+  value: 'CZ'
+}, {
+  name: '水库',
+  value: 'SK'
+}];
+
+export const dataBasins = [{
+  name: '长江流域',
+  value: 'CJ'
+}, {
+  name: '黄河流域',
+  value: 'HH'
+}];
+
+export const dataUnits = [{
+  name: 'A公司',
+  value: 'A'
+}, {
+  name: 'B公司',
+  value: 'B'
+}];
+export const dataSteps = [{
+  name: '1小时',
+  value: 1
+}, {
+  name: '3小时',
+  value: 3
+}];
+

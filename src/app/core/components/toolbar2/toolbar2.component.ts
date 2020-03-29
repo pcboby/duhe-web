@@ -10,6 +10,9 @@ export class Toolbar2Component implements OnInit {
   @Input()
   dataset = null;
 
+  @Input()
+  selected = null;
+
   @Output()
   onItemClick: EventEmitter < any > = new EventEmitter();
 

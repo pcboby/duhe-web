@@ -1,23 +1,27 @@
 <app-fix-panel [isLock]="true" style="top:86px; left: 16px;"
   [isFixed]="true">
-  <app-toolbar2 [dataset]="dataset" (onItemClick)="viewer = $event.label"></app-toolbar2>
+  <app-toolbar2 [dataset]="dataset" [selected]="viewer" (onItemClick)="viewer = viewer === $event.label ? null : $event.label"></app-toolbar2>
 </app-fix-panel>
 
 <ng-container [ngSwitch]="viewer">
+  <!-- ------------------------------------------- -->
   <ng-container *ngSwitchCase="'实时防洪调度'">
     <app-fix-panel mode="BLUE" [title]="'实时防洪调度'" [isFixed]="true" (onClose)="viewer = null" style="top: 50%; left: 50%; transform: translate(-50%,-50%); width: 800px;">
       <app-flood-dispatch-real></app-flood-dispatch-real>
     </app-fix-panel>
   </ng-container>
+  <!-- ------------------------------------------- -->
   <ng-container *ngSwitchCase="'调度成果管理'">
     <app-fix-panel mode="BLUE" [title]="'调度成果管理'" [isFixed]="true" (onClose)="viewer = null" style="top: 50%; left: 50%; transform: translate(-50%,-50%); width: 1000px;">
       <app-flood-dispatch-data></app-flood-dispatch-data>
     </app-fix-panel>
   </ng-container>
+  <!-- ------------------------------------------- -->
   <ng-container *ngSwitchCase="'调度方案对比'">
     <app-fix-panel mode="BLUE" [title]="'调度方案对比'" [isFixed]="true" [isScroll]="true" (onClose)="viewer = null" style="top: 50%; left: 50%; transform: translate(-50%,-50%); width: 1000px; max-height: 720px;">
       <app-flood-dispatch-contrast></app-flood-dispatch-contrast>
     </app-fix-panel>
   </ng-container>
+  <!-- ------------------------------------------- -->
 </ng-container>
 

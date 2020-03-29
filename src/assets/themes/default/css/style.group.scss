@@ -4,6 +4,7 @@
   background-color: #f5f5f5;
   padding: 8px;
   overflow: auto;
+  color: #333;
 }
 
 .group-font-alarm {
@@ -51,26 +52,27 @@
   position: relative;
   min-width: 168px;
   width: 100%;
-  .ant-input {
-    background-color: rgba($color: #000, $alpha: 0.3);
-    border-color: rgba($color: #fff, $alpha: 0.3);
-    color: #fff;
-    &:focus {
-      border-color: #0ff;
+  .group-search2-content {
+    .ant-input {
+      background-color: rgba($color: #000, $alpha: 0.3);
+      border-color: rgba($color: #fff, $alpha: 0.3);
+      color: #fff;
+      &:focus {
+        border-color: #0ff;
+      }
+    }
+    .ant-input-group-addon {
+      background-color: transparent;
+    }
+    .ant-btn-primary {
+      border-color: rgba($color: #fff, $alpha: 0.3);
+      background: linear-gradient(
+        to bottom,
+        rgba(49, 161, 203, 0.75),
+        rgba(0, 0, 0, 0.75)
+      );
     }
   }
-  .ant-input-group-addon {
-    background-color: transparent;
-  }
-  .ant-btn-primary {
-    border-color: rgba($color: #fff, $alpha: 0.3);
-    background: linear-gradient(
-      to bottom,
-      rgba(49, 161, 203, 0.75),
-      rgba(0, 0, 0, 0.75)
-    );
-  }
-
   .group-search2-dialog {
     position: absolute;
     top: 100%;
@@ -87,7 +89,7 @@
     right: 12px;
     font-size: 14px;
     color: #999;
-    &:hover{
+    &:hover {
       color: #000;
     }
   }
@@ -97,26 +99,26 @@
     background-color: #d9e8ff;
     padding: 0 10px;
   }
-  .group-search2-links{
+  .group-search2-links {
     padding: 10px;
-    ul{
+    ul {
       list-style: none;
       list-style-type: none;
       margin: 0;
       padding: 0;
       text-align: center;
-      li{
+      li {
         list-style: none;
         list-style-type: none;
         margin: 0;
         padding: 0;
         display: inline-block;
-        a{
+        a {
           display: block;
           line-height: 24px;
           color: #999;
           padding: 5px 10px;
-          i{
+          i {
             display: inline-block;
             width: 24px;
             height: 24px;
@@ -129,23 +131,29 @@
             border-radius: 100% 100%;
             margin-right: 5px;
           }
-          span{}
+          span {
+          }
 
-          &:hover{
+          &:hover {
             cursor: pointer;
           }
         }
       }
     }
   }
+  .group-search2-choose {
+    padding: 10px;
+    line-height: 32px;
+  }
   .group-search2-list {
     line-height: 2em;
+    padding: 0 10px;
     ul {
       display: block;
       list-style: none;
       list-style-type: none;
       margin: 0;
-      padding: 10px;
+      padding: 0;
 
       li {
         display: block;
@@ -184,12 +192,12 @@
         margin: 0;
         line-height: 1.875em;
       }
-      &:hover{
+      &:hover {
         cursor: pointer;
       }
     }
   }
-  .group-search2-pagination{
+  .group-search2-pagination {
     display: block;
     text-align: right;
     padding: 0 10px 10px 10px;
@@ -679,31 +687,32 @@
 }
 // ------------------------------------------------------------------------------------------------------------------------------
 
-.group-legend-label{
+.group-legend-label {
   line-height: 2em;
-  ul{
+  ul {
     list-style-type: none;
     list-style: none;
     margin: 0;
     padding: 0;
-    li{
+    li {
       list-style-type: none;
       list-style: none;
       margin: 0;
       padding: 4px 8px;
       display: inline-block;
-      a{
+      a {
         color: inherit;
-        i{
+        i {
           display: inline-block;
-          font-family: 'FontAwesome';
+          font-family: "FontAwesome";
           font-style: normal;
           margin-right: 4px;
-          &::before{
-            content: '\f111';
+          &::before {
+            content: "\f111";
           }
         }
-        span{}
+        span {
+        }
       }
     }
   }

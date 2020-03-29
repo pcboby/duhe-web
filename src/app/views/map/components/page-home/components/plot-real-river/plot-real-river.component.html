@@ -1,18 +1,28 @@
-<div class="table BLACK">
-    <table>
+<div class="table GRAY ACTION">
+  <table>
+    <thead>
       <tr>
         <th>站名</th>
         <th>时间</th>
-        <th>水位<br>m</th>
-        <th>流量<br><font class="m3">m</font>/s</th>
-        <th>降雨量<br>mm</th>
+        <th>水位<br />m</th>
+        <th>高程<br />m</th>
+        <th>流量<br /><font class="m3">m</font>/s</th>
+        <th>水位趋势</th>
+        <th>警戒水位</th>
+        <th>差值</th>
       </tr>
+    </thead>
+    <tbody>
       <tr *ngFor="let item of dataset">
-        <td class="tc">{{item.stationName}}</td>
-        <td class="tc">{{item.datetime | date:'yyyy-MM-dd'}}</td>
-        <td class="tr">{{item.upLevel | limits}}</td>
-        <td class="tr">{{item.flowIn}}</td>
-        <td class="tr">{{item.flowOut}}</td>
+        <td class="tc">{{ item.stationName }}</td>
+        <td class="tc">{{ item.datetime | date: "yyyy-MM-dd" }}</td>
+        <td class="tr">{{ item.upLevel | limits }}</td>
+        <td class="tr">{{ item.flowIn }}</td>
+        <td class="tr">{{ item.flowOut }}</td>
+        <td class="tr">{{ item.flowOut }}</td>
+        <td class="tr">{{ item.flowOut }}</td>
+        <td class="tr">{{ item.flowOut }}</td>
       </tr>
-    </table>
-  </div>
+    </tbody>
+  </table>
+</div>

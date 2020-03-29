@@ -48,6 +48,14 @@ const routes: Routes = [{
     // canActivate: [AuthIntercepterService]
   }]
 }, {
+  path: 'UI',
+  component: LayoutComponent,
+  children: [{
+    path: '',
+    loadChildren: () => import('./views/ui/ui.module').then(m => m.UiModule),
+    // canActivate: [AuthIntercepterService]
+  }]
+}, {
   path: '**', // 路由判定
   redirectTo: 'error',
   pathMatch: 'full'

@@ -10,6 +10,11 @@ export * from './select-satellite-map/select-satellite-map.component';
 export * from './select-topographic-map/select-topographic-map.component';
 export * from './select-electronic-map/select-electronic-map.component';
 
+export * from './select-type/select-type.component';
+export * from './select-basin/select-basin.component';
+export * from './select-unit/select-unit.component';
+export * from './select-step/select-step.component';
+
 export * from './input-group/input-group.component';
 export * from './control-map-mini/control-map-mini.component';
 export * from './control-map-mini/components/dialog-map-mini-hydropower/dialog-map-mini-hydropower.component';

@@ -1,39 +1,79 @@
 <div class="group-search2">
-  <nz-input-group nzSearch [nzAddOnAfter]="suffixIconButton">
-    <input type="text" (focus)="setFocus(true)" (blur)="setFocus(false)" [(ngModel)]="model" nz-input [placeholder]="placeholder" />
-  </nz-input-group>
-  <ng-template #suffixIconButton>
-    <button nz-button nzType="primary" nzSearch (click)="search()"><i nz-icon nzType="search"></i></button>
-  </ng-template>
-
+  <div class="group-search2-content">
+    <nz-input-group nzSearch [nzAddOnAfter]="suffixIconButton">
+      <input
+        type="text"
+        (focus)="setFocus(true)"
+        (blur)="setFocus(false)"
+        [(ngModel)]="model"
+        nz-input
+        [placeholder]="placeholder"
+      />
+    </nz-input-group>
+    <ng-template #suffixIconButton>
+      <button nz-button nzType="primary" nzSearch (click)="search()">
+        <i nz-icon nzType="search"></i>
+      </button>
+    </ng-template>
+  </div>
   <div class="group-search2-dialog" *ngIf="isFocus && !model">
     <div class="group-search2-links">
       <ul>
         <li>
-          <a (click)="search($event)">
-            <i class="untitled untitled-007B" style="background-color: #e39461;"></i>
+          <a (click)="setValue('河流')">
+            <i
+              class="untitled untitled-007B"
+              style="background-color: #e39461;"
+            ></i>
             <span>河流</span>
-          </a> 
+          </a>
         </li>
         <li>
-          <a (click)="search($event)">
-            <i class="untitled untitled-007C" style="background-color: #a9c067;"></i>
-            <span>水库</span>
-          </a> 
-        </li>
-        <li>
-          <a (click)="search($event)">
-            <i class="untitled untitled-007D" style="background-color: #5ea5d7;"></i>
+          <a (click)="setValue('测站')">
+            <i
+              class="untitled untitled-007C"
+              style="background-color: #a9c067;"
+            ></i>
             <span>测站</span>
-          </a> 
+          </a>
+        </li>
+        <li>
+          <a (click)="setValue('水库')">
+            <i
+              class="untitled untitled-007D"
+              style="background-color: #5ea5d7;"
+            ></i>
+            <span>水库</span>
+          </a>
         </li>
       </ul>
     </div>
   </div>
 
   <div class="group-search2-dialog" *ngIf="dataset">
-    <a class="group-search2-close" (click)="clear()"><i nz-icon nzType="close" nzTheme="outline"></i></a>
+    <a class="group-search2-close" (click)="clear()"
+      ><i nz-icon nzType="close" nzTheme="outline"></i
+    ></a>
     <div class="group-search2-title">共搜索出999条记录</div>
+    <!--  -->
+    <div class="group-search2-choose">
+      <div class="flex-row">
+        <div class="flex-col" style="flex: none;">筛选：</div>
+        <div class="flex-col">
+          <app-select-type></app-select-type>
+        </div>
+      </div>
+      <div class="flex-row">
+        <div class="flex-col" style="flex: none;">筛选：</div>
+        <div class="flex-col" style="padding-right:10px;">
+          <app-select-basin></app-select-basin>
+        </div>
+        <div class="flex-col">
+          <app-select-unit></app-select-unit>
+        </div>
+      </div>
+    </div>
+    <!--  -->
     <div class="group-search2-list">
       <ul>
         <li *ngFor="let item of dataset">
@@ -49,11 +89,11 @@
       </ul>
     </div>
     <nz-pagination
-    [(nzPageIndex)]="pageIndex"
-    [nzTotal]="50"
-    [nzSize]="'small'"
-    class="group-search2-pagination"
-  ></nz-pagination>
+      [(nzPageIndex)]="pageIndex"
+      [nzTotal]="50"
+      [nzSize]="'small'"
+      class="group-search2-pagination"
+    ></nz-pagination>
   </div>
 
   <!-- <div class="group-search2-dialog" *ngIf="!dataset && model">

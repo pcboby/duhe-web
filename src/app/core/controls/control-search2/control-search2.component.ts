@@ -16,6 +16,7 @@ import { NG_VALUE_ACCESSOR } from '@angular/forms';
 export class ControlSearch2Component implements OnInit {
   public isFocus = false;
   public dataset = null;
+  public type = null;
 
   pageIndex = 1;
 
@@ -31,7 +32,7 @@ export class ControlSearch2Component implements OnInit {
   }
 
   @Input()
-  placeholder = '关键字';
+  placeholder = '请输入河流、测站、水库';
 
   @Output()
   onItemClick:EventEmitter<any> = new EventEmitter();
@@ -70,6 +71,10 @@ export class ControlSearch2Component implements OnInit {
 
   search() {
     this.dataset = [{},{},{}];
+  }
+  setValue(val) {
+    this.model = val;
+    this.search();
   }
 
   clear() {

@@ -1,6 +1,6 @@
 <div class="toolbar2">
   <ul>
-    <li *ngFor="let item of dataset" (click)="itemClick(item)">
+    <li *ngFor="let item of dataset" (click)="itemClick(item)" [ngClass]="{'selected': item.label === selected}">
       <a>
         <span class="img"> <i [ngClass]="item.iconCls"></i></span>
         <span class="txt">{{ item.label }}</span>
