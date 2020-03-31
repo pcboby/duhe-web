@@ -9,7 +9,7 @@ import { MapService } from '../../../../core/services/local/map/map.service';
 export class PageHomeComponent implements OnInit {
   viewer = null;
 
-  // 
+  //
   data_weather = {
     name: '竹山县'
   };
@@ -130,7 +130,7 @@ export class PageHomeComponent implements OnInit {
     }
   ];
 
-  constructor(private map: MapService) {}
+  constructor(private map: MapService) { }
 
-  ngOnInit() {}
+  ngOnInit() { }
 }

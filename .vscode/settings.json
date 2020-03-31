@@ -1,3 +1,12 @@
 {
-    "svn.ignoreMissingSvnWarning": true
+    "svn.ignoreMissingSvnWarning": true,
+    "json.format.enable": false,
+    "javascript.preferences.quoteStyle": "single",
+    "files.autoSave": "off",
+    "vetur.format.defaultFormatter.js": "vscode-typescript",
+    "html.format.endWithNewline": true,
+    "explorer.confirmDelete": false,
+    "prettier.semi": false,
+    "prettier.singleQuote": true,
+    "typescript.updateImportsOnFileMove.enabled": "always"
 }
