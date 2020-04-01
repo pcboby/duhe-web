@@ -121,7 +121,8 @@ import {
   SelectTypeComponent,
   SelectBasinComponent,
   SelectUnitComponent,
-  SelectStepComponent
+  SelectStepComponent,
+  InputTextareaComponent
 } from './controls';
 
 
@@ -145,6 +146,7 @@ const modules = [
 // -----------------------------------------------------------------------------------------------------------------------
 const controls = [
   InputGroupComponent,
+  InputTextareaComponent,
   ControlMapMiniComponent,
   DialogMapMiniHydropowerComponent,
   DialogMapMiniReservoirComponent,

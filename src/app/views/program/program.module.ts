@@ -10,16 +10,21 @@ import {
   CoreModule
 } from 'src/app/core/core.module';
 import {
-  PageMessageNewsComponent,
-  PageMessageNewsSearchComponent,
-  PageDispatchingDataSearchComponent,
-  PageDispatchingSchemesComponent,
-  PageDispatchingSchemesSearchComponent,
-  PageDispatchingDataComponent,
-  PageRunningailySearchComponent,
-  PageRunningailyComponent,
-  PageWaterNewsSearchComponent,
-  PageWaterNewsComponent
+  DatabaseRainfallComponent,
+  DatabaseReservoirComponent,
+  DatabaseRiversComponent,
+  DatabaseStationComponent,
+  DatabaseWaterComponent,
+  DocumentComponent,
+  DatabaseRainfallSearchComponent,
+  DatabaseRainfallEditComponent,
+  DatabaseRainfallDetailComponent,
+  DatabaseStationSearchComponent,
+  DatabaseStationEditComponent,
+  DatabaseStationDetailComponent,
+  DatabaseStationFloodComponent,
+  DatabaseStationLevelComponent,
+  DatabaseStationCurveComponent
 } from './components';
 import { ProgramRoutes } from './program.routing';
 import { ProgramComponent } from './program.component';
@@ -27,20 +32,25 @@ import { ProgramComponent } from './program.component';
 const components = [
   ProgramComponent,
   //
-  PageMessageNewsComponent,
-  PageMessageNewsSearchComponent,
-  //
-  PageWaterNewsComponent,
-  PageWaterNewsSearchComponent,
-  //
-  PageRunningailyComponent,
-  PageRunningailySearchComponent,
-  //
-  PageDispatchingDataComponent,
-  PageDispatchingDataSearchComponent,
-  //
-  PageDispatchingSchemesComponent,
-  PageDispatchingSchemesSearchComponent,
+  DatabaseRainfallComponent,
+  DatabaseRainfallSearchComponent,
+  DatabaseRainfallEditComponent,
+  DatabaseRainfallDetailComponent,
+  // 
+  DatabaseReservoirComponent,
+  DatabaseRiversComponent,
+  // 
+  DatabaseStationComponent,
+  DatabaseStationSearchComponent,
+  DatabaseStationEditComponent,
+  DatabaseStationDetailComponent,
+  DatabaseStationFloodComponent,
+  DatabaseStationLevelComponent,
+  DatabaseStationCurveComponent,
+  // 
+  DatabaseWaterComponent,
+  // 
+  DocumentComponent
   //
   //
 ];

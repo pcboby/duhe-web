@@ -20,32 +20,51 @@ export const navigationList = [{
   link: '/map',
   value: 'FloodDispatch',
   cls: 'icon icon-FloodDispatch'
-}, {
+}, 
+
+{
   name: '日常管理',
   link: '/program',
   value: 'DailyManagement',
   mapDisabled: true,
   cls: 'icon icon-DailyManagement',
   children: [{
-    name: '信息通报',
-    value: 'MessageNews',
+    name: '数据管理',
+    value: 'Database',
     mapDisabled: true,
-    cls: 'icon icon-5-1'
+    cls: 'icon icon-5-1',
+    children: [{
+      name: '测站',
+      value: 'Station',
+
+      cls: 'icon icon-point'
+    }, {
+      name: '水库',
+      value: 'Reservoir',
+      cls: 'icon icon-point'
+    }, {
+      name: '河流',
+      value: 'Rivers',
+      cls: 'icon icon-point'
+    }, {
+      name: '降水',
+      value: 'Rainfall',
+      cls: 'icon icon-point'
+    }, {
+      name: '水情',
+      value: 'Water',
+      cls: 'icon icon-point'
+    }]
   }, {
-    name: '水资源公报',
-    value: 'WaterNews',
+    name: '文档管理',
+    value: 'Document',
     mapDisabled: true,
     cls: 'icon icon-5-2'
   }, {
-    name: '调度运用计划',
-    value: 'Runningaily',
+    name: '报表管理',
+    value: 'Statistic',
     mapDisabled: true,
-    cls: 'icon icon-5-5'
-  }, {
-    name: '统计报表',
-    value: 'StatisticalStatement',
-    mapDisabled: true,
-    cls: 'icon icon-5-6',
+    cls: 'icon icon-5-5',
     children: [{
       name: '水库水情',
       value: 'DispatchingData',
@@ -57,7 +76,49 @@ export const navigationList = [{
       cls: 'icon icon-point'
     }]
   }]
-}, {
+}, 
+
+// {
+//   name: '日常管理',
+//   link: '/program',
+//   value: 'DailyManagement',
+//   mapDisabled: true,
+//   cls: 'icon icon-DailyManagement',
+//   children: [{
+//     name: '信息通报',
+//     value: 'MessageNews',
+//     mapDisabled: true,
+//     cls: 'icon icon-5-1'
+//   }, {
+//     name: '水资源公报',
+//     value: 'WaterNews',
+//     mapDisabled: true,
+//     cls: 'icon icon-5-2'
+//   }, {
+//     name: '调度运用计划',
+//     value: 'Runningaily',
+//     mapDisabled: true,
+//     cls: 'icon icon-5-5'
+//   }, {
+//     name: '统计报表',
+//     value: 'StatisticalStatement',
+//     mapDisabled: true,
+//     cls: 'icon icon-5-6',
+//     children: [{
+//       name: '水库水情',
+//       value: 'DispatchingData',
+
+//       cls: 'icon icon-point'
+//     }, {
+//       name: '河道水情',
+//       value: 'DispatchingSchemes',
+//       cls: 'icon icon-point'
+//     }]
+//   }]
+// }, 
+
+
+{
   name: '系统设置',
   link: '/system',
   value: 'SystemManagement',

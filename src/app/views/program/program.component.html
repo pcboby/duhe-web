@@ -1,42 +1,42 @@
 <!--  ------------------------------------------------------------------------------------------------------------------------  -->
 <!-- page master -->
 <ng-container [ngSwitch]="mas">
-  
   <!-- ------------------------------------------------------------------------------------------------------------ -->
   <!-- 日常管理 -->
   <ng-container *ngSwitchCase="'DailyManagement'">
     <!-- page sub -->
     <ng-container [ngSwitch]="sub">
-      <!-- 信息通报 -->
-      <ng-container *ngSwitchCase="'MessageNews'">
-        <app-page-message-news></app-page-message-news>
+      <!-- 数据管理/测站 -->
+      <ng-container *ngSwitchCase="'Station'">
+        <app-database-station></app-database-station>
       </ng-container>
-      <!-- 水资源公报 -->
-      <ng-container *ngSwitchCase="'WaterNews'">
-        <app-page-water-news></app-page-water-news>
+      <!-- 数据管理/水库 -->
+      <ng-container *ngSwitchCase="'Reservoir'">
+        <app-database-reservoir></app-database-reservoir>
       </ng-container>
-      <!-- 调度运用计划 -->
-      <ng-container *ngSwitchCase="'Runningaily'">
-        <app-page-runningaily></app-page-runningaily>
+      <!-- 数据管理/河流 -->
+      <ng-container *ngSwitchCase="'Rivers'">
+        <app-database-rivers></app-database-rivers>
       </ng-container>
-      <!-- 统计报表/水库水情 -->
-      <ng-container *ngSwitchCase="'DispatchingData'">
-        <app-page-dispatching-data></app-page-dispatching-data>
+      <!-- 数据管理/降水 -->
+      <ng-container *ngSwitchCase="'Rainfall'">
+        <app-database-rainfall></app-database-rainfall>
       </ng-container>
-      <!-- 统计报表/河道水情 -->
-      <ng-container *ngSwitchCase="'DispatchingSchemes'">
-        <app-page-dispatching-schemes></app-page-dispatching-schemes>
+      <!-- 数据管理/水情 -->
+      <ng-container *ngSwitchCase="'Water'">
+        <app-database-water></app-database-water>
+      </ng-container>
+      <!-- 文档管理 -->
+      <ng-container *ngSwitchCase="'Document'">
+        <app-document></app-document>
       </ng-container>
     </ng-container>
     <!--  -->
   </ng-container>
   <!-- ------------------------------------------------------------------------------------------------------------ -->
-  <ng-container *ngSwitchDefault>
-
-  </ng-container>
+  <ng-container *ngSwitchDefault> </ng-container>
   <!-- ------------------------------------------------------------------------------------------------------------ -->
 </ng-container>
-
 
 <!-- loader -->
 <app-spinner></app-spinner>

@@ -16,6 +16,7 @@ export * from './select-unit/select-unit.component';
 export * from './select-step/select-step.component';
 
 export * from './input-group/input-group.component';
+export * from './input-textarea/input-textarea.component';
 export * from './control-map-mini/control-map-mini.component';
 export * from './control-map-mini/components/dialog-map-mini-hydropower/dialog-map-mini-hydropower.component';
 export * from './control-map-mini/components/dialog-map-mini-reservoir/dialog-map-mini-reservoir.component';

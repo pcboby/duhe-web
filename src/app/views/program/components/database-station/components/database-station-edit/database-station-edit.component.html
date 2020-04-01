@@ -1,0 +1,273 @@
+<form nz-form [formGroup]="validateForm">
+  <nz-row>
+    <nz-col nzSpan="12">
+      <nz-form-item>
+        <nz-form-label [nzSm]="6" [nzXs]="24" nzRequired>名称</nz-form-label>
+        <nz-form-control [nzSm]="18" [nzXs]="24">
+          <app-input-group></app-input-group>
+        </nz-form-control>
+      </nz-form-item>
+    </nz-col>
+    <nz-col nzSpan="12">
+      <nz-form-item>
+        <nz-form-label [nzSm]="6" [nzXs]="24" nzRequired>编码</nz-form-label>
+        <nz-form-control [nzSm]="18" [nzXs]="24">
+          <app-input-group></app-input-group>
+        </nz-form-control>
+      </nz-form-item>
+    </nz-col>
+    <nz-col nzSpan="24">
+      <nz-form-item>
+        <nz-form-label [nzSm]="3" [nzXs]="24" nzRequired>拼音码</nz-form-label>
+        <nz-form-control [nzSm]="21" [nzXs]="24">
+          <app-input-group></app-input-group>
+        </nz-form-control>
+      </nz-form-item>
+    </nz-col>
+
+
+
+    <nz-col nzSpan="12">
+      <nz-form-item>
+        <nz-form-label [nzSm]="6" [nzXs]="24" nzRequired
+          >建站年月</nz-form-label
+        >
+        <nz-form-control [nzSm]="18" [nzXs]="24">
+          <app-input-group></app-input-group>
+        </nz-form-control>
+      </nz-form-item>
+    </nz-col>
+    <nz-col nzSpan="12">
+      <nz-form-item>
+        <nz-form-label [nzSm]="6" [nzXs]="24" nzRequired
+          >始报年月</nz-form-label
+        >
+        <nz-form-control [nzSm]="18" [nzXs]="24">
+          <app-input-group></app-input-group>
+        </nz-form-control>
+      </nz-form-item>
+    </nz-col>
+    <nz-col nzSpan="12">
+      <nz-form-item>
+        <nz-form-label [nzSm]="6" [nzXs]="24" nzRequired
+          >行政区划</nz-form-label
+        >
+        <nz-form-control [nzSm]="18" [nzXs]="24">
+          <app-input-group></app-input-group>
+        </nz-form-control>
+      </nz-form-item>
+    </nz-col>
+    <nz-col nzSpan="6">
+      <nz-form-item>
+        <nz-form-label [nzSm]="12" [nzXs]="24" nzRequired>经度</nz-form-label>
+        <nz-form-control [nzSm]="12" [nzXs]="24">
+          <app-input-group></app-input-group>
+        </nz-form-control>
+      </nz-form-item>
+    </nz-col>
+    <nz-col nzSpan="6">
+      <nz-form-item>
+        <nz-form-label [nzSm]="12" [nzXs]="24" nzRequired>纬度</nz-form-label>
+        <nz-form-control [nzSm]="12" [nzXs]="24">
+          <app-input-group></app-input-group>
+        </nz-form-control>
+      </nz-form-item>
+    </nz-col>
+    <nz-col nzSpan="24">
+      <nz-form-item>
+        <nz-form-label [nzSm]="3" [nzXs]="24" nzRequired>站址</nz-form-label>
+        <nz-form-control [nzSm]="21" [nzXs]="24">
+          <app-input-group></app-input-group>
+        </nz-form-control>
+      </nz-form-item>
+    </nz-col>
+
+
+
+    <nz-col nzSpan="12">
+      <nz-form-item>
+        <nz-form-label [nzSm]="6" [nzXs]="24" nzRequired
+          >所属水系</nz-form-label
+        >
+        <nz-form-control [nzSm]="18" [nzXs]="24">
+          <app-input-group></app-input-group>
+        </nz-form-control>
+      </nz-form-item>
+    </nz-col>
+    <nz-col nzSpan="12">
+      <nz-form-item>
+        <nz-form-label [nzSm]="6" [nzXs]="24" nzRequired
+          >所属流域</nz-form-label
+        >
+        <nz-form-control [nzSm]="18" [nzXs]="24">
+          <app-input-group></app-input-group>
+        </nz-form-control>
+      </nz-form-item>
+    </nz-col>
+    <nz-col nzSpan="12">
+      <nz-form-item>
+        <nz-form-label [nzSm]="6" [nzXs]="24" nzRequired
+          >所属河流</nz-form-label
+        >
+        <nz-form-control [nzSm]="18" [nzXs]="24">
+          <app-input-group></app-input-group>
+        </nz-form-control>
+      </nz-form-item>
+    </nz-col>
+    <nz-col nzSpan="12">
+      <nz-form-item>
+        <nz-form-label [nzSm]="6" [nzXs]="24" nzRequired
+          >所在岸别</nz-form-label
+        >
+        <nz-form-control [nzSm]="18" [nzXs]="24">
+          <app-input-group></app-input-group>
+        </nz-form-control>
+      </nz-form-item>
+    </nz-col>
+    <nz-col nzSpan="12">
+      <nz-form-item>
+        <nz-form-label [nzSm]="6" [nzXs]="24" nzRequired
+          >基面名称</nz-form-label
+        >
+        <nz-form-control [nzSm]="18" [nzXs]="24">
+          <app-input-group></app-input-group>
+        </nz-form-control>
+      </nz-form-item>
+    </nz-col>
+    <nz-col nzSpan="12">
+      <nz-form-item>
+        <nz-form-label [nzSm]="6" [nzXs]="24" nzRequired
+          >所在方位</nz-form-label
+        >
+        <nz-form-control [nzSm]="18" [nzXs]="24">
+          <app-input-group></app-input-group>
+        </nz-form-control>
+      </nz-form-item>
+    </nz-col>
+    <nz-col nzSpan="12">
+      <nz-form-item>
+        <nz-form-label [nzSm]="6" [nzXs]="24" nzRequired
+          >至河口距离</nz-form-label
+        >
+        <nz-form-control [nzSm]="18" [nzXs]="24">
+          <app-input-group></app-input-group>
+        </nz-form-control>
+      </nz-form-item>
+    </nz-col>
+    <nz-col nzSpan="12">
+      <nz-form-item>
+        <nz-form-label [nzSm]="6" [nzXs]="24" nzRequired
+          >集水面积</nz-form-label
+        >
+        <nz-form-control [nzSm]="18" [nzXs]="24">
+          <app-input-group></app-input-group>
+        </nz-form-control>
+      </nz-form-item>
+    </nz-col>
+    <nz-col nzSpan="12">
+      <nz-form-item>
+        <nz-form-label [nzSm]="6" [nzXs]="24" nzRequired
+          >基面高程</nz-form-label
+        >
+        <nz-form-control [nzSm]="18" [nzXs]="24">
+          <app-input-group></app-input-group>
+        </nz-form-control>
+      </nz-form-item>
+    </nz-col>
+    <nz-col nzSpan="12">
+      <nz-form-item>
+        <nz-form-label [nzSm]="6" [nzXs]="24" nzRequired
+          >基面修正值</nz-form-label
+        >
+        <nz-form-control [nzSm]="18" [nzXs]="24">
+          <app-input-group></app-input-group>
+        </nz-form-control>
+      </nz-form-item>
+    </nz-col>
+    <nz-col nzSpan="12">
+      <nz-form-item>
+        <nz-form-label [nzSm]="6" [nzXs]="24" nzRequired>站类</nz-form-label>
+        <nz-form-control [nzSm]="18" [nzXs]="24">
+          <app-input-group></app-input-group>
+        </nz-form-control>
+      </nz-form-item>
+    </nz-col>
+    <nz-col nzSpan="12">
+      <nz-form-item>
+        <nz-form-label [nzSm]="6" [nzXs]="24" nzRequired
+          >报讯等级</nz-form-label
+        >
+        <nz-form-control [nzSm]="18" [nzXs]="24">
+          <app-input-group></app-input-group>
+        </nz-form-control>
+      </nz-form-item>
+    </nz-col>
+
+
+
+    <nz-col nzSpan="12">
+      <nz-form-item>
+        <nz-form-label [nzSm]="6" [nzXs]="24" nzRequired
+          >是否启用</nz-form-label
+        >
+        <nz-form-control [nzSm]="18" [nzXs]="24">
+          <app-input-group></app-input-group>
+        </nz-form-control>
+      </nz-form-item>
+    </nz-col>
+    <nz-col nzSpan="12">
+      <nz-form-item>
+        <nz-form-label [nzSm]="6" [nzXs]="24" nzRequired
+          >是否可控</nz-form-label
+        >
+        <nz-form-control [nzSm]="18" [nzXs]="24">
+          <app-input-group></app-input-group>
+        </nz-form-control>
+      </nz-form-item>
+    </nz-col>
+
+
+
+    <nz-col nzSpan="24">
+      <nz-form-item>
+        <nz-form-label [nzSm]="3" [nzXs]="24" nzRequired
+          >行业单位</nz-form-label
+        >
+        <nz-form-control [nzSm]="21" [nzXs]="24">
+          <app-input-group></app-input-group>
+        </nz-form-control>
+      </nz-form-item>
+    </nz-col>
+    <nz-col nzSpan="24">
+      <nz-form-item>
+        <nz-form-label [nzSm]="3" [nzXs]="24" nzRequired
+          >管理单位</nz-form-label
+        >
+        <nz-form-control [nzSm]="21" [nzXs]="24">
+          <app-input-group></app-input-group>
+        </nz-form-control>
+      </nz-form-item>
+    </nz-col>
+    <nz-col nzSpan="24">
+      <nz-form-item>
+        <nz-form-label [nzSm]="3" [nzXs]="24" nzRequired
+          >交换单位</nz-form-label
+        >
+        <nz-form-control [nzSm]="21" [nzXs]="24">
+          <app-input-group></app-input-group>
+        </nz-form-control>
+      </nz-form-item> </nz-col
+    >
+
+
+
+    <nz-col nzSpan="24">
+      <nz-form-item>
+        <nz-form-label [nzSm]="3" [nzXs]="24">备注</nz-form-label>
+        <nz-form-control [nzSm]="21" [nzXs]="24">
+          <app-input-textarea>
+          </app-input-textarea>
+        </nz-form-control> </nz-form-item
+    ></nz-col>
+  </nz-row>
+</form>
