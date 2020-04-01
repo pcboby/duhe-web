@@ -1,3 +1,32 @@
-<p>
-  database-station-level works!
-</p>
+<form nz-form [formGroup]="validateForm">
+  <nz-form-item>
+    <nz-form-label [nzSm]="6" [nzXs]="24" nzRequired>名称</nz-form-label>
+    <nz-form-control [nzSm]="18" [nzXs]="24">
+      <app-input-group></app-input-group>
+    </nz-form-control>
+  </nz-form-item>
+  <nz-form-item>
+    <nz-form-label [nzSm]="6" [nzXs]="24" nzRequired>开始月日</nz-form-label>
+    <nz-form-control [nzSm]="18" [nzXs]="24">
+      <app-input-group></app-input-group>
+    </nz-form-control>
+  </nz-form-item>
+  <nz-form-item>
+    <nz-form-label [nzSm]="6" [nzXs]="24" nzRequired>汛限水位</nz-form-label>
+    <nz-form-control [nzSm]="18" [nzXs]="24">
+      <app-input-group></app-input-group>
+    </nz-form-control>
+  </nz-form-item>
+  <nz-form-item>
+    <nz-form-label [nzSm]="6" [nzXs]="24" nzRequired>汛限库容</nz-form-label>
+    <nz-form-control [nzSm]="18" [nzXs]="24">
+      <app-input-group></app-input-group>
+    </nz-form-control>
+  </nz-form-item>
+  <nz-form-item>
+    <nz-form-label [nzSm]="6" [nzXs]="24" nzRequired>汛限类别</nz-form-label>
+    <nz-form-control [nzSm]="18" [nzXs]="24">
+      <app-input-group></app-input-group>
+    </nz-form-control>
+  </nz-form-item>
+</form>

@@ -7,7 +7,7 @@ import { MapService } from '../../../../core/services/local/map/map.service';
   styleUrls: ['./page-home.component.scss']
 })
 export class PageHomeComponent implements OnInit {
-  viewer = null;
+  viewer = '降雨预报';
 
   //
   data_weather = {

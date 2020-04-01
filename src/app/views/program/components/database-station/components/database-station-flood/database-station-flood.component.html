@@ -1,3 +1,459 @@
-<p>
-  database-station-flood works!
-</p>
+<form nz-form [formGroup]="validateForm">
+
+  <!--  -->
+  <nz-row *ngIf="stationType === 0">
+    <nz-col nzSpan="12">
+      <nz-form-item>
+        <nz-form-label [nzSm]="12" [nzXs]="24" nzRequired>名称</nz-form-label>
+        <nz-form-control [nzSm]="12" [nzXs]="24">
+          <app-input-group></app-input-group>
+        </nz-form-control>
+      </nz-form-item>
+    </nz-col>
+    <nz-col nzSpan="12">
+      <nz-form-item>
+        <nz-form-label [nzSm]="12" [nzXs]="24" nzRequired>左提高程</nz-form-label>
+        <nz-form-control [nzSm]="12" [nzXs]="24">
+          <app-input-group></app-input-group>
+        </nz-form-control>
+      </nz-form-item>
+    </nz-col>
+    <nz-col nzSpan="12">
+      <nz-form-item>
+        <nz-form-label [nzSm]="12" [nzXs]="24" nzRequired>右提高程</nz-form-label>
+        <nz-form-control [nzSm]="12" [nzXs]="24">
+          <app-input-group></app-input-group>
+        </nz-form-control>
+      </nz-form-item>
+    </nz-col>
+    <nz-col nzSpan="12">
+      <nz-form-item>
+        <nz-form-label [nzSm]="12" [nzXs]="24" nzRequired>警戒水位</nz-form-label>
+        <nz-form-control [nzSm]="12" [nzXs]="24">
+          <app-input-group></app-input-group>
+        </nz-form-control>
+      </nz-form-item>
+    </nz-col>
+    <nz-col nzSpan="12">
+      <nz-form-item>
+        <nz-form-label [nzSm]="12" [nzXs]="24" nzRequired>警戒流量</nz-form-label>
+        <nz-form-control [nzSm]="12" [nzXs]="24">
+          <app-input-group></app-input-group>
+        </nz-form-control>
+      </nz-form-item>
+    </nz-col>
+    <nz-col nzSpan="12">
+      <nz-form-item>
+        <nz-form-label [nzSm]="12" [nzXs]="24" nzRequired>保证水位</nz-form-label>
+        <nz-form-control [nzSm]="12" [nzXs]="24">
+          <app-input-group></app-input-group>
+        </nz-form-control>
+      </nz-form-item>
+    </nz-col>
+    <nz-col nzSpan="12">
+      <nz-form-item>
+        <nz-form-label [nzSm]="12" [nzXs]="24" nzRequired>保证流量</nz-form-label>
+        <nz-form-control [nzSm]="12" [nzXs]="24">
+          <app-input-group></app-input-group>
+        </nz-form-control>
+      </nz-form-item>
+    </nz-col>
+    <nz-col nzSpan="12">
+      <nz-form-item>
+        <nz-form-label [nzSm]="12" [nzXs]="24" nzRequired>平滩流量</nz-form-label>
+        <nz-form-control [nzSm]="12" [nzXs]="24">
+          <app-input-group></app-input-group>
+        </nz-form-control>
+      </nz-form-item>
+    </nz-col>
+    <nz-col nzSpan="12">
+      <nz-form-item>
+        <nz-form-label [nzSm]="12" [nzXs]="24" nzRequired>实测最高水位</nz-form-label>
+        <nz-form-control [nzSm]="12" [nzXs]="24">
+          <app-input-group></app-input-group>
+        </nz-form-control>
+      </nz-form-item>
+    </nz-col>
+    <nz-col nzSpan="12">
+      <nz-form-item>
+        <nz-form-label [nzSm]="12" [nzXs]="24" nzRequired>实测最高水位出现时间</nz-form-label>
+        <nz-form-control [nzSm]="12" [nzXs]="24">
+          <app-input-group></app-input-group>
+        </nz-form-control>
+      </nz-form-item>
+    </nz-col>
+    <nz-col nzSpan="12">
+      <nz-form-item>
+        <nz-form-label [nzSm]="12" [nzXs]="24" nzRequired>调查最高水位</nz-form-label>
+        <nz-form-control [nzSm]="12" [nzXs]="24">
+          <app-input-group></app-input-group>
+        </nz-form-control>
+      </nz-form-item>
+    </nz-col>
+    <nz-col nzSpan="12">
+      <nz-form-item>
+        <nz-form-label [nzSm]="12" [nzXs]="24" nzRequired>调查最高水位出现时间</nz-form-label>
+        <nz-form-control [nzSm]="12" [nzXs]="24">
+          <app-input-group></app-input-group>
+        </nz-form-control>
+      </nz-form-item>
+    </nz-col>
+    <nz-col nzSpan="12">
+      <nz-form-item>
+        <nz-form-label [nzSm]="12" [nzXs]="24" nzRequired>实测最大流量</nz-form-label>
+        <nz-form-control [nzSm]="12" [nzXs]="24">
+          <app-input-group></app-input-group>
+        </nz-form-control>
+      </nz-form-item>
+    </nz-col>
+    <nz-col nzSpan="12">
+      <nz-form-item>
+        <nz-form-label [nzSm]="12" [nzXs]="24" nzRequired>实测最大流量出现时间</nz-form-label>
+        <nz-form-control [nzSm]="12" [nzXs]="24">
+          <app-input-group></app-input-group>
+        </nz-form-control>
+      </nz-form-item>
+    </nz-col>
+    <nz-col nzSpan="12">
+      <nz-form-item>
+        <nz-form-label [nzSm]="12" [nzXs]="24" nzRequired>调查最大流量</nz-form-label>
+        <nz-form-control [nzSm]="12" [nzXs]="24">
+          <app-input-group></app-input-group>
+        </nz-form-control>
+      </nz-form-item>
+    </nz-col>
+    <nz-col nzSpan="12">
+      <nz-form-item>
+        <nz-form-label [nzSm]="12" [nzXs]="24" nzRequired>调查最大流量出现时间</nz-form-label>
+        <nz-form-control [nzSm]="12" [nzXs]="24">
+          <app-input-group></app-input-group>
+        </nz-form-control>
+      </nz-form-item>
+    </nz-col>
+    <nz-col nzSpan="12">
+      <nz-form-item>
+        <nz-form-label [nzSm]="12" [nzXs]="24" nzRequired>历史最大含沙量</nz-form-label>
+        <nz-form-control [nzSm]="12" [nzXs]="24">
+          <app-input-group></app-input-group>
+        </nz-form-control>
+      </nz-form-item>
+    </nz-col>
+    <nz-col nzSpan="12">
+      <nz-form-item>
+        <nz-form-label [nzSm]="12" [nzXs]="24" nzRequired>历史最大含沙量出现时间</nz-form-label>
+        <nz-form-control [nzSm]="12" [nzXs]="24">
+          <app-input-group></app-input-group>
+        </nz-form-control>
+      </nz-form-item>
+    </nz-col>
+    <nz-col nzSpan="12">
+      <nz-form-item>
+        <nz-form-label [nzSm]="12" [nzXs]="24" nzRequired>历史最大断面平均流速</nz-form-label>
+        <nz-form-control [nzSm]="12" [nzXs]="24">
+          <app-input-group></app-input-group>
+        </nz-form-control>
+      </nz-form-item>
+    </nz-col>
+    <nz-col nzSpan="12">
+      <nz-form-item>
+        <nz-form-label [nzSm]="12" [nzXs]="24" nzRequired>历史最大断面平均流速出现时间</nz-form-label>
+        <nz-form-control [nzSm]="12" [nzXs]="24">
+          <app-input-group></app-input-group>
+        </nz-form-control>
+      </nz-form-item>
+    </nz-col>
+    <nz-col nzSpan="12">
+      <nz-form-item>
+        <nz-form-label [nzSm]="12" [nzXs]="24" nzRequired>历史最低水位</nz-form-label>
+        <nz-form-control [nzSm]="12" [nzXs]="24">
+          <app-input-group></app-input-group>
+        </nz-form-control>
+      </nz-form-item>
+    </nz-col>
+    <nz-col nzSpan="12">
+      <nz-form-item>
+        <nz-form-label [nzSm]="12" [nzXs]="24" nzRequired>历史最低水位出现时间</nz-form-label>
+        <nz-form-control [nzSm]="12" [nzXs]="24">
+          <app-input-group></app-input-group>
+        </nz-form-control>
+      </nz-form-item>
+    </nz-col>
+    <nz-col nzSpan="12">
+      <nz-form-item>
+        <nz-form-label [nzSm]="12" [nzXs]="24" nzRequired>历史最小流量</nz-form-label>
+        <nz-form-control [nzSm]="12" [nzXs]="24">
+          <app-input-group></app-input-group>
+        </nz-form-control>
+      </nz-form-item>
+    </nz-col>
+    <nz-col nzSpan="12">
+      <nz-form-item>
+        <nz-form-label [nzSm]="12" [nzXs]="24" nzRequired>历史最小流量出现时间</nz-form-label>
+        <nz-form-control [nzSm]="12" [nzXs]="24">
+          <app-input-group></app-input-group>
+        </nz-form-control>
+      </nz-form-item>
+    </nz-col>
+    <nz-col nzSpan="12">
+      <nz-form-item>
+        <nz-form-label [nzSm]="12" [nzXs]="24" nzRequired>高水位告警值</nz-form-label>
+        <nz-form-control [nzSm]="12" [nzXs]="24">
+          <app-input-group></app-input-group>
+        </nz-form-control>
+      </nz-form-item>
+    </nz-col>
+    <nz-col nzSpan="12">
+      <nz-form-item>
+        <nz-form-label [nzSm]="12" [nzXs]="24" nzRequired>大流量告警值</nz-form-label>
+        <nz-form-control [nzSm]="12" [nzXs]="24">
+          <app-input-group></app-input-group>
+        </nz-form-control>
+      </nz-form-item>
+    </nz-col>
+    <nz-col nzSpan="12">
+      <nz-form-item>
+        <nz-form-label [nzSm]="12" [nzXs]="24" nzRequired>低水位告警值</nz-form-label>
+        <nz-form-control [nzSm]="12" [nzXs]="24">
+          <app-input-group></app-input-group>
+        </nz-form-control>
+      </nz-form-item>
+    </nz-col>
+    <nz-col nzSpan="12">
+      <nz-form-item>
+        <nz-form-label [nzSm]="12" [nzXs]="24" nzRequired>小流量告警值</nz-form-label>
+        <nz-form-control [nzSm]="12" [nzXs]="24">
+          <app-input-group></app-input-group>
+        </nz-form-control>
+      </nz-form-item>
+    </nz-col>
+    <nz-col nzSpan="12">
+      <nz-form-item>
+        <nz-form-label [nzSm]="12" [nzXs]="24" nzRequired>启动预报水位标准</nz-form-label>
+        <nz-form-control [nzSm]="12" [nzXs]="24">
+          <app-input-group></app-input-group>
+        </nz-form-control>
+      </nz-form-item>
+    </nz-col>
+    <nz-col nzSpan="12">
+      <nz-form-item>
+        <nz-form-label [nzSm]="12" [nzXs]="24" nzRequired>启动预报流量标准</nz-form-label>
+        <nz-form-control [nzSm]="12" [nzXs]="24">
+          <app-input-group></app-input-group>
+        </nz-form-control>
+      </nz-form-item>
+    </nz-col>
+  </nz-row>
+
+  <!--  -->
+  <nz-row *ngIf="stationType === 1">
+    <nz-col nzSpan="12">
+      <nz-form-item>
+        <nz-form-label [nzSm]="12" [nzXs]="24" nzRequired>名称</nz-form-label>
+        <nz-form-control [nzSm]="12" [nzXs]="24">
+          <app-input-group></app-input-group>
+        </nz-form-control>
+      </nz-form-item>
+    </nz-col>
+    <nz-col nzSpan="12">
+      <nz-form-item>
+        <nz-form-label [nzSm]="12" [nzXs]="24" nzRequired>水库类型</nz-form-label>
+        <nz-form-control [nzSm]="12" [nzXs]="24">
+          <app-input-group></app-input-group>
+        </nz-form-control>
+      </nz-form-item>
+    </nz-col>
+    <nz-col nzSpan="12">
+      <nz-form-item>
+        <nz-form-label [nzSm]="12" [nzXs]="24" nzRequired>坝顶高程</nz-form-label>
+        <nz-form-control [nzSm]="12" [nzXs]="24">
+          <app-input-group></app-input-group>
+        </nz-form-control>
+      </nz-form-item>
+    </nz-col>
+    <nz-col nzSpan="12">
+      <nz-form-item>
+        <nz-form-label [nzSm]="12" [nzXs]="24" nzRequired>校核洪水位</nz-form-label>
+        <nz-form-control [nzSm]="12" [nzXs]="24">
+          <app-input-group></app-input-group>
+        </nz-form-control>
+      </nz-form-item>
+    </nz-col>
+    <nz-col nzSpan="12">
+      <nz-form-item>
+        <nz-form-label [nzSm]="12" [nzXs]="24" nzRequired>设计洪水位</nz-form-label>
+        <nz-form-control [nzSm]="12" [nzXs]="24">
+          <app-input-group></app-input-group>
+        </nz-form-control>
+      </nz-form-item>
+    </nz-col>
+    <nz-col nzSpan="12">
+      <nz-form-item>
+        <nz-form-label [nzSm]="12" [nzXs]="24" nzRequired>正常高水位</nz-form-label>
+        <nz-form-control [nzSm]="12" [nzXs]="24">
+          <app-input-group></app-input-group>
+        </nz-form-control>
+      </nz-form-item>
+    </nz-col>
+    <nz-col nzSpan="12">
+      <nz-form-item>
+        <nz-form-label [nzSm]="12" [nzXs]="24" nzRequired>死水位</nz-form-label>
+        <nz-form-control [nzSm]="12" [nzXs]="24">
+          <app-input-group></app-input-group>
+        </nz-form-control>
+      </nz-form-item>
+    </nz-col>
+    <nz-col nzSpan="12">
+      <nz-form-item>
+        <nz-form-label [nzSm]="12" [nzXs]="24" nzRequired>兴利水位</nz-form-label>
+        <nz-form-control [nzSm]="12" [nzXs]="24">
+          <app-input-group></app-input-group>
+        </nz-form-control>
+      </nz-form-item>
+    </nz-col>
+    <nz-col nzSpan="12">
+      <nz-form-item>
+        <nz-form-label [nzSm]="12" [nzXs]="24" nzRequired>总库容</nz-form-label>
+        <nz-form-control [nzSm]="12" [nzXs]="24">
+          <app-input-group></app-input-group>
+        </nz-form-control>
+      </nz-form-item>
+    </nz-col>
+    <nz-col nzSpan="12">
+      <nz-form-item>
+        <nz-form-label [nzSm]="12" [nzXs]="24" nzRequired>防洪库容</nz-form-label>
+        <nz-form-control [nzSm]="12" [nzXs]="24">
+          <app-input-group></app-input-group>
+        </nz-form-control>
+      </nz-form-item>
+    </nz-col>
+    <nz-col nzSpan="12">
+      <nz-form-item>
+        <nz-form-label [nzSm]="12" [nzXs]="24" nzRequired>兴利库容</nz-form-label>
+        <nz-form-control [nzSm]="12" [nzXs]="24">
+          <app-input-group></app-input-group>
+        </nz-form-control>
+      </nz-form-item>
+    </nz-col>
+    <nz-col nzSpan="12">
+      <nz-form-item>
+        <nz-form-label [nzSm]="12" [nzXs]="24" nzRequired>死库容</nz-form-label>
+        <nz-form-control [nzSm]="12" [nzXs]="24">
+          <app-input-group></app-input-group>
+        </nz-form-control>
+      </nz-form-item>
+    </nz-col>
+    <nz-col nzSpan="12">
+      <nz-form-item>
+        <nz-form-label [nzSm]="12" [nzXs]="24" nzRequired>历史最高库水位</nz-form-label>
+        <nz-form-control [nzSm]="12" [nzXs]="24">
+          <app-input-group></app-input-group>
+        </nz-form-control>
+      </nz-form-item>
+    </nz-col>
+    <nz-col nzSpan="12">
+      <nz-form-item>
+        <nz-form-label [nzSm]="12" [nzXs]="24" nzRequired>历史最大蓄水量</nz-form-label>
+        <nz-form-control [nzSm]="12" [nzXs]="24">
+          <app-input-group></app-input-group>
+        </nz-form-control>
+      </nz-form-item>
+    </nz-col>
+    <nz-col nzSpan="12">
+      <nz-form-item>
+        <nz-form-label [nzSm]="12" [nzXs]="24" nzRequired>历史最高库水位(蓄水量)时间</nz-form-label>
+        <nz-form-control [nzSm]="12" [nzXs]="24">
+          <app-input-group></app-input-group>
+        </nz-form-control>
+      </nz-form-item>
+    </nz-col>
+    <nz-col nzSpan="12">
+      <nz-form-item>
+        <nz-form-label [nzSm]="12" [nzXs]="24" nzRequired>历史最大入流</nz-form-label>
+        <nz-form-control [nzSm]="12" [nzXs]="24">
+          <app-input-group></app-input-group>
+        </nz-form-control>
+      </nz-form-item>
+    </nz-col>
+    <nz-col nzSpan="12">
+      <nz-form-item>
+        <nz-form-label [nzSm]="12" [nzXs]="24" nzRequired>历史最大入流时段长</nz-form-label>
+        <nz-form-control [nzSm]="12" [nzXs]="24">
+          <app-input-group></app-input-group>
+        </nz-form-control>
+      </nz-form-item>
+    </nz-col>
+    <nz-col nzSpan="12">
+      <nz-form-item>
+        <nz-form-label [nzSm]="12" [nzXs]="24" nzRequired>历史最大入流出现时间</nz-form-label>
+        <nz-form-control [nzSm]="12" [nzXs]="24">
+          <app-input-group></app-input-group>
+        </nz-form-control>
+      </nz-form-item>
+    </nz-col>
+    <nz-col nzSpan="12">
+      <nz-form-item>
+        <nz-form-label [nzSm]="12" [nzXs]="24" nzRequired>历史最大出流</nz-form-label>
+        <nz-form-control [nzSm]="12" [nzXs]="24">
+          <app-input-group></app-input-group>
+        </nz-form-control>
+      </nz-form-item>
+    </nz-col>
+    <nz-col nzSpan="12">
+      <nz-form-item>
+        <nz-form-label [nzSm]="12" [nzXs]="24" nzRequired>历史最大出流出现时间</nz-form-label>
+        <nz-form-control [nzSm]="12" [nzXs]="24">
+          <app-input-group></app-input-group>
+        </nz-form-control>
+      </nz-form-item>
+    </nz-col>
+    <nz-col nzSpan="12">
+      <nz-form-item>
+        <nz-form-label [nzSm]="12" [nzXs]="24" nzRequired>历史最低库水位</nz-form-label>
+        <nz-form-control [nzSm]="12" [nzXs]="24">
+          <app-input-group></app-input-group>
+        </nz-form-control>
+      </nz-form-item>
+    </nz-col>
+    <nz-col nzSpan="12">
+      <nz-form-item>
+        <nz-form-label [nzSm]="12" [nzXs]="24" nzRequired>历史最低库水位出现时间</nz-form-label>
+        <nz-form-control [nzSm]="12" [nzXs]="24">
+          <app-input-group></app-input-group>
+        </nz-form-control>
+      </nz-form-item>
+    </nz-col>
+    <nz-col nzSpan="12">
+      <nz-form-item>
+        <nz-form-label [nzSm]="12" [nzXs]="24" nzRequired>历史最日均入流</nz-form-label>
+        <nz-form-control [nzSm]="12" [nzXs]="24">
+          <app-input-group></app-input-group>
+        </nz-form-control>
+      </nz-form-item>
+    </nz-col>
+    <nz-col nzSpan="12">
+      <nz-form-item>
+        <nz-form-label [nzSm]="12" [nzXs]="24" nzRequired>历史最小日均入流出现时间</nz-form-label>
+        <nz-form-control [nzSm]="12" [nzXs]="24">
+          <app-input-group></app-input-group>
+        </nz-form-control>
+      </nz-form-item>
+    </nz-col>
+    <nz-col nzSpan="12">
+      <nz-form-item>
+        <nz-form-label [nzSm]="12" [nzXs]="24" nzRequired>低水位告警值</nz-form-label>
+        <nz-form-control [nzSm]="12" [nzXs]="24">
+          <app-input-group></app-input-group>
+        </nz-form-control>
+      </nz-form-item>
+    </nz-col>
+    <nz-col nzSpan="12">
+      <nz-form-item>
+        <nz-form-label [nzSm]="12" [nzXs]="24" nzRequired>启动预报流量标准</nz-form-label>
+        <nz-form-control [nzSm]="12" [nzXs]="24">
+          <app-input-group></app-input-group>
+        </nz-form-control>
+      </nz-form-item>
+    </nz-col>
+  </nz-row>
+
+</form>

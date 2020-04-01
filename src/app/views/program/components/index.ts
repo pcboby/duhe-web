@@ -15,6 +15,8 @@ export * from './database-station/components/database-station-edit/database-stat
 export * from './database-station/components/database-station-flood/database-station-flood.component';
 export * from './database-station/components/database-station-level/database-station-level.component';
 export * from './database-station/components/database-station-curve/database-station-curve.component';
+export * from './database-station/components/database-station-rainfall/database-station-rainfall.component';
+export * from './database-station/components/database-station-water/database-station-water.component';
 // 
 export * from './database-water/database-water.component';
 

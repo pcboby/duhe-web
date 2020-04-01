@@ -6,6 +6,11 @@ import { DatabaseStationDetailComponent } from './components/database-station-de
 import { DatabaseStationEditComponent } from './components/database-station-edit/database-station-edit.component';
 import { ApiUserService } from 'src/app/core/services';
 import configs from 'src/app/core/common/configs';
+import { DatabaseStationFloodComponent } from './components/database-station-flood/database-station-flood.component';
+import { DatabaseStationLevelComponent } from './components/database-station-level/database-station-level.component';
+import { DatabaseStationRainfallComponent } from './components/database-station-rainfall/database-station-rainfall.component';
+import { DatabaseStationWaterComponent } from './components/database-station-water/database-station-water.component';
+import { DatabaseStationCurveComponent } from './components/database-station-curve/database-station-curve.component';
 
 @Component({
   selector: 'app-database-station',
@@ -149,6 +154,150 @@ export class DatabaseStationComponent implements OnInit {
       if (res) {
         this.loadData();
       }
+    });
+  }
+  // 编辑防洪指标
+  editFlood(data) {
+    const modal = this.modalService.create({
+      nzTitle: '防洪指标',
+      nzContent: DatabaseStationFloodComponent,
+      nzComponentParams: {
+        dataset: data
+      },
+      nzWidth: 820,
+      nzFooter: [{
+        label: '保存',
+        disabled: (scope) => !scope.validateForm.valid,
+        onClick: (scope) => {
+          this.api.post(scope.validateForm.value).subscribe(res => {
+            if (res.status === 200) {
+              this.msg.success(res.info);
+              modal.close();
+              this.loadData();
+            }
+            if (res.status === 300) {
+              this.msg.error(res.info);
+            }
+          }, res => {
+            this.msg.error(res.info);
+          });
+        }
+      }, {
+        label: '取消',
+        onClick: () => {
+          modal.close();
+        }
+      }]
+    });
+    // 关闭时执行
+    modal.afterClose.subscribe((res) => {
+      if (res) {
+        this.loadData();
+      }
+    });
+  }
+  // 编辑特征曲线
+  editCurve(data) {
+    const modal = this.modalService.create({
+      nzTitle: '特征曲线',
+      nzContent: DatabaseStationCurveComponent,
+      nzComponentParams: {
+        dataset: data
+      },
+      nzWidth: 820,
+      nzFooter: [{
+        label: '保存',
+        disabled: (scope) => !scope.validateForm.valid,
+        onClick: (scope) => {
+          this.api.post(scope.validateForm.value).subscribe(res => {
+            if (res.status === 200) {
+              this.msg.success(res.info);
+              modal.close();
+              this.loadData();
+            }
+            if (res.status === 300) {
+              this.msg.error(res.info);
+            }
+          }, res => {
+            this.msg.error(res.info);
+          });
+        }
+      }, {
+        label: '取消',
+        onClick: () => {
+          modal.close();
+        }
+      }]
+    });
+    // 关闭时执行
+    modal.afterClose.subscribe((res) => {
+      if (res) {
+        this.loadData();
+      }
+    });
+  }
+  // 编辑汛限水位
+  editLevel(data) {
+    const modal = this.modalService.create({
+      nzTitle: '汛限水位',
+      nzContent: DatabaseStationLevelComponent,
+      nzComponentParams: {
+        dataset: data
+      },
+      nzWidth: 480,
+      nzFooter: [{
+        label: '保存',
+        disabled: (scope) => !scope.validateForm.valid,
+        onClick: (scope) => {
+          this.api.post(scope.validateForm.value).subscribe(res => {
+            if (res.status === 200) {
+              this.msg.success(res.info);
+              modal.close();
+              this.loadData();
+            }
+            if (res.status === 300) {
+              this.msg.error(res.info);
+            }
+          }, res => {
+            this.msg.error(res.info);
+          });
+        }
+      }, {
+        label: '取消',
+        onClick: () => {
+          modal.close();
+        }
+      }]
+    });
+    // 关闭时执行
+    modal.afterClose.subscribe((res) => {
+      if (res) {
+        this.loadData();
+      }
+    });
+  }
+  // 详情雨情
+  detailRainfall(data) {
+    const modal = this.modalService.create({
+      nzTitle: '雨情详情',
+      nzContent: DatabaseStationRainfallComponent,
+      nzComponentParams: {
+        dataset: data
+      },
+      nzWidth: 820,
+      nzFooter: null
+    });
+  }
+  // 详情水情
+  detailWater(data) {
+    const modal = this.modalService.create({
+      nzTitle: '水情详情',
+      nzContent: DatabaseStationWaterComponent,
+      nzComponentParams: {
+        dataset: data
+      },
+      nzWidth: 820,
+      nzFooter: null
     });
   }
   // 删除

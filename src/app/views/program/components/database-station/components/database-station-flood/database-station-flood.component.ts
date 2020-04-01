@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import { FormGroup, FormBuilder } from '@angular/forms';
 
 @Component({
   selector: 'app-database-station-flood',
@@ -7,9 +8,28 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DatabaseStationFloodComponent implements OnInit {
 
-  constructor() { }
+  
+  
+  default_form_value = {
+  };
 
-  ngOnInit() {
+  @Input()
+  stationType = 1;
+
+  @Input()
+  set dataset(val) {
+    // tslint:disable-next-line:forin
+    for (const field in this.default_form_value) {
+      this.default_form_value[field][0] = val[field] === undefined ? null : val[field];
+    }
+  }
+
+  validateForm: FormGroup;
+
+  constructor(private fb: FormBuilder) {}
+
+  ngOnInit(): void {
+    this.validateForm = this.fb.group(this.default_form_value);
   }
 
 }
