@@ -1,3 +1,4 @@
+import { SelectBaseSurfaceComponent } from './controls/select-base-surface/select-base-surface.component';
 import { DialogMapMiniHydrologicalComponent } from './controls/control-map-mini/components/dialog-map-mini-hydrological/dialog-map-mini-hydrological.component';
 import { DialogMapMiniHydropowerComponent } from './controls/control-map-mini/components/dialog-map-mini-hydropower/dialog-map-mini-hydropower.component';
 import { ItemPlayComponent } from './components/item-play/item-play.component';
@@ -122,7 +123,17 @@ import {
   SelectBasinComponent,
   SelectUnitComponent,
   SelectStepComponent,
-  InputTextareaComponent
+  InputTextareaComponent,
+  SelectStationTypeComponent,
+  SelectFloodLevelComponent,
+  SelectBaseBankComponent,
+  SelectReservoirTypeComponent,
+  SelectFloodDatetypeComponent,
+  SelectRiverCharacteristicComponent,
+  SelectWaterFlowComponent,
+  SelectTestFlowComponent,
+  SelectTestProductComponent,
+  SelectTestVelocityComponent
 } from './controls';
 
 
@@ -168,7 +179,19 @@ const controls = [
   SelectTypeComponent,
   SelectBasinComponent,
   SelectUnitComponent,
-  SelectStepComponent
+  SelectStepComponent,
+
+  SelectStationTypeComponent,
+  SelectFloodLevelComponent,
+  SelectBaseSurfaceComponent,
+  SelectBaseBankComponent,
+  SelectReservoirTypeComponent,
+  SelectFloodDatetypeComponent,
+  SelectRiverCharacteristicComponent,
+  SelectWaterFlowComponent,
+  SelectTestFlowComponent,
+  SelectTestProductComponent,
+  SelectTestVelocityComponent
 ];
 const details = [
   DetailSearchComponent,

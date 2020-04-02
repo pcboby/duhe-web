@@ -26,7 +26,18 @@ export class UiComponent implements OnInit {
       basin: [null],
       unit: [null],
       step: [null],
-      frameIdx: [0]
+      frameIdx: [0],
+      stationType: [null],
+      floodLevel: [null],
+      baseSurface: [null],
+      baseBank: [null],
+      reservoirType: [null],
+      floodDatetype: [null],
+      riverCharacteristic: [null],
+      waterFlow: [null],
+      testFlow: [null],
+      testProduct: [null],
+      testVelocity: [null]
     });
   }
 

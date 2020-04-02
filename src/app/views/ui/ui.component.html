@@ -1,43 +1,125 @@
-<nz-row style="padding: 10px;">
-  <nz-col nzSpan="16" style="padding-right: 10px;">
+<nz-row style="padding: 10px; height: 100%;">
+  <nz-col nzSpan="16" style="padding-right: 10px; height: 100%;">
     <!--  -->
-    <div class="group-box" style="background-color: #fff;">
+    <div class="group-box" style="background-color: #fff; height: 100%; overflow-y: auto;">
       <form nz-form [formGroup]="validateForm">
         <h3>常规组件：</h3>
         <nz-form-item>
-          <nz-form-label [nzSm]="4" [nzXs]="24" nzRequired nzFor="type">字符（text）</nz-form-label>
-          <nz-form-control [nzSm]="20" [nzXs]="24">
+          <nz-form-label [nzSm]="6" [nzXs]="24" nzRequired nzFor="type">字符（text）</nz-form-label>
+          <nz-form-control [nzSm]="18" [nzXs]="24">
             <app-input-group formControlName="text"></app-input-group>
           </nz-form-control>
         </nz-form-item>
+
+
+
+
+
+
+
         <h3>业务组件：</h3>
+
+
         <nz-form-item>
-          <nz-form-label [nzSm]="4" [nzXs]="24" nzRequired nzFor="type">类型（type）</nz-form-label>
-          <nz-form-control [nzSm]="20" [nzXs]="24">
+          <nz-form-label [nzSm]="6" [nzXs]="24" nzRequired nzFor="type">测站类型（stationType）</nz-form-label>
+          <nz-form-control [nzSm]="18" [nzXs]="24">
+            <app-select-station-type formControlName="stationType"></app-select-station-type>
+          </nz-form-control>
+        </nz-form-item>
+        <nz-form-item>
+          <nz-form-label [nzSm]="6" [nzXs]="24" nzRequired nzFor="type">报汛等级（floodLevel）</nz-form-label>
+          <nz-form-control [nzSm]="18" [nzXs]="24">
+            <app-select-flood-level formControlName="floodLevel"></app-select-flood-level>
+          </nz-form-control>
+        </nz-form-item>
+        <nz-form-item>
+          <nz-form-label [nzSm]="6" [nzXs]="24" nzRequired nzFor="type">基面名称|水准基面（baseSurface）</nz-form-label>
+          <nz-form-control [nzSm]="18" [nzXs]="24">
+            <app-select-base-surface formControlName="baseSurface"></app-select-base-surface>
+          </nz-form-control>
+        </nz-form-item>
+        <nz-form-item>
+          <nz-form-label [nzSm]="6" [nzXs]="24" nzRequired nzFor="type">岸别（baseBank）</nz-form-label>
+          <nz-form-control [nzSm]="18" [nzXs]="24">
+            <app-select-base-bank formControlName="baseBank"></app-select-base-bank>
+          </nz-form-control>
+        </nz-form-item>
+        <nz-form-item>
+          <nz-form-label [nzSm]="6" [nzXs]="24" nzRequired nzFor="type">水库类型（reservoirType）</nz-form-label>
+          <nz-form-control [nzSm]="18" [nzXs]="24">
+            <app-select-reservoir-type formControlName="reservoirType"></app-select-reservoir-type>
+          </nz-form-control>
+        </nz-form-item>
+        <nz-form-item>
+          <nz-form-label [nzSm]="6" [nzXs]="24" nzRequired nzFor="type">汛期类别（floodDatetype）</nz-form-label>
+          <nz-form-control [nzSm]="18" [nzXs]="24">
+            <app-select-flood-datetype formControlName="floodDatetype"></app-select-flood-datetype>
+          </nz-form-control>
+        </nz-form-item>
+        <nz-form-item>
+          <nz-form-label [nzSm]="6" [nzXs]="24" nzRequired nzFor="type">河水特征（riverCharacteristic）</nz-form-label>
+          <nz-form-control [nzSm]="18" [nzXs]="24">
+            <app-select-river-characteristic formControlName="riverCharacteristic"></app-select-river-characteristic>
+          </nz-form-control>
+        </nz-form-item>
+        <nz-form-item>
+          <nz-form-label [nzSm]="6" [nzXs]="24" nzRequired nzFor="type">水势（waterFlow）</nz-form-label>
+          <nz-form-control [nzSm]="18" [nzXs]="24">
+            <app-select-water-flow formControlName="waterFlow"></app-select-water-flow>
+          </nz-form-control>
+        </nz-form-item>
+        <nz-form-item>
+          <nz-form-label [nzSm]="6" [nzXs]="24" nzRequired nzFor="type">测流方法（testFlow）</nz-form-label>
+          <nz-form-control [nzSm]="18" [nzXs]="24">
+            <app-select-test-flow formControlName="testFlow"></app-select-test-flow>
+          </nz-form-control>
+        </nz-form-item>
+        <nz-form-item>
+          <nz-form-label [nzSm]="6" [nzXs]="24" nzRequired nzFor="type">测积方法（testProduct）</nz-form-label>
+          <nz-form-control [nzSm]="18" [nzXs]="24">
+            <app-select-test-product formControlName="testProduct"></app-select-test-product>
+          </nz-form-control>
+        </nz-form-item>
+        <nz-form-item>
+          <nz-form-label [nzSm]="6" [nzXs]="24" nzRequired nzFor="type">测速方法（testVelocity）</nz-form-label>
+          <nz-form-control [nzSm]="18" [nzXs]="24">
+            <app-select-test-velocity formControlName="testVelocity"></app-select-test-velocity>
+          </nz-form-control>
+        </nz-form-item>
+
+
+
+
+
+
+
+        <nz-form-item>
+          <nz-form-label [nzSm]="6" [nzXs]="24" nzRequired nzFor="type">类型（type）</nz-form-label>
+          <nz-form-control [nzSm]="18" [nzXs]="24">
             <app-select-type formControlName="type"></app-select-type>
           </nz-form-control>
         </nz-form-item>
         <nz-form-item>
-          <nz-form-label [nzSm]="4" [nzXs]="24" nzRequired nzFor="basin">流域范围（basin）</nz-form-label>
-          <nz-form-control [nzSm]="20" [nzXs]="24">
+          <nz-form-label [nzSm]="6" [nzXs]="24" nzRequired nzFor="basin">流域范围（basin）</nz-form-label>
+          <nz-form-control [nzSm]="18" [nzXs]="24">
             <app-select-basin formControlName="basin"></app-select-basin>
           </nz-form-control>
         </nz-form-item>
         <nz-form-item>
-          <nz-form-label [nzSm]="4" [nzXs]="24" nzRequired nzFor="unit">管辖单位（unit）</nz-form-label>
-          <nz-form-control [nzSm]="20" [nzXs]="24">
+          <nz-form-label [nzSm]="6" [nzXs]="24" nzRequired nzFor="unit">管辖单位（unit）</nz-form-label>
+          <nz-form-control [nzSm]="18" [nzXs]="24">
             <app-select-unit formControlName="unit"></app-select-unit>
           </nz-form-control>
         </nz-form-item>
         <nz-form-item>
-          <nz-form-label [nzSm]="4" [nzXs]="24" nzRequired nzFor="step">时段步长（step）</nz-form-label>
-          <nz-form-control [nzSm]="20" [nzXs]="24">
+          <nz-form-label [nzSm]="6" [nzXs]="24" nzRequired nzFor="step">时段步长（step）</nz-form-label>
+          <nz-form-control [nzSm]="18" [nzXs]="24">
             <app-select-step formControlName="step"></app-select-step>
           </nz-form-control>
         </nz-form-item>
         <nz-form-item>
-          <nz-form-label [nzSm]="4" [nzXs]="24" nzRequired nzFor="step">播放器（frameIdx）</nz-form-label>
-          <nz-form-control [nzSm]="20" [nzXs]="24">
+          <nz-form-label [nzSm]="6" [nzXs]="24" nzRequired nzFor="step">播放器（frameIdx）</nz-form-label>
+          <nz-form-control [nzSm]="18" [nzXs]="24">
             <app-control-player2 formControlName="step"></app-control-player2>
           </nz-form-control>
         </nz-form-item>

@@ -326,3 +326,122 @@ export const dataSteps = [{
   value: 3
 }];
 
+// -----------------------------------------
+// 测站类型
+export const lookup_station_types = [
+  { key: '气象站', value: 'MM'},
+  { key: '蒸发站', value: 'BB'},
+  { key: '堰闸水文站', value: 'DD'},
+  { key: '潮位站', value: 'TT'},
+  { key: '泵站', value: 'DP'},
+  { key: '墒情站', value: 'SS'},
+  { key: '雨量站', value: 'PP'},
+  { key: '河道水文站', value: 'ZQ'},
+  { key: '河道水位站', value: 'ZZ'},
+  { key: '水库水文站', value: 'RR'},
+  { key: '地下水站', value: 'ZG'},
+  { key: '分洪水位站', value: 'ZB'}
+];
+// 报汛等级
+export const lookup_flood_levels = [
+  { key: '中央报汛站', value: 1},
+  { key: '省级重点报汛站', value: 2},
+  { key: '省级一般报汛站', value: 3},
+  { key: '其他报汛站', value: 4}
+];
+// 基面名称 | 水准基面
+export const lookup_base_surfaces = [
+  { key: '1985年国家高程基准', value: 1},
+  { key: '1954年黄海高程系', value: 2},
+  { key: '1956年黄海高程系', value: 3},
+  { key: '榆林', value: 4},
+  { key: '吴淞基面', value: 5},
+  { key: '珠江高程系', value: 6},
+  { key: '大沽高程系', value: 7},
+  { key: '大连高程系', value: 8},
+  { key: '波罗的海水准', value: 9},
+  { key: '渤海高程系', value: 10},
+  { key: '海防高程系', value: 11},
+  { key: '海口秀英港', value: 12},
+  { key: '其他', value: 0},
+];
+
+// 岸别
+export const lookup_base_banks = [
+  { key: '左岸', value: 0},
+  { key: '右岸', value: 1},
+];
+
+// 水库类型
+export const lookup_reservoir_types = [
+  { value: 1, key: '小（2）型', min: 0.001, max: 0.01},
+  { value: 2, key: '小（1）型', min: 0.01, max: 0.1},
+  { value: 3, key: '中型', min: 0.1, max: 1},
+  { value: 4, key: '大（2）型', min: 1, max: 10},
+  { value: 5, key: '大（1）型', min: 10},
+  { value: 9, key: '其他', max: 0.001}
+];
+
+// 汛期类别
+export const lookup_flood_datetypes = [
+  { value: 1, key: '主汛期'},
+  { value: 2, key: '后汛期'},
+  { value: 3, key: '过渡期'},
+  { value: 4, key: '其他'}
+];
+
+// 河水特征
+export const lookup_river_characteristics = [
+  { key: '干涸', value: 1},
+  { key: '断流', value: 2},
+  { key: '流向不定', value: 3},
+  { key: '逆流', value: 4},
+  { key: '起涨', value: 5},
+  { key: '洪峰', value: 6}
+  // { key: '发电厂发电流量', value: 'P'},
+];
+
+// 水势
+export const lookup_water_flows = [
+  { key: '落', value: 4},
+  { key: '涨', value: 5},
+  { key: '平', value: 6}
+];
+
+// 测流方法
+export const lookup_test_flows = [
+  { key: '水位流量关系曲线', value: 1},
+  { key: '浮标及溶液测流法', value: 2},
+  { key: '流速仪及量水建筑物', value: 3},
+  { key: '估算法', value: 4},
+  { key: 'ADCP', value: 5},
+  { key: '电功率反推法', value: 6},
+  { key: '其他方法', value: 9}
+];
+
+// 测积方法
+export const lookup_test_products = [
+  { key: '水位面积关系曲线', value: 1},
+  { key: '测深杆或测深锤、铅鱼', value: 2},
+  { key: '回声探测仪', value: 3},
+  { key: 'ADCP', value: 5},
+  { key: '其他方法', value: 9}
+];
+
+// 测速方法
+export const lookup_test_velocitys = [
+  { key: '流速仪', value: 1},
+  { key: '浮标法', value: 2},
+  { key: '声学法', value: 3},
+  { key: 'ADCP', value: 5},
+  { key: '其他方法', value: 9}
+];
+
+// 天气情况
+export const lookup_weather_types = [
+  { value: 5, key: '雪'},
+  { value: 6, key: '雨夹雪'},
+  { value: 7, key: '雨'},
+  { value: 8, key: '阴'},
+  { value: 9, key: '晴'}
+];
