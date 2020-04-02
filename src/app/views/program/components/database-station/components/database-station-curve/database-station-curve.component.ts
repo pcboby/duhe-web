@@ -8,6 +8,8 @@ import { FormGroup, FormBuilder } from '@angular/forms';
 })
 export class DatabaseStationCurveComponent implements OnInit {
 
+  stationType = 1;
+
   
   default_form_value = {
   };

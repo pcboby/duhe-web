@@ -26,7 +26,11 @@ import {
   DatabaseStationLevelComponent,
   DatabaseStationCurveComponent,
   DatabaseStationRainfallComponent,
-  DatabaseStationWaterComponent
+  DatabaseStationWaterComponent,
+  DatabaseStationCurveTmpgridComponent,
+  DatabaseStationCurveTmpchartComponent,
+  DatabaseStationRainfallSearchComponent,
+  DatabaseStationWaterSearchComponent
 } from './components';
 import { ProgramRoutes } from './program.routing';
 import { ProgramComponent } from './program.component';
@@ -49,8 +53,12 @@ const components = [
   DatabaseStationFloodComponent,
   DatabaseStationLevelComponent,
   DatabaseStationCurveComponent,
+  DatabaseStationCurveTmpgridComponent,
+  DatabaseStationCurveTmpchartComponent,
   DatabaseStationRainfallComponent,
+  DatabaseStationRainfallSearchComponent,
   DatabaseStationWaterComponent,
+  DatabaseStationWaterSearchComponent,
   // 
   DatabaseWaterComponent,
   // 

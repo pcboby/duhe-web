@@ -15,8 +15,12 @@ export * from './database-station/components/database-station-edit/database-stat
 export * from './database-station/components/database-station-flood/database-station-flood.component';
 export * from './database-station/components/database-station-level/database-station-level.component';
 export * from './database-station/components/database-station-curve/database-station-curve.component';
+export * from './database-station/components/database-station-curve/components/database-station-curve-tmpgrid/database-station-curve-tmpgrid.component';
+export * from './database-station/components/database-station-curve/components/database-station-curve-tmpchart/database-station-curve-tmpchart.component';
 export * from './database-station/components/database-station-rainfall/database-station-rainfall.component';
+export * from './database-station/components/database-station-rainfall/components/database-station-rainfall-search/database-station-rainfall-search.component';
 export * from './database-station/components/database-station-water/database-station-water.component';
+export * from './database-station/components/database-station-water/components/database-station-water-search/database-station-water-search.component';
 // 
 export * from './database-water/database-water.component';
 

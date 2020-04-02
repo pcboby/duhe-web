@@ -1,3 +1,31 @@
-<p>
-  database-station-rainfall works!
-</p>
+<div class="table-operations">
+  <app-database-station-rainfall-search></app-database-station-rainfall-search>
+</div>
+<!--  -->
+<div class="table-operations">
+  <button nz-button nzTitle="导出" nzPlacement="top" nz-tooltip>
+    <i nz-icon nzType="export" theme="outline"></i>导出
+  </button>
+</div>
+<!--  -->
+<div class="table-operations">
+  <nz-table #dataGrid nzShowSizeChanger nzShowQuickJumper [nzShowTotal]="totalTemplate" [nzFrontPagination]="false"
+    [nzTotal]="total" [(nzPageIndex)]="pageIndex" [(nzPageSize)]="pageSize" (nzPageIndexChange)="loadData()"
+    nzSize="small" (nzPageSizeChange)="loadData(true)" [nzData]="dataset" nzBordered>
+    <thead>
+      <tr>
+        <th>序号</th>
+        <th>时间</th>
+        <th>累计降雨量</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let data of dataGrid.data">
+        <td>{{ data.label2 }}</td>
+        <td>{{ data.label3 }}</td>
+        <td>{{ data.label4 }}</td>
+      </tr>
+    </tbody>
+  </nz-table>
+  <ng-template #totalTemplate let-total>共计 {{ total }} 条记录.</ng-template>
+</div>
