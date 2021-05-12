@@ -39,7 +39,7 @@
     "ngx-echarts": "^4.2.2",
     "ngx-scrollbar": "^5.0.2",
     "rxjs": "~6.4.0",
-    "swiper": "^4.5.1",
+    "swiper": "^6.5.1",
     "tslib": "^1.9.0",
     "web-animations-js": "^2.3.2",
     "zone.js": "~0.9.1"
